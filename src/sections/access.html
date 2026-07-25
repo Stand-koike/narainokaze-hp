@@ -1,37 +1,13 @@
-<section
-        id="access"
-        data-animate="reveal"
+<div
+        data-component="image-text-section"
+        data-variant="access"
+        data-id="access"
         data-pencil-name="アクセス"
-        class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[48px] px-5 py-16 lg:px-[80px] lg:py-[88px] justify-start items-start lg:items-center bg-[#FFFFFF]"
+        data-image-src="../assets/images/access-map.png"
+        data-image-alt="蒼海の宿 ならいの風へのアクセスマップ"
+        data-addr-text="〒415-0013 静岡県下田市柿崎700番地"
       >
-        <img
-          data-pencil-name="Access Map"
-          src="../assets/images/access-map.png"
-          alt="蒼海の宿 ならいの風へのアクセスマップ"
-          class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[420px] object-cover"
-        />
-        <div
-          data-pencil-name="Access Text"
-          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
-        >
-          <div
-            data-pencil-name="Access En"
-            class="text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left md:[white-space:nowrap]"
-          >
-            Access
-          </div>
-          <div
-            data-pencil-name="Access Heading"
-            class="text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left md:[white-space:nowrap]"
-          >
-            アクセス
-          </div>
-          <div
-            data-pencil-name="Access Addr"
-            class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap]"
-          >
-            〒415-0013 静岡県下田市柿崎700番地
-          </div>
+        <template data-slot="access-lines">
           <div
             data-pencil-name="Access Line"
             class="text-[14px]/[25px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
@@ -50,6 +26,5 @@
           >
             バス｜駅近・駐車場あり。荷物の多いご一行もご相談ください
           </div>
-          <div data-component="button-outline" data-pencil-name="Access CTA" data-pencil-name-label="Access CTA Label" data-padding="12px_22px" data-label="詳しいアクセス" data-href="#access"></div>
-        </div>
-      </section>
+        </template>
+      </div>

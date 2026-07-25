@@ -5,22 +5,14 @@
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] px-5 py-16 md:px-[80px] md:py-[96px] justify-start items-center bg-[#FFFFFF]"
       >
         <div
-          data-pencil-name="News Head"
-          class="box-border w-fit h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center"
-        >
-          <div
-            data-pencil-name="News En"
-            class="text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left md:[white-space:nowrap]"
-          >
-            Topics
-          </div>
-          <div
-            data-pencil-name="News Ja"
-            class="text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left md:[white-space:nowrap]"
-          >
-            お知らせ
-          </div>
-        </div>
+          data-component="section-heading"
+          data-variant="centered-en-ja"
+          data-head-pencil-name="News Head"
+          data-en-pencil-name="News En"
+          data-ja-pencil-name="News Ja"
+          data-label-en="Topics"
+          data-label-ja="お知らせ"
+        ></div>
         <div
           data-pencil-name="News Grid"
           class="box-border w-full h-fit shrink-0 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-[20px] justify-start items-start"
@@ -58,5 +50,5 @@
             data-title="早春の河津桜まつりと菜の花まつり"
           ></div>
         </div>
-        <div data-component="button-outline" data-pencil-name="News More" data-pencil-name-label="News More Label" data-padding="12px_24px" data-label="お知らせ一覧" data-href="#news"></div>
+        <div data-component="button" data-variant="outline" data-pencil-name="News More" data-padding="12px_24px" data-label="お知らせ一覧" data-href="#news"></div>
       </section>

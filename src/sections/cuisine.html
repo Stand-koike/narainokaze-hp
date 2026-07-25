@@ -1,46 +1,12 @@
-<section
-        id="cuisine"
-        data-animate="reveal"
+<div
+        data-component="image-text-section"
+        data-variant="cuisine"
+        data-id="cuisine"
         data-pencil-name="料理"
-        class="box-border w-full h-fit shrink-0 flex flex-col-reverse lg:flex-row gap-8 lg:gap-[56px] px-5 py-16 lg:px-0 lg:py-[96px] lg:pl-[80px] justify-end items-center bg-[#FFFFFF] relative"
+        data-image-src="../assets/images/cuisine-hero.jpg"
+        data-image-alt="地魚を使った宿の料理"
+        data-label-text="Dining"
       >
-        <div
-          data-pencil-name="Cuisine Text"
-          class="box-border w-full max-w-[520px] lg:w-[520px] shrink-0 h-fit flex flex-col gap-[22px] justify-start items-start relative [z-index:0]"
-        >
-          <div
-            data-pencil-name="Cuisine Heading"
-            class="text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
-          >
-            食卓で、
-            <br />
-            世代がそろう
-          </div>
-          <div
-            data-pencil-name="Cuisine Body"
-            class="text-[16px]/[32px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
-          >
-            眼前の海から、目の前の器へ。
-            <br />
-            畑の匂いもそのままに。
-            <br />
-            地魚は自慢ではなく、
-            <br />
-            家族の夜を温めるためのものです。
-          </div>
-          <div data-component="button-outline" data-pencil-name="Cuisine CTA" data-pencil-name-label="Cuisine CTA Label" data-padding="12px_24px" data-label="お料理を見る" data-href="#cuisine"></div>
-        </div>
-        <div
-          data-pencil-name="Cuisine En"
-          data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[107px] top-[203px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center [white-space:nowrap] [z-index:1] hidden lg:block"
-        >
-          Dining
-        </div>
-        <img
-          data-pencil-name="Cuisine Hero Img"
-          src="../assets/images/cuisine-hero.jpg"
-          alt="地魚を使った宿の料理"
-          class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[480px] relative [z-index:2] object-cover"
-        />
-      </section>
+        <template data-slot="heading">食卓で、<br />世代がそろう</template>
+        <template data-slot="body">眼前の海から、目の前の器へ。<br />畑の匂いもそのままに。<br />地魚は自慢ではなく、<br />家族の夜を温めるためのものです。</template>
+      </div>
