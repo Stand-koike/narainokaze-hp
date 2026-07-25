@@ -1,12 +1,12 @@
 <header
         data-pencil-name="Header"
-        class="box-border w-full h-[72px] shrink-0 flex flex-row gap-0 p-[0px_56px] justify-between items-center bg-[#F0F4F3]"
+        class="box-border w-full shrink-0 flex flex-wrap md:flex-nowrap md:flex-row md:h-[72px] gap-3 md:gap-0 p-4 md:p-[0px_56px] md:justify-between md:items-center bg-[#F0F4F3]"
       >
         <a
           href="/"
           data-pencil-name="Logo"
           aria-label="蒼海の宿 ならいの風 トップへ"
-          class="box-border w-[181px] shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
+          class="box-border order-1 w-[181px] max-w-[50%] md:max-w-none shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
         >
           <img
             data-pencil-name="Logo Mark"
@@ -15,10 +15,17 @@
             class="box-border [flex:1_1_0] h-[57px] w-full object-contain"
           />
         </a>
+        <a
+          href="tel:0558-36-4500"
+          data-pencil-name="Header CTA"
+          class="box-border order-2 md:order-3 ml-auto md:ml-0 w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline"
+        >
+          ご予約・ご相談
+        </a>
         <nav
           data-pencil-name="Nav Links"
           aria-label="メインナビゲーション"
-          class="box-border w-fit shrink-0 h-fit flex flex-row gap-[28px] justify-start items-center"
+          class="box-border order-3 md:order-2 w-full md:w-fit shrink-0 h-fit basis-full md:basis-auto flex flex-row flex-wrap md:flex-nowrap gap-x-5 gap-y-2 md:gap-[28px] justify-start items-center"
         >
           <div data-component="nav-link" data-pencil-name="Nav 客室" data-label="客室" data-href="#rooms"></div>
           <div data-component="nav-link" data-pencil-name="Nav 温泉" data-label="温泉" data-href="#onsen"></div>
@@ -27,10 +34,3 @@
           <div data-component="nav-link" data-pencil-name="Nav アクセス" data-label="アクセス" data-href="#access"></div>
           <div data-component="nav-link" data-pencil-name="Nav FAQ" data-label="FAQ" data-href="#faq"></div>
         </nav>
-        <a
-          href="tel:0558-36-4500"
-          data-pencil-name="Header CTA"
-          class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap] no-underline"
-        >
-          ご予約・ご相談
-        </a>
