@@ -384,6 +384,130 @@ function buildFeatureCardHtml(element, vars) {
         </div>`;
 }
 
+function buildHeaderHtml(element, vars) {
+  const navItems = getSlotContent(element, "nav-items");
+
+  return `<header
+        data-pencil-name="Header"
+        class="box-border w-full shrink-0 flex flex-wrap md:flex-nowrap md:flex-row md:h-[72px] gap-3 md:gap-0 p-4 md:p-[0px_56px] md:justify-between md:items-center bg-[#F0F4F3]"
+      >
+        <a
+          href="${vars.HOME_HREF || "/"}"
+          data-pencil-name="Logo"
+          aria-label="${vars.LOGO_ARIA_LABEL}"
+          class="box-border order-1 w-[181px] max-w-[50%] md:max-w-none shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
+        >
+          <img
+            data-pencil-name="Logo Mark"
+            src="${vars.LOGO_SRC}"
+            alt="${vars.LOGO_ALT}"
+            class="box-border [flex:1_1_0] h-[57px] w-full object-contain"
+          />
+        </a>
+        <div
+          data-component="button"
+          data-variant="header-cta"
+          data-pencil-name="Header CTA"
+          data-href="${vars.CTA_HREF}"
+          data-label="${vars.CTA_LABEL}"
+        ></div>
+        <nav
+          data-pencil-name="Nav Links"
+          aria-label="メインナビゲーション"
+          class="box-border order-3 md:order-2 w-full md:w-fit shrink-0 h-fit basis-full md:basis-auto flex flex-row flex-wrap md:flex-nowrap gap-x-5 gap-y-2 md:gap-[28px] justify-start items-center"
+        >
+          ${navItems}
+        </nav>
+      </header>`;
+}
+
+function buildFooterHtml(element, vars) {
+  const navItems = getSlotContent(element, "nav-items");
+
+  return `<footer
+        data-pencil-name="Footer"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[28px] px-5 pt-14 pb-8 md:px-[80px] md:pt-[56px] md:pb-[32px] justify-start items-start bg-[#4A5D5B]"
+      >
+        <div
+          data-pencil-name="Footer Main"
+          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-8 md:gap-[48px] justify-between items-start"
+        >
+          <div
+            data-pencil-name="Footer Brand"
+            class="box-border w-fit shrink-0 h-fit flex flex-col gap-[6px] justify-start items-start"
+          >
+            <img
+              data-pencil-name="Footer Logo Img"
+              src="${vars.LOGO_SRC}"
+              alt="${vars.LOGO_ALT}"
+              class="box-border w-[136px] h-[61px] shrink-0 object-contain"
+            />
+          </div>
+          <div
+            data-pencil-name="Footer Info"
+            class="box-border w-full md:w-fit shrink-0 h-fit flex flex-col gap-[14px] justify-start items-start md:items-end"
+          >
+            <address
+              data-pencil-name="Info Addr"
+              class="text-[12px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left md:text-right md:[white-space:nowrap] not-italic"
+            >
+              ${vars.ADDRESS_TEXT}
+            </address>
+            <nav
+              data-pencil-name="Info Nav"
+              aria-label="フッターナビゲーション"
+              class="box-border w-full md:w-fit h-fit shrink-0 flex flex-row flex-wrap md:flex-nowrap gap-x-5 gap-y-2 md:gap-[20px] justify-start md:justify-start items-center"
+            >
+              ${navItems}
+            </nav>
+            <div
+              data-pencil-name="Info Contact"
+              class="box-border w-full md:w-fit h-fit shrink-0 flex flex-col sm:flex-row flex-wrap gap-2 md:gap-[10px] justify-start items-start sm:items-center"
+            >
+              <div
+                data-component="phone-display"
+                data-variant="display-footer"
+                data-number="${vars.PHONE_NUMBER}"
+              ></div>
+              <span
+                class="text-[13px]/[normal] box-border text-[#929E9D] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap] hidden sm:inline"
+              >
+                ・
+              </span>
+              <a
+                href="${vars.BOOKING_HREF}"
+                class="text-[13px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline"
+              >
+                ${vars.BOOKING_LABEL}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pencil-name="Footer Rule"
+          class="box-border w-full h-[1px] shrink-0 bg-[#6A7A79]"
+          aria-hidden="true"
+        ></div>
+        <div
+          data-pencil-name="Footer Bottom"
+          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center"
+        >
+          <small
+            data-pencil-name="Copyright"
+            class="text-[11px]/[normal] box-border text-[#AEB6B5] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap]"
+          >
+            ${vars.COPYRIGHT_TEXT}
+          </small>
+          <div
+            data-pencil-name="Footer Locale"
+            class="text-[12px]/[normal] box-border text-[#AEB6B5] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[1px] text-left md:[white-space:nowrap]"
+          >
+            ${vars.LOCALE_TEXT}
+          </div>
+        </div>
+      </footer>`;
+}
+
 async function fetchText(src) {
   const response = await fetch(src);
   if (!response.ok) {
@@ -436,6 +560,16 @@ async function loadPattern(element) {
 
   if (name === "feature-card") {
     element.outerHTML = buildFeatureCardHtml(element, vars);
+    return;
+  }
+
+  if (name === "header") {
+    element.outerHTML = buildHeaderHtml(element, vars);
+    return;
+  }
+
+  if (name === "footer") {
+    element.outerHTML = buildFooterHtml(element, vars);
     return;
   }
 
