@@ -67,6 +67,7 @@ async function loadComponents() {
 async function initPage() {
   await loadSections();
   await loadComponents();
+  document.dispatchEvent(new CustomEvent("page:ready"));
 }
 
 initPage();

@@ -1,0 +1,17 @@
+:root {
+    --color-bg: #F0F4F3;
+    --color-bg-alt: #E8EEEA;
+  
+    --color-primary: #4A5D5B;
+    --color-accent: #BFA170;
+  
+    --color-text: #2E3334;
+    --color-text-sub: #4A5456;
+  
+    --font-serif-ja: "Shippori Mincho";
+    --font-sans-ja: "Shippori Antique B1";
+    --font-serif-en: "Cormorant Garamond";
+  
+    --layout-max: 1440px;
+    --gutter: 80px;
+  }
