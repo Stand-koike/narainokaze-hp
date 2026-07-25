@@ -2,35 +2,35 @@
         data-pencil-name="Header"
         class="box-border w-full h-[72px] shrink-0 flex flex-row gap-0 p-[0px_56px] justify-between items-center bg-[#F0F4F3]"
       >
-        <div
+        <a
+          href="/"
           data-pencil-name="Logo"
-          class="box-border w-[181px] shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center"
+          aria-label="蒼海の宿 ならいの風 トップへ"
+          class="box-border w-[181px] shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
         >
-          <div
+          <img
             data-pencil-name="Logo Mark"
-            class="box-border [flex:1_1_0] h-[57px] rounded-[4px]"
-            style="background-image: url('../assets/images/logo.png'); background-position: center; background-repeat: no-repeat; background-size: contain"
-          ></div>
-        </div>
-        <div
+            src="../assets/images/logo.png"
+            alt="蒼海の宿 ならいの風"
+            class="box-border [flex:1_1_0] h-[57px] w-full object-contain"
+          />
+        </a>
+        <nav
           data-pencil-name="Nav Links"
+          aria-label="メインナビゲーション"
           class="box-border w-fit shrink-0 h-fit flex flex-row gap-[28px] justify-start items-center"
         >
-          <div data-component="nav-link" data-pencil-name="Nav 客室" data-label="客室"></div>
-          <div data-component="nav-link" data-pencil-name="Nav 温泉" data-label="温泉"></div>
-          <div data-component="nav-link" data-pencil-name="Nav 料理" data-label="料理"></div>
-          <div data-component="nav-link" data-pencil-name="Nav 過ごし方" data-label="過ごし方"></div>
-          <div data-component="nav-link" data-pencil-name="Nav アクセス" data-label="アクセス"></div>
-          <div data-component="nav-link" data-pencil-name="Nav FAQ" data-label="FAQ"></div>
-        </div>
-        <div
+          <div data-component="nav-link" data-pencil-name="Nav 客室" data-label="客室" data-href="#rooms"></div>
+          <div data-component="nav-link" data-pencil-name="Nav 温泉" data-label="温泉" data-href="#onsen"></div>
+          <div data-component="nav-link" data-pencil-name="Nav 料理" data-label="料理" data-href="#cuisine"></div>
+          <div data-component="nav-link" data-pencil-name="Nav 過ごし方" data-label="過ごし方" data-href="#intro"></div>
+          <div data-component="nav-link" data-pencil-name="Nav アクセス" data-label="アクセス" data-href="#access"></div>
+          <div data-component="nav-link" data-pencil-name="Nav FAQ" data-label="FAQ" data-href="#faq"></div>
+        </nav>
+        <a
+          href="tel:0558-36-4500"
           data-pencil-name="Header CTA"
-          class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#4A5D5B] rounded-[2px]"
+          class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap] no-underline"
         >
-          <div
-            data-pencil-name="Header CTA Label"
-            class="text-[14px]/[normal] box-border text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
-          >
-            ご予約・ご相談
-          </div>
-        </div>
+          ご予約・ご相談
+        </a>

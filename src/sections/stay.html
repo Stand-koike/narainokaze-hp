@@ -1,4 +1,5 @@
-<div
+<section
+        id="stay"
         data-pencil-name="温泉と客室"
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] p-[100px_80px] justify-start items-center bg-[#E8EEEA] relative"
       >
@@ -26,14 +27,16 @@
           class="box-border w-full h-fit shrink-0 flex flex-row gap-[32px] justify-start items-start relative [z-index:2]"
         >
           <div
+            id="onsen"
             data-pencil-name="Onsen Block"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
           >
-            <div
+            <img
               data-pencil-name="Onsen Img"
-              class="box-border w-full h-[468px] shrink-0"
-              style="background-image: url('../assets/images/onsen.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover"
-            ></div>
+              src="../assets/images/onsen.jpg"
+              alt="客室温泉"
+              class="box-border w-full h-[468px] shrink-0 object-cover"
+            />
             <div
               data-pencil-name="Onsen Title"
               class="text-[22px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
@@ -48,17 +51,19 @@
               <br />
               海と湯に身をあずけて、芯からほどける。
             </div>
-            <div data-component="button-outline" data-pencil-name="Onsen CTA" data-pencil-name-label="Onsen CTA Label" data-padding="10px_20px" data-label="温泉を見る"></div>
+            <div data-component="button-outline" data-pencil-name="Onsen CTA" data-pencil-name-label="Onsen CTA Label" data-padding="10px_20px" data-label="温泉を見る" data-href="#onsen"></div>
           </div>
           <div
+            id="rooms"
             data-pencil-name="Rooms Block"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
           >
-            <div
+            <img
               data-pencil-name="Rooms Img"
-              class="box-border w-full h-[468px] shrink-0"
-              style="background-image: url('../assets/images/rooms.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover"
-            ></div>
+              src="../assets/images/rooms.jpg"
+              alt="海を望む客室"
+              class="box-border w-full h-[468px] shrink-0 object-cover"
+            />
             <div
               data-pencil-name="Rooms Title"
               class="text-[22px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
@@ -73,6 +78,7 @@
               <br />
               波音を枕に、思い出を語らう。
             </div>
-            <div data-component="button-outline" data-pencil-name="Rooms CTA" data-pencil-name-label="Rooms CTA Label" data-padding="10px_20px" data-label="客室を見る"></div>
+            <div data-component="button-outline" data-pencil-name="Rooms CTA" data-pencil-name-label="Rooms CTA Label" data-padding="10px_20px" data-label="客室を見る" data-href="#rooms"></div>
           </div>
         </div>
+      </section>
