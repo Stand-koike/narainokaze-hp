@@ -1,42 +1,18 @@
-<section
-        data-animate="reveal"
+<div
+        data-pattern="full-bleed-banner"
+        data-variant="final-cta"
         data-pencil-name="最終CTA"
-        class="box-border w-full min-h-[520px] md:h-[573px] shrink-0 overflow-hidden relative"
-        style="background-image: url('../assets/images/final-cta-bg.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover"
+        data-bg-image="../assets/images/final-cta-bg.jpg"
       >
-        <div
-          data-pencil-name="Final Overlay"
-          class="box-border absolute inset-0 w-full h-full bg-[#1a242299] [z-index:0]"
-        ></div>
-        <div
-          data-pencil-name="Final Content"
-          class="box-border w-full max-w-[1000px] lg:w-[1000px] h-fit absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-[180.5px] lg:translate-y-0 px-5 lg:px-0 flex flex-col gap-[20px] justify-center items-center [z-index:1]"
-        >
-          <div
-            data-pencil-name="Final Heading"
-            class="text-[28px]/[normal] md:text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
-          >
-            ただ、家族になる時間。
-          </div>
-          <div
-            data-pencil-name="Final Body"
-            class="text-[16px]/[30px] box-border w-full text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center"
-          >
-            特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。
-            <br />
-            アレルギー対応や幼児グッズのご相談も、心よりお待ちしています。
-          </div>
-          <div
-            data-pencil-name="Final Actions"
-            class="box-border w-full md:w-fit h-fit shrink-0 flex flex-col sm:flex-row flex-wrap gap-4 md:gap-[20px] p-[12px_0px_0px_0px] justify-center md:justify-start items-center"
-          >
+        <template data-slot="heading">ただ、家族になる時間。</template>
+        <template data-slot="body">特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。<br />アレルギー対応や幼児グッズのご相談も、心よりお待ちしています。</template>
+        <template data-slot="actions">
             <div
               data-component="phone-display"
               data-variant="display-large"
               data-pencil-name="Final Tel"
-              data-number="0558-36-4500"
+              data-facility-phone
             ></div>
             <div data-component="button" data-variant="primary" data-pencil-name="Final Book" data-padding="14px_28px" data-label-font="Shippori_Mincho" data-label="空室確認・予約" data-href="#"></div>
-          </div>
-        </div>
-      </section>
+        </template>
+      </div>

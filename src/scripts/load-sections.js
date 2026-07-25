@@ -508,6 +508,91 @@ function buildFooterHtml(element, vars) {
       </footer>`;
 }
 
+function buildFullBleedBannerHtml(element, vars) {
+  switch (vars.VARIANT) {
+    case "bridge":
+      return buildBridgeBannerHtml(element, vars);
+    case "final-cta":
+      return buildFinalCtaBannerHtml(element, vars);
+    default:
+      throw new Error(`Unknown full-bleed-banner variant: ${vars.VARIANT}`);
+  }
+}
+
+function buildBridgeBannerHtml(element, vars) {
+  const labelEn = getSlotContent(element, "label-en");
+  const labelJa = getSlotContent(element, "label-ja");
+
+  return `<div
+        data-pencil-name="${vars.PENCIL_NAME}"
+        class="box-border w-full min-h-[400px] md:h-[560px] shrink-0 overflow-hidden relative"
+        style="background-image: url('${vars.BG_IMAGE}'); background-position: center; background-repeat: no-repeat; background-size: cover"
+      >
+        <div
+          data-pencil-name="Bridge Overlay"
+          class="box-border absolute inset-0 w-full h-full [background-image:linear-gradient(180deg,_#1A242266_0%,_#1A242288_55%,_#1A2422AA_100%)] bg-no-repeat bg-[length:100%_100%] [z-index:0]"
+        ></div>
+        <div
+          data-pencil-name="Bridge Content"
+          class="box-border w-full max-w-[640px] md:w-[640px] h-fit absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[200px] md:translate-y-0 px-5 md:px-0 flex flex-col gap-[14px] justify-start items-center [z-index:1]"
+        >
+          <div
+            data-pencil-name="Bridge En"
+            class="text-[20px]/[normal] box-border text-[#BFA170] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center md:text-left md:[white-space:nowrap]"
+          >
+            ${labelEn}
+          </div>
+          <div
+            data-pencil-name="Bridge Ja"
+            class="text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
+          >
+            ${labelJa}
+          </div>
+        </div>
+      </div>`;
+}
+
+function buildFinalCtaBannerHtml(element, vars) {
+  const heading = getSlotContent(element, "heading");
+  const body = getSlotContent(element, "body");
+  const actions = getSlotContent(element, "actions");
+
+  return `<section
+        data-animate="reveal"
+        data-pencil-name="${vars.PENCIL_NAME}"
+        class="box-border w-full min-h-[520px] md:h-[573px] shrink-0 overflow-hidden relative"
+        style="background-image: url('${vars.BG_IMAGE}'); background-position: center; background-repeat: no-repeat; background-size: cover"
+      >
+        <div
+          data-pencil-name="Final Overlay"
+          class="box-border absolute inset-0 w-full h-full bg-[#1a242299] [z-index:0]"
+        ></div>
+        <div
+          data-pencil-name="Final Content"
+          class="box-border w-full max-w-[1000px] lg:w-[1000px] h-fit absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-[180.5px] lg:translate-y-0 px-5 lg:px-0 flex flex-col gap-[20px] justify-center items-center [z-index:1]"
+        >
+          <div
+            data-pencil-name="Final Heading"
+            class="text-[28px]/[normal] md:text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
+          >
+            ${heading}
+          </div>
+          <div
+            data-pencil-name="Final Body"
+            class="text-[16px]/[30px] box-border w-full text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center"
+          >
+            ${body}
+          </div>
+          <div
+            data-pencil-name="Final Actions"
+            class="box-border w-full md:w-fit h-fit shrink-0 flex flex-col sm:flex-row flex-wrap gap-4 md:gap-[20px] p-[12px_0px_0px_0px] justify-center md:justify-start items-center"
+          >
+            ${actions}
+          </div>
+        </div>
+      </section>`;
+}
+
 async function fetchText(src) {
   const response = await fetch(src);
   if (!response.ok) {
@@ -573,6 +658,11 @@ async function loadPattern(element) {
     return;
   }
 
+  if (name === "full-bleed-banner") {
+    element.outerHTML = buildFullBleedBannerHtml(element, vars);
+    return;
+  }
+
   throw new Error(`Unknown pattern: ${name}`);
 }
 
@@ -604,7 +694,13 @@ async function loadComponents() {
 
 async function initPage() {
   await loadSections();
+
+  const facility = await window.loadFacilityData();
+  window.applyFacilityData(facility);
+
   await loadPatterns();
+  window.applyPhoneDisplayData(facility);
+
   await loadComponents();
   document.dispatchEvent(new CustomEvent("page:ready"));
 }

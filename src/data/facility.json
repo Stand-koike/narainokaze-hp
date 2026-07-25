@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "蒼海の宿 ならいの風",
+    "logoSrc": "../assets/images/logo.png",
+    "logoAriaLabel": "蒼海の宿 ならいの風 トップへ",
+    "homeHref": "/"
+  },
+  "contact": {
+    "phone": {
+      "display": "0558-36-4500",
+      "tel": "tel:0558-36-4500"
+    },
+    "address": "静岡県下田市柿崎700番地・外浦海水浴場 目の前"
+  },
+  "booking": {
+    "href": "#",
+    "label": "空室確認・予約 →"
+  },
+  "header": {
+    "ctaLabel": "ご予約・ご相談"
+  },
+  "footer": {
+    "copyright": "© 蒼海の宿 ならいの風 All Rights Reserved.",
+    "locale": "Izu Shimoda · Soto-ura"
+  },
+  "hero": {
+    "bgImage": "../assets/images/hero-bg.jpg",
+    "subtitleLines": [
+      "外浦の海まで徒歩1分。",
+      "漁師が届ける地魚と客室温泉の宿。"
+    ],
+    "catchLines": [
+      "凪が結ぶ、",
+      "三世代の記憶。"
+    ],
+    "bookingLabel": "空室確認・予約",
+    "bookingHref": "#",
+    "phoneLabelPrefix": "ご相談"
+  }
+}
