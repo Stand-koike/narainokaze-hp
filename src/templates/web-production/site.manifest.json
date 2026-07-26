@@ -1,0 +1,57 @@
+{
+
+  "template": "web-production",
+
+  "version": "1.0.0",
+
+  "source": {
+
+    "index": "index.html"
+
+  },
+
+  "data": {
+
+    "facility": "data/facility.json",
+
+    "content": "data/content.json"
+
+  },
+
+  "output": {
+
+    "dir": "dist",
+
+    "assetPathFrom": "../assets/",
+
+    "assetPathFromPages": "../../assets/",
+
+    "assetPathTo": "assets/",
+
+    "scripts": [
+
+      "scripts/animation.js",
+
+      "scripts/luxury-reveal.js",
+
+      "scripts/rooms-gallery.js",
+
+      "scripts/cuisine-slideshow.js",
+
+      "scripts/faq-accordion.js"
+
+    ],
+
+    "removeScripts": [
+
+      "scripts/load-data.js",
+
+      "scripts/load-sections.js"
+
+    ]
+
+  }
+
+}
+
+

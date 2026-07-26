@@ -8,6 +8,7 @@ const COMPONENT_MAP = {
   "nav-link": "components/nav-link-header.html",
   "nav-link-header": "components/nav-link-header.html",
   "nav-link-footer": "components/nav-link-footer.html",
+  "nav-group": "components/nav-group.html",
   "news-card": "components/news-card.html",
   "faq-card": "components/faq-card.html",
 };
@@ -143,7 +144,18 @@ function buildSectionHeadingHtml(vars) {
 
 function getSlotContent(element, slotName) {
   const template = element.querySelector(`template[data-slot="${slotName}"]`);
-  return template ? template.innerHTML.trim() : "";
+  if (!template) {
+    return "";
+  }
+
+  if (template.content?.childNodes.length) {
+    return Array.from(template.content.childNodes)
+      .map((node) => node.outerHTML || node.textContent || "")
+      .join("")
+      .trim();
+  }
+
+  return template.innerHTML.trim();
 }
 
 function buildIntroSection(vars, slots) {
@@ -252,7 +264,8 @@ function buildHostSection(vars, slots) {
       </section>`;
 }
 
-function buildCuisineSection(vars, slots) {
+function buildCuisineSection(vars, slots, element) {
+  const button = element ? getSlotContent(element, "button") : "";
   return `<section
         id="${vars.ID}"
         data-animate="reveal"
@@ -275,7 +288,7 @@ function buildCuisineSection(vars, slots) {
           >
             ${slots.body}
           </div>
-          <div data-component="button" data-variant="outline" data-pencil-name="Cuisine CTA" data-padding="12px_24px" data-label="お料理を見る" data-href="#cuisine"></div>
+          ${button}
         </div>
         <div
           data-pencil-name="Cuisine En"
@@ -325,7 +338,7 @@ function buildAccessSection(vars, slots) {
             ${vars.ADDR_TEXT}
           </div>
           ${slots.accessLines}
-          <div data-component="button" data-variant="outline" data-pencil-name="Access CTA" data-padding="12px_22px" data-label="詳しいアクセス" data-href="#access"></div>
+          <div data-component="button" data-variant="outline" data-pencil-name="Access CTA" data-padding="12px_22px" data-label="詳しいアクセス" data-href="${window.resolvePageHref("access.html")}"></div>
         </div>
       </section>`;
 }
@@ -345,7 +358,7 @@ function buildImageTextSectionHtml(element, vars) {
     case "host":
       return buildHostSection(vars, slots);
     case "cuisine":
-      return buildCuisineSection(vars, slots);
+      return buildCuisineSection(vars, slots, element);
     case "access":
       return buildAccessSection(vars, slots);
     default:
@@ -382,6 +395,21 @@ function buildFeatureCardHtml(element, vars) {
           </div>
           <div data-component="button" data-variant="outline" data-pencil-name="${vars.CTA_PENCIL_NAME}" data-padding="${vars.CTA_PADDING}" data-label="${vars.CTA_LABEL}" data-href="${vars.CTA_HREF}"></div>
         </div>`;
+}
+
+function buildNavGroupHtml(element, vars) {
+  const variant = vars.VARIANT || "header";
+  const items = JSON.parse(vars.ITEMS || "[]");
+
+  return items
+    .map((item) => {
+      if (variant === "footer") {
+        return `<div data-component="nav-link-footer" data-label="${item.label}" data-href="${item.href}"></div>`;
+      }
+
+      return `<div data-component="nav-link" data-pencil-name="Nav ${item.label}" data-label="${item.label}" data-href="${item.href}"></div>`;
+    })
+    .join("\n          ");
 }
 
 function buildHeaderHtml(element, vars) {
@@ -436,12 +464,19 @@ function buildFooterHtml(element, vars) {
             data-pencil-name="Footer Brand"
             class="box-border w-fit shrink-0 h-fit flex flex-col gap-[6px] justify-start items-start"
           >
-            <img
-              data-pencil-name="Footer Logo Img"
-              src="${vars.LOGO_SRC}"
-              alt="${vars.LOGO_ALT}"
-              class="box-border w-[136px] h-[61px] shrink-0 object-contain"
-            />
+            <a
+              href="${vars.HOME_HREF || "/"}"
+              data-pencil-name="Footer Logo"
+              aria-label="${vars.LOGO_ARIA_LABEL || vars.LOGO_ALT}"
+              class="box-border w-fit shrink-0 h-fit no-underline"
+            >
+              <img
+                data-pencil-name="Footer Logo Img"
+                src="${vars.LOGO_SRC}"
+                alt="${vars.LOGO_ALT}"
+                class="box-border w-[136px] h-[61px] shrink-0 object-contain"
+              />
+            </a>
           </div>
           <div
             data-pencil-name="Footer Info"
@@ -593,8 +628,17 @@ function buildFinalCtaBannerHtml(element, vars) {
       </section>`;
 }
 
+function resolveFetchPath(src) {
+  if (src.startsWith("http") || src.startsWith("../")) {
+    return src;
+  }
+
+  const base = window.__SRC_BASE__ || "";
+  return `${base}${src}`;
+}
+
 async function fetchText(src) {
-  const response = await fetch(src);
+  const response = await fetch(resolveFetchPath(src));
   if (!response.ok) {
     throw new Error(`Failed to load: ${src}`);
   }
@@ -617,6 +661,11 @@ async function loadComponent(element) {
 
   if (name === "image-text-section") {
     element.outerHTML = buildImageTextSectionHtml(element, vars);
+    return;
+  }
+
+  if (name === "nav-group") {
+    element.outerHTML = buildNavGroupHtml(element, vars);
     return;
   }
 
@@ -698,11 +747,22 @@ async function initPage() {
   const facility = await window.loadFacilityData();
   window.applyFacilityData(facility);
 
+  const content = await window.loadContentData();
+  window.applyContentData(content);
+
   await loadPatterns();
   window.applyPhoneDisplayData(facility);
 
   await loadComponents();
-  document.dispatchEvent(new CustomEvent("page:ready"));
+  window.applyPageCtaLinks(facility);
+
+  if (!window.__SITE_BUILD__) {
+    document.dispatchEvent(new CustomEvent("page:ready"));
+  }
 }
 
-initPage();
+window.initPage = initPage;
+
+if (!window.__SITE_BUILD__) {
+  initPage();
+}

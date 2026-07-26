@@ -23,9 +23,147 @@
         margin: 0;
         overflow-x: hidden;
       }
+
+      :root {
+        --lux-ease: cubic-bezier(0.16, 1, 0.3, 1);
+        --lux-duration: 1.5s;
+        --lux-duration-slow: 2.3s;
+        --lux-rise: 40px;
+        --lux-slide: 68px;
+      }
+
+      html.js .lux-section .lux-item {
+        opacity: 0;
+        transition:
+          opacity var(--lux-duration) var(--lux-ease),
+          transform var(--lux-duration) var(--lux-ease);
+        transition-delay: calc(var(--lux-i, 0) * 180ms);
+        will-change: opacity, transform;
+      }
+
+      html.js .lux-section .lux-item[data-lux-dir="up"] {
+        transform: translate3d(0, var(--lux-rise), 0);
+      }
+
+      html.js .lux-section .lux-item[data-lux-dir="left"] {
+        transform: translate3d(calc(var(--lux-slide) * -1), 0, 0);
+      }
+
+      html.js .lux-section .lux-item[data-lux-dir="right"] {
+        transform: translate3d(var(--lux-slide), 0, 0);
+      }
+
+      html.js .lux-section .lux-item[data-lux-dir="fade"] {
+        transition-duration: var(--lux-duration-slow);
+        transform: none;
+      }
+
+      html.js .lux-section.lux-inview .lux-item {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      @keyframes luxKenBurns {
+        from { background-size: 100% 100%; }
+        to { background-size: 108% 108%; }
+      }
+
+      .lux-ken-burns {
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        animation: luxKenBurns 22s var(--lux-ease) forwards;
+      }
+
+      [data-pencil-name^="News 20"],
+      [data-pencil-name="Onsen Block"],
+      [data-pencil-name="Rooms Block"] {
+        overflow: hidden;
+      }
+
+      .lux-image-hover {
+        transition: transform 0.75s var(--lux-ease);
+        transform-origin: center;
+      }
+
+      [data-pencil-name="Onsen Block"]:hover .lux-image-hover,
+      [data-pencil-name="Rooms Block"]:hover .lux-image-hover,
+      [data-pencil-name^="News 20"]:hover .lux-image-hover {
+        transform: scale(1.045);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html.js .lux-section .lux-item {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+
+        .lux-ken-burns {
+          animation: none !important;
+        }
+
+        .lux-image-hover {
+          transition: none !important;
+        }
+      }
+
+      header[data-header-overlay] {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px;
+        z-index: 50;
+        background-color: transparent !important;
+        transition:
+          background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      header[data-header-overlay].is-scrolled {
+        background-color: #F0F4F3 !important;
+        box-shadow: 0 1px 0 rgba(74, 93, 91, 0.08);
+      }
+
+      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Logo Mark"] {
+        filter:
+          drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55))
+          drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
+      }
+
+      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Nav Links"] a {
+        color: #E8EEEA;
+      }
+
+      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Header CTA"] {
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        color: #FFFFFF;
+      }
+
+      header[data-header-overlay] [data-pencil-name="Logo Mark"],
+      header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+      header[data-header-overlay] [data-pencil-name="Header CTA"] {
+        transition:
+          color 0.35s ease,
+          background-color 0.35s ease,
+          border-color 0.35s ease,
+          filter 0.35s ease;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        header[data-header-overlay],
+        header[data-header-overlay] [data-pencil-name="Logo Mark"],
+        header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+        header[data-header-overlay] [data-pencil-name="Header CTA"] {
+          transition: none !important;
+        }
+      }
     </style>
+    <script>document.documentElement.classList.add("js");</script>
   </head>
-  <body>
+  <body data-page="top">
     <div
       data-pencil-name="TOP — 三世代温もり案"
       class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-stretch bg-[#F0F4F3] overflow-hidden"
@@ -46,9 +184,9 @@
       <div data-include="sections/footer.html"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="scripts/load-data.js"></script>
     <script src="scripts/load-sections.js"></script>
     <script src="scripts/animation.js"></script>
+    <script src="scripts/luxury-reveal.js"></script>
   </body>
 </html>

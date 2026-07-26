@@ -1,0 +1,12 @@
+{
+  "name": "sotoura-hotel-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-production.mjs",
+    "sync:assets": "node scripts/sync-page-assets.mjs"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.9"
+  }
+}

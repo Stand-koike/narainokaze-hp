@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>よくあるご質問 | 蒼海の宿 ならいの風</title>
+    <script>
+      tailwind = { config: { corePlugins: { preflight: false } } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%400%2C300..700%3B1%2C300..700&family=Shippori+Antique+B1%3Awght%40400&family=Shippori+Mincho%3Awght%40400%3B500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, ::before, ::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      /* FAQ accordion（参照: narainokaze-hp/faq.html）
+         初期状態で回答を閉じておく（レイアウト確定 → CTA が消えない） */
+      [data-pencil-name="Stay List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"],
+      [data-pencil-name="Dine List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"],
+      [data-pencil-name="Other List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"] {
+        display: grid;
+        grid-template-rows: 0fr;
+      }
+
+      [data-pencil-name="Stay List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"] > *,
+      [data-pencil-name="Dine List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"] > *,
+      [data-pencil-name="Other List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"] > * {
+        overflow: hidden;
+      }
+
+      .faq-acc-item {
+        gap: 0 !important;
+      }
+
+      .faq-acc-item__q {
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .faq-acc-item__q:focus-visible {
+        outline: 2px solid #BFA170;
+        outline-offset: 4px;
+      }
+
+      .faq-acc-item__a {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.35s ease;
+      }
+
+      .faq-acc-item__a-inner {
+        overflow: hidden;
+      }
+
+      .faq-acc-item.is-open .faq-acc-item__a {
+        grid-template-rows: 1fr;
+      }
+
+      .faq-acc-item.is-open .faq-acc-item__a-inner {
+        padding-top: 14px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .faq-acc-item__a {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body data-page="faq">
+    <div
+      data-pencil-name="FAQ — 三世代温もり案"
+      class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-stretch bg-[#F0F4F3] overflow-hidden"
+    >
+      <div data-include="../sections/header.html"></div>
+      <main class="w-full">
+        <div data-include="../sections/faq-hero.html"></div>
+        <div data-include="../sections/faq-intro.html"></div>
+        <div data-include="../sections/faq-facilities.html"></div>
+        <div data-include="../sections/faq-area.html"></div>
+        <div data-include="../sections/faq-payment.html"></div>
+        <div data-include="../sections/faq-cta.html"></div>
+      </main>
+      <div data-include="../sections/footer.html"></div>
+    </div>
+    <script>
+      window.__SRC_BASE__ = "../";
+      window.__ASSET_BASE__ = "../../assets/";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../scripts/load-data.js"></script>
+    <script src="../scripts/load-sections.js"></script>
+    <script src="../scripts/faq-accordion.js"></script>
+    <script src="../scripts/animation.js"></script>
+  </body>
+</html>

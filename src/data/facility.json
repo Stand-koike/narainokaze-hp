@@ -13,7 +13,7 @@
     "address": "静岡県下田市柿崎700番地・外浦海水浴場 目の前"
   },
   "booking": {
-    "href": "#",
+    "href": "tel:0558-36-4500",
     "label": "空室確認・予約 →"
   },
   "header": {
@@ -34,7 +34,7 @@
       "三世代の記憶。"
     ],
     "bookingLabel": "空室確認・予約",
-    "bookingHref": "#",
+    "bookingHref": "tel:0558-36-4500",
     "phoneLabelPrefix": "ご相談"
   }
 }

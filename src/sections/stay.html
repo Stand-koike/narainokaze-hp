@@ -1,62 +1,21 @@
-<section
-        id="stay"
-        data-animate="reveal"
-        data-pencil-name="温泉と客室"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] px-5 py-16 md:px-[80px] md:py-[100px] justify-start items-center bg-[#E8EEEA] relative"
-      >
-        <div
-          data-pencil-name="Stay En Label"
-          data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[132px] top-[-47px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:0] hidden md:block"
-        >
-          Stay
-        </div>
-        <div
-          data-component="section-heading"
-          data-variant="centered-ja-only"
-          data-head-pencil-name="Stay Head"
-          data-ja-pencil-name="Stay Heading"
-          data-label-ja="ペースが違う世代が、"
-          data-label-ja-line2="いっしょに泊まれる理由"
-        ></div>
-        <div
-          data-pencil-name="Stay Row"
-          class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[32px] justify-start items-start relative [z-index:2]"
-        >
-          <div
-            data-pattern="feature-card"
-            data-id="onsen"
-            data-block-pencil-name="Onsen Block"
-            data-img-pencil-name="Onsen Img"
-            data-image-src="../assets/images/onsen.jpg"
-            data-image-alt="客室温泉"
-            data-title-pencil-name="Onsen Title"
-            data-body-pencil-name="Onsen Body"
-            data-cta-pencil-name="Onsen CTA"
-            data-cta-padding="10px_20px"
-            data-cta-label="温泉を見る"
-            data-cta-href="#onsen"
-          >
-            <template data-slot="heading">温泉</template>
-            <template data-slot="body">祖父母も子どもも、自分の時間で湯に。<br />海と湯に身をあずけて、芯からほどける。</template>
-          </div>
-          <div
-            data-pattern="feature-card"
-            data-id="rooms"
-            data-block-pencil-name="Rooms Block"
-            data-img-pencil-name="Rooms Img"
-            data-image-src="../assets/images/rooms.jpg"
-            data-image-alt="海を望む客室"
-            data-title-pencil-name="Rooms Title"
-            data-body-pencil-name="Rooms Body"
-            data-cta-pencil-name="Rooms CTA"
-            data-cta-padding="10px_20px"
-            data-cta-label="客室を見る"
-            data-cta-href="#rooms"
-          >
-            <template data-slot="heading">客室</template>
-            <template data-slot="body">みんなで、でもそれぞれの時間を過ごせる部屋。<br />波音を枕に、思い出を語らう。</template>
-          </div>
-        </div>
-      </section>
-
+<section
+        data-content-bind="stay"
+        data-animate="reveal"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] px-5 py-16 md:px-[80px] md:py-[100px] justify-start items-center bg-[#E8EEEA] relative"
+      >
+        <div
+          data-pencil-name="Stay En Label"
+          data-animate="label"
+          class="text-[230px]/[normal] box-border absolute left-[132px] top-[-47px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:0] hidden md:block"
+        ></div>
+        <div
+          data-component="section-heading"
+          data-variant="centered-ja-only"
+          data-head-pencil-name="Stay Head"
+          data-ja-pencil-name="Stay Heading"
+        ></div>
+        <div
+          data-pencil-name="Stay Row"
+          class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[32px] justify-start items-start relative [z-index:2]"
+        ></div>
+      </section>

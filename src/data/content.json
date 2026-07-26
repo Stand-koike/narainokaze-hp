@@ -1,0 +1,186 @@
+{
+  "intro": {
+    "id": "intro",
+    "pencilName": "Intro",
+    "imageSrc": "../assets/images/intro.jpg",
+    "imageAlt": "外浦の海を望む宿の風景",
+    "labelText": "Welcome",
+    "heading": "何もしない贅沢。",
+    "bodyHtml": "おじいちゃん、おばあちゃん、パパ、ママ、そして小さな君へ。<br />観光地を巡る慌ただしい旅ではなく、<br />三世代がそれぞれのペースで過ごす、小さな漁師宿です。"
+  },
+  "host": {
+    "id": "host",
+    "pencilName": "迎える人",
+    "imageSrc": "../assets/images/host-main.png",
+    "imageAlt": "この海で生きる家族",
+    "labelText": "People",
+    "roleText": "主人・女将より",
+    "headingHtml": "迎えるのは、<br />この海で生きる家族",
+    "quote": "「小さなご不安も、事前にお聞かせください。」",
+    "helpItems": [
+      "アレルギー・離乳食のご相談",
+      "幼児用のお風呂グッズのご用意",
+      "早寝・静かな時間帯のご要望"
+    ]
+  },
+  "cuisine": {
+    "id": "cuisine",
+    "pencilName": "料理",
+    "imageSrc": "../assets/images/cuisine-hero.jpg",
+    "imageAlt": "地魚を使った宿の料理",
+    "labelText": "Dining",
+    "headingHtml": "食卓で、<br />世代がそろう",
+    "bodyHtml": "眼前の海から、目の前の器へ。<br />畑の匂いもそのままに。<br />地魚は自慢ではなく、<br />家族の夜を温めるためのものです。",
+    "buttonLabel": "お料理を見る",
+    "buttonHref": "cuisine.html"
+  },
+  "access": {
+    "id": "access",
+    "pencilName": "アクセス",
+    "imageSrc": "../assets/images/access-map.png",
+    "imageAlt": "蒼海の宿 ならいの風へのアクセスマップ",
+    "addrText": "〒415-0013 静岡県下田市柿崎700番地",
+    "routes": [
+      "電車｜伊豆急下田駅よりタクシー約10分",
+      "お車｜東名沼津ICより約1時間30分",
+      "バス｜駅近・駐車場あり。荷物の多いご一行もご相談ください"
+    ]
+  },
+  "stay": {
+    "id": "stay",
+    "pencilName": "温泉と客室",
+    "labelText": "Stay",
+    "headingJa": "ペースが違う世代が、",
+    "headingJaLine2": "いっしょに泊まれる理由",
+    "features": [
+      {
+        "id": "onsen",
+        "blockPencilName": "Onsen Block",
+        "imgPencilName": "Onsen Img",
+        "imageSrc": "../assets/images/onsen.jpg",
+        "imageAlt": "客室温泉",
+        "titlePencilName": "Onsen Title",
+        "bodyPencilName": "Onsen Body",
+        "ctaPencilName": "Onsen CTA",
+        "ctaPadding": "10px_20px",
+        "ctaLabel": "温泉を見る",
+        "ctaHref": "onsen.html",
+        "heading": "温泉",
+        "bodyHtml": "祖父母も子どもも、自分の時間で湯に。<br />海と湯に身をあずけて、芯からほどける。"
+      },
+      {
+        "id": "rooms",
+        "blockPencilName": "Rooms Block",
+        "imgPencilName": "Rooms Img",
+        "imageSrc": "../assets/images/rooms.jpg",
+        "imageAlt": "海を望む客室",
+        "titlePencilName": "Rooms Title",
+        "bodyPencilName": "Rooms Body",
+        "ctaPencilName": "Rooms CTA",
+        "ctaPadding": "10px_20px",
+        "ctaLabel": "客室を見る",
+        "ctaHref": "rooms.html",
+        "heading": "客室",
+        "bodyHtml": "みんなで、でもそれぞれの時間を過ごせる部屋。<br />波音を枕に、思い出を語らう。"
+      }
+    ]
+  },
+  "news": {
+    "id": "news",
+    "pencilName": "お知らせ",
+    "headingEn": "Topics",
+    "headingJa": "お知らせ",
+    "buttonLabel": "お知らせ一覧",
+    "buttonHref": "#news",
+    "items": [
+      {
+        "pencilName": "News 2025.04.01",
+        "image": "../assets/images/news-01.webp",
+        "date": "2025.04.01",
+        "dateIso": "2025-04-01",
+        "title": "おかげ様で10周年を迎えました"
+      },
+      {
+        "pencilName": "News 2025.03.15",
+        "image": "../assets/images/rooms.jpg",
+        "date": "2025.03.15",
+        "dateIso": "2025-03-15",
+        "title": "館内改装に伴う休館のお知らせ"
+      },
+      {
+        "pencilName": "News 2025.01.20",
+        "image": "../assets/images/news-02.jpg",
+        "date": "2025.01.20",
+        "dateIso": "2025-01-20",
+        "title": "伊勢海老漁体験のご案内"
+      },
+      {
+        "pencilName": "News 2025.01.05",
+        "image": "../assets/images/news-03.jpg",
+        "date": "2025.01.05",
+        "dateIso": "2025-01-05",
+        "title": "早春の河津桜まつりと菜の花まつり"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "pencilName": "ご不安への答え",
+    "headingEn": "Before You Book",
+    "headingJa": "ご予約前の、よくあるご不安へ",
+    "rows": [
+      [
+        {
+          "pencilName": "FAQ 部屋は三世代で足りますか？",
+          "question": "部屋は三世代で足りますか？",
+          "answer": "定員と間取りをご案内します。布団の配置も事前にご相談ください。"
+        },
+        {
+          "pencilName": "FAQ 階段やバリアフリーは？",
+          "question": "階段やバリアフリーは？",
+          "answer": "館内の段差や移動のしやすさを、お電話で正直にお伝えします。"
+        }
+      ],
+      [
+        {
+          "pencilName": "FAQ 子どもの食事は？",
+          "question": "子どもの食事は？",
+          "answer": "アレルギー・離乳食対応も可能です。人数と年齢を教えてください。"
+        },
+        {
+          "pencilName": "FAQ 祖父母の静かな時間は？",
+          "question": "祖父母の静かな時間は？",
+          "answer": "早寝・ゆったりした滞在を前提に、無理のないプランをご提案します。"
+        }
+      ]
+    ],
+    "faqLinkLabel": "FAQをもっと見る",
+    "faqLinkHref": "faq.html",
+    "callLabel": "まずはお電話で相談",
+    "callHref": "tel:0558-36-4500"
+  },
+  "bridge": {
+    "pencilName": "間奏 — 食卓から湯へ",
+    "bgImage": "../assets/images/bridge-bg.jpg",
+    "labelEn": "From Table to Quiet",
+    "labelJa": "食卓から、湯と部屋へ。"
+  },
+  "finalCta": {
+    "pencilName": "最終CTA",
+    "bgImage": "../assets/images/final-cta-bg.jpg",
+    "heading": "ただ、家族になる時間。",
+    "bodyHtml": "特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。<br />アレルギー対応や幼児グッズのご相談も、心よりお待ちしています。",
+    "bookingLabel": "空室確認・予約",
+    "bookingHref": "tel:0558-36-4500"
+  },
+  "navigation": {
+    "items": [
+      { "label": "客室", "href": "rooms.html" },
+      { "label": "温泉", "href": "onsen.html" },
+      { "label": "料理", "href": "cuisine.html" },
+      { "label": "過ごし方", "href": "news.html" },
+      { "label": "アクセス", "href": "access.html" },
+      { "label": "FAQ", "href": "faq.html" }
+    ]
+  }
+}
