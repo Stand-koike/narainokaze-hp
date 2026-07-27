@@ -193,6 +193,8 @@ function buildIntroSection(vars, slots) {
           data-pencil-name="Intro Image"
           src="${vars.IMAGE_SRC}"
           alt="${vars.IMAGE_ALT}"
+          loading="lazy"
+          decoding="async"
           class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[440px] relative [z-index:2] object-cover"
         />
       </section>`;
@@ -216,6 +218,8 @@ function buildHostSection(vars, slots) {
             <img
               src="${vars.IMAGE_SRC}"
               alt="${vars.IMAGE_ALT}"
+              loading="lazy"
+              decoding="async"
               class="box-border w-full h-full object-cover"
             />
             <div
@@ -301,6 +305,8 @@ function buildCuisineSection(vars, slots, element) {
           data-pencil-name="Cuisine Hero Img"
           src="${vars.IMAGE_SRC}"
           alt="${vars.IMAGE_ALT}"
+          loading="lazy"
+          decoding="async"
           class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[480px] relative [z-index:2] object-cover"
         />
       </section>`;
@@ -317,6 +323,8 @@ function buildAccessSection(vars, slots) {
           data-pencil-name="Access Map"
           src="${vars.IMAGE_SRC}"
           alt="${vars.IMAGE_ALT}"
+          loading="lazy"
+          decoding="async"
           class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[420px] object-cover"
         />
         <div
@@ -379,6 +387,8 @@ function buildFeatureCardHtml(element, vars) {
             data-pencil-name="${vars.IMG_PENCIL_NAME}"
             src="${vars.IMAGE_SRC}"
             alt="${vars.IMAGE_ALT}"
+            loading="lazy"
+            decoding="async"
             class="box-border w-full h-[468px] shrink-0 object-cover"
           />
           <div
@@ -502,6 +512,7 @@ function buildFooterHtml(element, vars) {
               <div
                 data-component="phone-display"
                 data-variant="display-footer"
+                data-pencil-name="Footer Phone"
                 data-number="${vars.PHONE_NUMBER}"
               ></div>
               <span
@@ -681,6 +692,7 @@ async function loadComponent(element) {
     vars.CLASSES = resolvePhoneDisplayClasses(vars);
     vars.HREF = vars.HREF || `tel:${vars.NUMBER}`;
     vars.DISPLAY = vars.DISPLAY || vars.NUMBER;
+    vars.PENCIL_NAME = vars.PENCIL_NAME || "Phone Display";
     element.outerHTML = applyTemplate(template, vars);
     return;
   }

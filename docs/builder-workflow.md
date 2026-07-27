@@ -14,7 +14,7 @@ Builder Agent  ← 本ドキュメント
     ↓ 構造化 HTML + JSON データ + ビルド基盤
 Animation Agent
     ↓ GSAP アニメーション
-Reviewer
+Reviewer  ← docs/reviewer-checklist.md（レスポンシブ含む品質確認）
     ↓ 品質確認
 Performance
     ↓ 最適化
@@ -28,11 +28,13 @@ Deploy
 - 施設情報・可変コンテンツを **JSON データ** へ切り出す
 - 開発時ランタイム（`load-data.js` / `load-sections.js`）と本番ビルド（`build-production.mjs`）を接続する
 - 複数ページ間の **リンク・画像パス** を一貫した規約で整える
+- ページシェル幅の固定（`w-[1440px]` 等）を除去し、デスクトップ幅での横スクロールを予防する
 
 **Builder の責務外**
 
 - アニメーション実装（Animation Agent）
 - デザイン変更・レイアウトの再設計
+- **スマホ／タブレット幅の目視確認**（Reviewer。→ [reviewer-checklist.md](reviewer-checklist.md)）
 - サーバー・DNS・本番ホスティング設定
 
 ---
@@ -280,6 +282,7 @@ project-root/
 ├── dist/                   # 本番出力（gitignore 推奨）
 ├── docs/
 │   ├── builder-workflow.md # 本ドキュメント
+│   ├── reviewer-checklist.md # Reviewer（レスポンシブ含む）
 │   └── project-context.md  # 案件コンセプト
 ├── scripts/
 │   ├── build-production.mjs
@@ -309,6 +312,9 @@ project-root/
 
 ## 検証チェックリスト（Builder 完了判定）
 
+> **範囲:** 構造・リンク・デスクトップ幅の整合まで。  
+> **375px / 768px のレスポンシブ目視** と SEO・a11y 一式は Reviewer 完了条件（[reviewer-checklist.md](reviewer-checklist.md)）。
+
 ### 開発環境
 
 - [ ] プロジェクトルートで `py -m http.server 8080` を起動
@@ -329,6 +335,11 @@ project-root/
 - [ ] `load-data.js` / `load-sections.js` が HTML に含まれていない
 - [ ] `http://localhost:8080/dist/index.html` — TOP 表示
 - [ ] 下層ページ間・TOP へのリンクが機能
+
+### Reviewer へ渡す前
+
+- [ ] 上記 Builder 完了判定を満たしている
+- [ ] Reviewer に [reviewer-checklist.md](reviewer-checklist.md) を渡し、**レスポンシブ必須チェック**（375 / 768 / 1366 / 1920）を依頼する
 
 ---
 
@@ -390,7 +401,8 @@ Pencil エクスポート固有パスが残ると、下層ページほど修正�
 
 ### 10. Builder 完了の定義をチェックリスト化する
 
-「HTML が存在する」≠「Builder 完了」。開発表示・本番ビルド・リンク・画像の 4 点セットで判定する。
+「HTML が存在する」≠「Builder 完了」。開発表示・本番ビルド・リンク・画像の 4 点セットで判定する。  
+公開前の **スマホ／タブレット確認は Reviewer** に分離し、チェックリストを別ドキュメント化する（本案件: `docs/reviewer-checklist.md`）。
 
 ### 11. ページ横幅は Pencil 値をそのまま使わない
 
@@ -429,6 +441,7 @@ Pencil エクスポート固有パスが残ると、下層ページほど修正�
 
 | ファイル | 役割 |
 |----------|------|
+| `docs/reviewer-checklist.md` | Reviewer 品質確認（レスポンシブ必須） |
 | `src/scripts/load-sections.js` | section / pattern / component 展開 |
 | `src/scripts/load-data.js` | JSON 注入・リンク解決 |
 | `scripts/build-production.mjs` | 本番静的 HTML 生成 |

@@ -2,11 +2,15 @@
   "name": "sotoura-hotel-site",
   "private": true,
   "type": "module",
+  "homepage": "https://stand-koike.github.io/sotoura-hotel-site/",
   "scripts": {
     "build": "node scripts/build-production.mjs",
-    "sync:assets": "node scripts/sync-page-assets.mjs"
+    "preview": "npx --yes serve dist -l 4173",
+    "sync:assets": "node scripts/sync-page-assets.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
-    "linkedom": "^0.18.9"
+    "linkedom": "^0.18.9",
+    "sharp": "^0.35.3"
   }
 }

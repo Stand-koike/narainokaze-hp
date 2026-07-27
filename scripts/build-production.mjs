@@ -180,12 +180,17 @@ async function buildSite() {
   }
 
   const assetsSource = path.join(ROOT, "assets");
+  const assetsDest = path.join(distDir, "assets");
   try {
     await fs.access(assetsSource);
-    await copyDirectory(assetsSource, path.join(distDir, "assets"));
+    await fs.rm(assetsDest, { recursive: true, force: true });
+    await copyDirectory(assetsSource, assetsDest);
   } catch {
     // Optional until image assets are added at project root.
   }
+
+  // GitHub Pages: do not run Jekyll on the uploaded site.
+  await fs.writeFile(path.join(distDir, ".nojekyll"), "", "utf8");
 }
 
 buildSite().catch((error) => {

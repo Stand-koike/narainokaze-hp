@@ -62,7 +62,10 @@ scripts/
   sync-page-assets.mjs  レガシー素材同期（案件固有）
 docs/
   builder-workflow.md   Builder 工程ドキュメント
+  deployment.md         本番公開・GitHub Pages
   project-context.md    案件コンセプト
+.github/workflows/
+  deploy-pages.yml      main push で dist を Pages へ
 ```
 
 ## Local Development
@@ -118,21 +121,36 @@ npm run build
 ### 確認
 
 ```bash
+npm run preview
+# → http://localhost:4173/
+```
+
+または:
+
+```bash
 py -m http.server 8080
 ```
 
-| ページ | URL |
-|--------|-----|
-| TOP | http://localhost:8080/dist/index.html |
-| 下層 | http://localhost:8080/dist/rooms.html 等 |
+| ページ | URL（preview） | URL（http.server） |
+|--------|----------------|-------------------|
+| TOP | http://localhost:4173/ | http://localhost:8080/dist/index.html |
+| 下層 | http://localhost:4173/rooms.html 等 | http://localhost:8080/dist/rooms.html 等 |
 
 ### 本番出力の特徴
 
 - section / data / pattern / component を **ビルド時に展開済み**
 - `load-data.js` / `load-sections.js` は **含めない**（fetch 不要）
-- TOP のみ GSAP + `animation.js` を残す
 - 画像パスは `assets/` に統一（`../assets/` / `../../assets/` → `assets/`）
 - `assets/` ディレクトリを `dist/assets/` へコピー
+- `.nojekyll` を出力（GitHub Pages 用）
+
+### デプロイ（GitHub Pages）
+
+詳細は **[docs/deployment.md](docs/deployment.md)**。
+
+- 公開対象: **`dist/` のみ**（Actions が `npm run build` してデプロイ）
+- 想定 URL: https://stand-koike.github.io/sotoura-hotel-site/
+- 初回: Settings → Pages → Source を **GitHub Actions** に設定
 
 ### テンプレート構成
 
@@ -158,6 +176,7 @@ npm run sync:assets
 
 | ドキュメント | 内容 |
 |-------------|------|
+| [docs/deployment.md](docs/deployment.md) | 本番公開・GitHub Pages 手順 |
 | [docs/builder-workflow.md](docs/builder-workflow.md) | Builder 工程の標準手順・チェックリスト・テンプレート知見 |
 | [docs/animation-guide.md](docs/animation-guide.md) | アニメーション指示のコツ・プロンプト例（ローカル参照） |
 | [docs/animation-spec.md](docs/animation-spec.md) | **編集用** アニメ仕様一覧（手直し → Agent 反映） |
