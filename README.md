@@ -148,9 +148,9 @@ py -m http.server 8080
 
 詳細は **[docs/deployment.md](docs/deployment.md)**。
 
-- 公開対象: **`dist/` のみ**（Actions が `npm run build` してデプロイ）
+- 公開対象: **`dist/` のみ**（Actions が build し **`gh-pages` ブランチ**へ配置）
 - 想定 URL: https://stand-koike.github.io/sotoura-hotel-site/
-- 初回: Settings → Pages → Source を **GitHub Actions** に設定
+- 初回: Settings → Pages → Branch を **`gh-pages` / root** に設定（`main` だと 404）
 
 ### テンプレート構成
 

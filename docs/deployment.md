@@ -35,11 +35,15 @@
 ## 初回セットアップ（GitHub）
 
 1. 本リポジトリの変更（workflow・docs）を `main` に push する  
-2. **Settings → Pages → Build and deployment → Source** を **GitHub Actions** にする  
-3. **Actions** タブで `Deploy GitHub Pages` が成功することを確認する  
-4. Settings → Pages に表示された URL を開く  
+2. Actions で **Deploy GitHub Pages** が成功し、`gh-pages` ブランチが作られることを確認する  
+3. **Settings → Pages → Build and deployment**  
+   - **Source:** Deploy from a branch  
+   - **Branch:** `gh-pages` / `/ (root)`  
+4. 数分待ってから公開 URL を開く  
 
-権限: ワークフローは `pages: write` と `id-token: write` のみ。追加の Personal Access Token は不要。
+> **404 になる典型原因:** Source が `main` / root のまま。リポジトリ直下に `index.html` が無いため 404 になる。必ず **`gh-pages`** を選ぶ。
+
+権限: `GITHUB_TOKEN` のみ使用（追加の PAT は不要）。
 
 ---
 
@@ -59,7 +63,7 @@ git push origin main
 
 1. `npm ci`
 2. `npm run build` → `dist/`
-3. Pages へデプロイ
+3. `dist/` の中身を **`gh-pages` ブランチ** へ公開
 
 手動再デプロイ: Actions → **Deploy GitHub Pages** → **Run workflow**。
 
@@ -87,9 +91,9 @@ npm run preview
 
 | ファイル | 役割 |
 |----------|------|
-| `.github/workflows/deploy-pages.yml` | `main` push で build → Pages デプロイ |
+| `.github/workflows/deploy-pages.yml` | `main` push で build → `gh-pages` へ `dist/` を公開 |
 
-公開ディレクトリは Actions の artifact（`path: dist`）のみ。`src/` はアップロードしない。
+公開内容は `dist/` のみ。`src/` はアップロードしない。
 
 ---
 
@@ -110,7 +114,8 @@ npm run preview
 
 | 症状 | 確認 |
 |------|------|
-| 404 on Pages | Source が GitHub Actions か。workflow が success か |
+| **404** | Pages の Branch が **`gh-pages` / root** か（`main` だと index が無く 404） |
 | CSS/JS が当たらない | 相対パスか。カスタム 404 でルート直書きしていないか |
 | 古い画面のまま | Actions 再実行、またはハードリロード |
 | ビルド失敗 | Actions ログの `npm ci` / `npm run build` |
+| `gh-pages` が無い | Deploy ワークフローが一度も成功していない |
