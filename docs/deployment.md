@@ -9,7 +9,7 @@
 
 | 項目 | 内容 |
 |------|------|
-| リポジトリ | `https://github.com/Stand-koike/sotoura-hotel-site` |
+| リポジトリ | `https://github.com/Stand-koike/narainokaze-hp` |
 | 公開物 | `npm run build` が生成する `dist/`（HTML / `assets/` / `scripts/`） |
 | `dist/` | `.gitignore` 対象。リポジトリにはコミットしない |
 | ホスティング | **GitHub Pages**（Actions でビルド＆デプロイ） |
@@ -25,7 +25,7 @@
 
 | 種別 | URL |
 |------|-----|
-| プロジェクトサイト（既定） | https://stand-koike.github.io/sotoura-hotel-site/ |
+| プロジェクトサイト（既定） | https://stand-koike.github.io/narainokaze-hp/ |
 | Actions 完了後の表示 | リポジトリ → **Settings → Pages**、または Actions の Deploy ジョブ出力 |
 
 カスタムドメインを使う場合は Pages 設定で Domain を追加する（DNS はホスト側。シークレットは不要）。

@@ -1,5 +1,8 @@
 # 蒼海の宿 ならいの風 — Website Project
 
+> **ローカル配置:** `Stand/01.案件/ならいの風/`  
+> **GitHub:** [Stand-koike/narainokaze-hp](https://github.com/Stand-koike/narainokaze-hp)
+
 ## Purpose
 
 外浦の海辺で三世代がゆったり過ごす宿「蒼海の宿 ならいの風」の魅力を伝える公式 Web サイト。
@@ -17,11 +20,17 @@
 - 家族の時間
 - 海辺の宿
 
+## Pencil.dev
+
+デザイン本体: [`pencil/narainokaze-design.pen`](pencil/narainokaze-design.pen)  
+エクスポート: [`pencil/export/`](pencil/export/)  
+詳細: [pencil/README.md](pencil/README.md)
+
 ## Production Flow
 
 ```
-Pencil.dev
-    ↓ HTML Export
+Pencil.dev（pencil/narainokaze-design.pen）
+    ↓ HTML Export → pencil/export/
 Builder Agent          ← 構造化・データ切り出し・ビルド基盤
     ↓
 Animation Agent        ← GSAP
@@ -149,7 +158,7 @@ py -m http.server 8080
 詳細は **[docs/deployment.md](docs/deployment.md)**。
 
 - 公開対象: **`dist/` のみ**（Actions が build し **`gh-pages` ブランチ**へ配置）
-- 想定 URL: https://stand-koike.github.io/sotoura-hotel-site/
+- 想定 URL: https://stand-koike.github.io/narainokaze-hp/
 - 初回: Settings → Pages → Branch を **`gh-pages` / root** に設定（`main` だと 404）
 
 ### テンプレート構成
@@ -177,6 +186,7 @@ npm run sync:assets
 | ドキュメント | 内容 |
 |-------------|------|
 | [docs/deployment.md](docs/deployment.md) | 本番公開・GitHub Pages 手順 |
+| [docs/folder-migration.md](docs/folder-migration.md) | フォルダ統合手順（2026-08） |
 | [docs/builder-workflow.md](docs/builder-workflow.md) | Builder 工程の標準手順・チェックリスト・テンプレート知見 |
 | [docs/animation-guide.md](docs/animation-guide.md) | アニメーション指示のコツ・プロンプト例（ローカル参照） |
 | [docs/animation-spec.md](docs/animation-spec.md) | **編集用** アニメ仕様一覧（手直し → Agent 反映） |

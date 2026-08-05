@@ -1,8 +1,8 @@
 {
-  "name": "sotoura-hotel-site",
+  "name": "narainokaze-hp",
   "private": true,
   "type": "module",
-  "homepage": "https://stand-koike.github.io/sotoura-hotel-site/",
+  "homepage": "https://stand-koike.github.io/narainokaze-hp/",
   "scripts": {
     "build": "node scripts/build-production.mjs",
     "preview": "npx --yes serve dist -l 4173",

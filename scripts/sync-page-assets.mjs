@@ -5,12 +5,14 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DEST = path.join(ROOT, "assets", "images");
-const LEGACY_ROOT = path.resolve(ROOT, "..", "..", "ならいの風");
+/** @deprecated 2026-08 フォルダ統合済み。再同期が必要な場合のみ Desktop\\ボツならいの風 を指定 */
+const LEGACY_ROOT =
+  process.env.LEGACY_ASSETS_ROOT ??
+  path.join(process.env.USERPROFILE ?? "", "Desktop", "ボツならいの風");
 
 function resolveSourceDir() {
   const candidates = [
     path.join(LEGACY_ROOT, "narainokaze-hp", "assets", "images"),
-    path.resolve(ROOT, "..", "narainokaze-hp", "assets", "images"),
   ];
 
   for (const candidate of candidates) {
