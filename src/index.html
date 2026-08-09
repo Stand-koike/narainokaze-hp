@@ -165,21 +165,65 @@
           transition: none !important;
         }
       }
+
+      [data-fade-slider] [data-fade-stage],
+      [data-fade-slider] [data-fade-slide] {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .pen-fade-dots {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 10;
+        display: flex;
+        gap: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .pen-fade-dots {
+          right: 80px;
+          bottom: 24px;
+        }
+      }
+
+      .pen-fade-dot {
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .pen-fade-dot.is-active {
+        background-color: #ffffff;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        [data-fade-slider] [data-fade-stage],
+        [data-fade-slider] [data-fade-slide],
+        [data-fade-caption] {
+          transition: none !important;
+        }
+      }
     </style>
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body data-page="top">
     <div
-      data-pencil-name="TOP — 三世代温もり案"
+      data-pencil-name="TOP — 料理推し案"
       class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-stretch bg-[#F0F4F3] overflow-hidden"
     >
       <div data-include="sections/header.html"></div>
       <main>
-        <div data-include="sections/hero.html"></div>
+        <div data-include="sections/hero-fade.html"></div>
         <div data-include="sections/intro.html"></div>
-        <div data-include="sections/host.html"></div>
         <div data-include="sections/cuisine.html"></div>
-        <div data-include="sections/bridge.html"></div>
         <div data-include="sections/stay.html"></div>
         <div data-include="sections/news.html"></div>
         <div data-include="sections/faq.html"></div>
@@ -193,5 +237,6 @@
     <script src="scripts/load-sections.js"></script>
     <script src="scripts/animation.js"></script>
     <script src="scripts/luxury-reveal.js"></script>
+    <script src="scripts/pen-fade.js"></script>
   </body>
 </html>

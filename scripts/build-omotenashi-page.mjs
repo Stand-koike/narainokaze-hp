@@ -114,13 +114,15 @@ function buildStaffCard(index, name, phrase) {
             >
               <div
                 data-pencil-name="Staff Photo ${index}"
-                class="box-border w-full h-[420px] md:h-[540px] shrink-0 flex flex-col gap-0 justify-center items-center bg-[#D1C7BD] overflow-hidden relative"
+                class="staff-photo box-border w-full h-[420px] md:h-[540px] shrink-0 flex flex-col gap-0 justify-center items-center bg-[#D1C7BD] overflow-hidden relative"
               >
                 <img
                   src="../../assets/images/staff/staff-${photo}.jpg"
-                  alt=""
+                  alt="${name} の写真"
                   class="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
+                  onload="this.parentElement.classList.add('has-photo')"
                   onerror="this.remove()"
                 />
                 <div
@@ -210,12 +212,6 @@ function buildCta() {
           お電話でのご予約・お問い合わせ
         </div>
         <div
-          data-pencil-name="CTA Body"
-          class="text-[16px]/[30px] box-border w-full max-w-[560px] px-1 text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center relative [z-index:2]"
-        >
-          TEL：0558-36-4500
-        </div>
-        <div
           data-pencil-name="CTA Actions"
           class="box-border w-full max-w-[560px] h-fit shrink-0 flex flex-col sm:flex-row gap-[16px] sm:gap-[20px] p-[12px_0px_0px_0px] justify-center items-center relative [z-index:3]"
         >
@@ -270,6 +266,14 @@ function buildPageShell() {
       body {
         margin: 0;
         overflow-x: hidden;
+      }
+
+      .staff-photo.has-photo {
+        background-color: transparent;
+      }
+
+      .staff-photo.has-photo [data-pencil-name="Photo Label"] {
+        display: none;
       }
     </style>
   </head>

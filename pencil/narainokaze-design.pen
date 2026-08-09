@@ -1,5 +1,5 @@
 {
-  "version": "2.15",
+  "version": "2.17",
   "children": [
     {
       "type": "frame",
@@ -13729,23 +13729,15 @@
                           "name": "Staff Photo 1",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-01.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "t3q8",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",
@@ -13786,23 +13778,15 @@
                           "name": "Staff Photo 2",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-02.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "t8u6",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",
@@ -13843,23 +13827,15 @@
                           "name": "Staff Photo 3",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-03.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "tdhv",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",
@@ -13909,23 +13885,15 @@
                           "name": "Staff Photo 4",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-04.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "tjkb",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",
@@ -13966,23 +13934,15 @@
                           "name": "Staff Photo 5",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-05.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "touz",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",
@@ -14023,23 +13983,15 @@
                           "name": "Staff Photo 6",
                           "width": "fill_container",
                           "height": 540,
-                          "fill": "#D1C7BD",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../assets/images/staff/staff-06.jpg",
+                            "mode": "fill"
+                          },
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "ttay",
-                              "name": "Photo Label",
-                              "fill": "#8A908C",
-                              "content": "Photo",
-                              "fontFamily": "Cormorant Garamond",
-                              "fontSize": 18,
-                              "fontWeight": "normal",
-                              "fontStyle": "italic"
-                            }
-                          ]
+                          "alignItems": "center"
                         },
                         {
                           "type": "text",

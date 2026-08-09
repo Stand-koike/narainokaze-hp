@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      tailwind = { config: { corePlugins: { preflight: false } } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%400%2C300..700%3B1%2C300..700&family=Shippori+Antique+B1%3Awght%40400&family=Shippori+Mincho%3Awght%40400%3B500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, ::before, ::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      data-pencil-name="TOP — 料理推し案"
+      class="box-border w-[1440px] h-fit flex flex-col gap-0 justify-start items-start bg-[#F0F4F3] overflow-hidden"
+    >
+      <div
+        data-pencil-name="Header"
+        class="box-border w-full h-[72px] shrink-0 flex flex-row gap-0 p-[0px_56px] justify-between items-center bg-[#F0F4F3]"
+      >
+        <div
+          data-pencil-name="Logo"
+          class="box-border w-[181px] shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center"
+        >
+          <div
+            data-pencil-name="Logo Mark"
+            class="box-border [flex:1_1_0] h-[57px] bg-[url('../assets/images/ロゴ.png')] bg-no-repeat bg-contain bg-center rounded-[4px]"
+          ></div>
+        </div>
+        <div
+          data-pencil-name="Nav Links"
+          class="box-border w-fit shrink-0 h-fit flex flex-row gap-[28px] justify-start items-center"
+        >
+          <div
+            data-pencil-name="Nav 客室"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            客室
+          </div>
+          <div
+            data-pencil-name="Nav 料理"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            料理
+          </div>
+          <div
+            data-pencil-name="Nav 温泉"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            温泉
+          </div>
+          <div
+            data-pencil-name="Nav 過ごし方"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            過ごし方
+          </div>
+          <div
+            data-pencil-name="Nav おもてなし"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            おもてなし
+          </div>
+          <div
+            data-pencil-name="Nav アクセス"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            アクセス
+          </div>
+          <div
+            data-pencil-name="Nav FAQ"
+            class="text-[16px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            FAQ
+          </div>
+        </div>
+        <div
+          data-pencil-name="Header CTA"
+          class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#4A5D5B] rounded-[2px]"
+        >
+          <div
+            data-pencil-name="Header CTA Label"
+            class="text-[14px]/[normal] box-border text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            ご予約・ご相談
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="Hero Fade"
+        class="box-border w-full h-[820px] shrink-0 overflow-hidden relative"
+      >
+        <div
+          data-pencil-name="Hero Fade Stage"
+          class="box-border w-[1440px] h-[820px] absolute left-0 top-0 bg-[url('../assets/images/DSC_3147.JPG')] bg-no-repeat bg-cover bg-center overflow-hidden [z-index:0]"
+        >
+          <div
+            data-pencil-name="Slide 2"
+            class="box-border w-[1440px] h-[820px] opacity-[0] absolute left-0 top-0 bg-[url('../assets/images/追加/海の家族.png')] bg-no-repeat bg-cover bg-center [z-index:0]"
+          ></div>
+          <div
+            data-pencil-name="Hero Overlay"
+            class="box-border w-[1440px] h-[820px] absolute left-0 top-0 [background-image:linear-gradient(180deg,_#1a242266_0%,_#1a24223d_45%,_#1a24227a_100%)] bg-no-repeat bg-[length:100%_100%] [z-index:1]"
+          ></div>
+          <div
+            data-pencil-name="Hero Content"
+            class="box-border w-[520px] h-fit absolute left-[80px] top-[280px] flex flex-col gap-[28px] justify-start items-start [z-index:2]"
+          >
+            <div
+              data-pencil-name="Hero Sub"
+              class="text-[16px]/[29px] box-border w-full text-[#E8EEEA] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+            >
+              外浦の海まで徒歩1分。
+              <br />
+              漁師が届ける地魚と客室温泉の宿。
+            </div>
+            <div
+              data-pencil-name="Hero Catch"
+              class="text-[56px]/[76px] box-border w-full text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+            >
+              風が結ぶ、
+              <br />
+              三世代の記憶。
+            </div>
+            <div
+              data-pencil-name="Hero Actions"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-[16px] p-[12px_0px_0px_0px] justify-start items-center"
+            >
+              <div
+                data-pencil-name="Book Button"
+                class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#BFA170] rounded-[2px]"
+              >
+                <div
+                  data-pencil-name="Book Label"
+                  class="text-[14px]/[normal] box-border text-[#2E3334] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  空室確認・予約
+                </div>
+              </div>
+              <div
+                data-pencil-name="Phone Button"
+                class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#FFFFFF22] [outline:1px_solid_#FFFFFF99] [outline-offset:-0.5px] rounded-[2px]"
+              >
+                <div
+                  data-pencil-name="Phone Label"
+                  class="text-[14px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  ご相談 0558-36-4500
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="Intro"
+        class="box-border w-full h-fit shrink-0 flex flex-row gap-[64px] p-[100px_0px] justify-start items-center bg-[#F0F4F3] relative"
+      >
+        <div
+          data-pencil-name="Intro Image"
+          class="box-border w-[720px] shrink-0 h-[440px] bg-[url('../assets/images/追加/砂浜.jpg')] bg-no-repeat bg-cover bg-center relative [z-index:0]"
+        ></div>
+        <div
+          data-pencil-name="Intro Text"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[24px] justify-start items-start relative [z-index:1]"
+        >
+          <div
+            data-pencil-name="Intro Heading"
+            class="text-[36px]/[54px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+          >
+            何もしない贅沢。
+          </div>
+          <div
+            data-pencil-name="Intro Body"
+            class="text-[16px]/[32px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          >
+            おじいちゃん、おばあちゃん、パパ、ママ、そして小さな君へ。
+            <br />
+            観光地を巡る慌ただしい旅ではなく、
+            <br />
+            三世代がそれぞれのペースで過ごす、小さな漁師宿です。
+          </div>
+        </div>
+        <div
+          data-pencil-name="Intro Label"
+          class="text-[230px]/[normal] box-border absolute left-[691px] top-[41px] text-[#4a5d5b1a] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:2]"
+        >
+          Welcome
+        </div>
+      </div>
+      <div
+        data-pencil-name="料理"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[100px] p-[96px_0px] justify-start items-start bg-[#FFFFFF]"
+      >
+        <div
+          data-pencil-name="Cuisine Split"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[56px] p-[0px_0px_0px_80px] justify-end items-center relative"
+        >
+          <div
+            data-pencil-name="Cuisine Text"
+            class="box-border w-[520px] shrink-0 h-fit flex flex-col gap-[22px] justify-start items-start relative [z-index:0]"
+          >
+            <div
+              data-pencil-name="Cuisine Heading"
+              class="text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+            >
+              ご馳走と笑顔が並ぶ
+              <br />
+              ここでしか味わえない感動。
+            </div>
+            <div
+              data-pencil-name="Cuisine Body"
+              class="text-[16px]/[32px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+            >
+              眼前の海から、目の前の器へ。
+              <br />
+              畑の匂いもそのままに。
+              <br />
+              漁師宿だからできる贅沢で
+              <br />
+              本物の味に出会える。
+            </div>
+            <div
+              data-pencil-name="Cuisine Tags"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
+            >
+              <div
+                data-pencil-name="Tag 地魚"
+                class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[6px_12px] justify-start items-start bg-[#E8EEEA] rounded-[2px]"
+              >
+                <div
+                  data-pencil-name="Tag Label"
+                  class="text-[12px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  地魚
+                </div>
+              </div>
+              <div
+                data-pencil-name="Tag 伊勢海老"
+                class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[6px_12px] justify-start items-start bg-[#E8EEEA] rounded-[2px]"
+              >
+                <div
+                  data-pencil-name="Tag Label"
+                  class="text-[12px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  伊勢海老
+                </div>
+              </div>
+              <div
+                data-pencil-name="Tag 朝どり野菜"
+                class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[6px_12px] justify-start items-start bg-[#E8EEEA] rounded-[2px]"
+              >
+                <div
+                  data-pencil-name="Tag Label"
+                  class="text-[12px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  朝どり野菜
+                </div>
+              </div>
+            </div>
+            <div
+              data-pencil-name="Cuisine CTA"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_24px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+            >
+              <div
+                data-pencil-name="Cuisine CTA Label"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                お料理を見る
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="Cuisine En"
+            class="text-[230px]/[normal] box-border absolute left-[17px] top-[311px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center [white-space:nowrap] [z-index:1]"
+          >
+            Dining
+          </div>
+          <div
+            data-pencil-name="Cuisine Hero Img"
+            class="box-border w-[720px] shrink-0 h-[480px] bg-[url('../assets/images/追加/食べる子ども.JPG')] bg-no-repeat bg-cover bg-center relative [z-index:2]"
+          ></div>
+        </div>
+        <div
+          data-pencil-name="Cuisine Banner Fade"
+          class="box-border w-full h-[560px] shrink-0 overflow-hidden relative"
+        >
+          <div
+            data-pencil-name="Banner Fade Stage"
+            class="box-border w-[1440px] h-[560px] absolute left-0 top-0 bg-[url('../assets/images/dish/dish-visual-banner.jpg')] bg-no-repeat bg-cover bg-center overflow-hidden [z-index:0]"
+          >
+            <div
+              data-pencil-name="Slide 2"
+              class="box-border w-[1440px] h-[560px] opacity-[0] absolute left-0 top-0 bg-[url('../assets/images/dish/dish-hero-header.jpg')] bg-no-repeat bg-cover bg-center [z-index:0]"
+            ></div>
+            <div
+              data-pencil-name="Slide 3"
+              class="box-border w-[1440px] h-[560px] opacity-[0] absolute left-0 top-0 bg-[url('../assets/images/dish/dish-visual-banner.jpg')] bg-no-repeat bg-cover bg-center [z-index:1]"
+            ></div>
+            <div
+              data-pencil-name="Frame 1"
+              class="box-border w-[586px] h-fit absolute left-[93px] top-[280px] flex flex-row gap-0 justify-start items-start bg-[#4a5d5b99] [z-index:2]"
+            >
+              <div
+                data-pencil-name="Banner Title"
+                class="text-[32px]/[46px] box-border w-[589px] shrink-0 text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                伊豆下田、キンメダイ水揚げ量日本一。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pencil-name="Cuisine Gallery"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[20px] p-[0px_80px] justify-start items-start"
+        >
+          <div
+            data-pencil-name="Gallery 伊勢海老入りサラダ"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Gallery Img"
+              class="box-border w-full h-[220px] shrink-0 bg-[url('../assets/images/dish/dish-lobster-salad.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Gallery Cap"
+              class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              伊勢海老入りサラダ
+            </div>
+          </div>
+          <div
+            data-pencil-name="Gallery とこぶしご飯"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Gallery Img"
+              class="box-border w-full h-[220px] shrink-0 bg-[url('../assets/images/dish/dish-tokobushi.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Gallery Cap"
+              class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              とこぶしご飯
+            </div>
+          </div>
+          <div
+            data-pencil-name="Gallery 旬の野菜天ぷら"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Gallery Img"
+              class="box-border w-full h-[220px] shrink-0 bg-[url('../assets/images/dish/dish-veg-tempura.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Gallery Cap"
+              class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              旬の野菜天ぷら
+            </div>
+          </div>
+          <div
+            data-pencil-name="Gallery 朝採りの旬野菜"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Gallery Img"
+              class="box-border w-full h-[220px] shrink-0 bg-[url('../assets/images/dish/dish-farm-veg.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Gallery Cap"
+              class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              朝採りの旬野菜
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="温泉と客室"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] p-[100px_80px] justify-start items-center bg-[#E8EEEA] relative"
+      >
+        <div
+          data-pencil-name="Stay En Label"
+          class="text-[230px]/[normal] box-border absolute left-[132px] top-[-47px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:0]"
+        >
+          Stay
+        </div>
+        <div
+          data-pencil-name="Stay Head"
+          class="box-border w-[640px] h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center relative [z-index:1]"
+        >
+          <div
+            data-pencil-name="Stay Heading"
+            class="text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center"
+          >
+            世代を越えて楽しむ。
+            <br />
+            皆が一緒に泊まれる理由
+          </div>
+        </div>
+        <div
+          data-pencil-name="Stay Row"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[32px] justify-start items-start relative [z-index:2]"
+        >
+          <div
+            data-pencil-name="Onsen Block"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Onsen Img"
+              class="box-border w-full h-[468px] shrink-0 bg-[url('../assets/images/温泉.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Onsen Title"
+              class="text-[22px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+            >
+              温泉
+            </div>
+            <div
+              data-pencil-name="Onsen Body"
+              class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+            >
+              祖父母も子どもも、自分の時間で湯に。
+              <br />
+              海と湯に身をあずけて、芯からほどける。
+            </div>
+            <div
+              data-pencil-name="Onsen CTA"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[10px_20px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+            >
+              <div
+                data-pencil-name="Onsen CTA Label"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                温泉を見る
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="Rooms Block"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Rooms Img"
+              class="box-border w-full h-[468px] shrink-0 bg-[url('../assets/images/お部屋2.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="Rooms Title"
+              class="text-[22px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+            >
+              客室
+            </div>
+            <div
+              data-pencil-name="Rooms Body"
+              class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+            >
+              みんなで、でもそれぞれの時間を過ごせる部屋。
+              <br />
+              波音を枕に、思い出を語らう。
+            </div>
+            <div
+              data-pencil-name="Rooms CTA"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[10px_20px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+            >
+              <div
+                data-pencil-name="Rooms CTA Label"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                客室を見る
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="お知らせ"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] p-[96px_80px] justify-start items-center bg-[#FFFFFF]"
+      >
+        <div
+          data-pencil-name="News Head"
+          class="box-border w-fit h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center"
+        >
+          <div
+            data-pencil-name="News En"
+            class="text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap]"
+          >
+            Topics
+          </div>
+          <div
+            data-pencil-name="News Ja"
+            class="text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+          >
+            お知らせ
+          </div>
+        </div>
+        <div
+          data-pencil-name="News Grid"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[20px] justify-start items-start"
+        >
+          <div
+            data-pencil-name="News 2025.04.01"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="News Img"
+              class="box-border w-full h-[230px] shrink-0 bg-[url('../assets/images/ウエルカム.webp')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="News Body"
+              class="box-border w-full h-fit shrink-0 flex flex-col gap-[8px] justify-start items-start"
+            >
+              <div
+                data-pencil-name="News Date"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                2025.04.01
+              </div>
+              <div
+                data-pencil-name="News Title"
+                class="text-[16px]/[26px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                おかげ様で10周年を迎えました
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="News 2025.03.15"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="News Img"
+              class="box-border w-full h-[230px] shrink-0 bg-[url('../assets/images/お部屋2.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="News Body"
+              class="box-border w-full h-fit shrink-0 flex flex-col gap-[8px] justify-start items-start"
+            >
+              <div
+                data-pencil-name="News Date"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                2025.03.15
+              </div>
+              <div
+                data-pencil-name="News Title"
+                class="text-[16px]/[26px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                館内改装に伴う休館のお知らせ
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="News 2025.01.20"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="News Img"
+              class="box-border w-full h-[230px] shrink-0 bg-[url('../assets/images/イセエビ.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="News Body"
+              class="box-border w-full h-fit shrink-0 flex flex-col gap-[8px] justify-start items-start"
+            >
+              <div
+                data-pencil-name="News Date"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                2025.01.20
+              </div>
+              <div
+                data-pencil-name="News Title"
+                class="text-[16px]/[26px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                伊勢海老漁体験のご案内
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="News 2025.01.05"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="News Img"
+              class="box-border w-full h-[230px] shrink-0 bg-[url('../assets/images/野菜.jpg')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <div
+              data-pencil-name="News Body"
+              class="box-border w-full h-fit shrink-0 flex flex-col gap-[8px] justify-start items-start"
+            >
+              <div
+                data-pencil-name="News Date"
+                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                2025.01.05
+              </div>
+              <div
+                data-pencil-name="News Title"
+                class="text-[16px]/[26px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                早春の河津桜まつりと菜の花まつり
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pencil-name="News More"
+          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_24px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+        >
+          <div
+            data-pencil-name="News More Label"
+            class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            お知らせ一覧
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="ご不安への答え"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[36px] p-[88px_100px_96px_100px] justify-start items-center bg-[#E8EEEA]"
+      >
+        <div
+          data-pencil-name="Anxiety Head"
+          class="box-border w-fit h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center"
+        >
+          <div
+            data-pencil-name="Anxiety En"
+            class="text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap]"
+          >
+            Before You Book
+          </div>
+          <div
+            data-pencil-name="Anxiety Ja"
+            class="text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+          >
+            ご予約前の、よくあるご不安へ
+          </div>
+        </div>
+        <div
+          data-pencil-name="Anxiety Grid"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] justify-start items-start"
+        >
+          <div
+            data-pencil-name="FAQ Row 1"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[16px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="FAQ 部屋は三世代で足りますか？"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[28px_24px] justify-start items-start bg-[#FFFFFF]"
+            >
+              <div
+                data-pencil-name="FAQ Q"
+                class="text-[18px]/[27px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                部屋は三世代で足りますか？
+              </div>
+              <div
+                data-pencil-name="FAQ A"
+                class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+              >
+                定員と間取りをご案内します。布団の配置も事前にご相談ください。
+              </div>
+            </div>
+            <div
+              data-pencil-name="FAQ 階段やバリアフリーは？"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[28px_24px] justify-start items-start bg-[#FFFFFF]"
+            >
+              <div
+                data-pencil-name="FAQ Q"
+                class="text-[18px]/[27px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                階段やバリアフリーは？
+              </div>
+              <div
+                data-pencil-name="FAQ A"
+                class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+              >
+                館内の段差や移動のしやすさを、お電話で正直にお伝えします。
+              </div>
+            </div>
+          </div>
+          <div
+            data-pencil-name="FAQ Row 2"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[16px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="FAQ 子どもの食事は？"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[28px_24px] justify-start items-start bg-[#FFFFFF]"
+            >
+              <div
+                data-pencil-name="FAQ Q"
+                class="text-[18px]/[27px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                子どもの食事は？
+              </div>
+              <div
+                data-pencil-name="FAQ A"
+                class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+              >
+                アレルギー・離乳食対応も可能です。人数と年齢を教えてください。
+              </div>
+            </div>
+            <div
+              data-pencil-name="FAQ 祖父母の静かな時間は？"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[28px_24px] justify-start items-start bg-[#FFFFFF]"
+            >
+              <div
+                data-pencil-name="FAQ Q"
+                class="text-[18px]/[27px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+              >
+                祖父母の静かな時間は？
+              </div>
+              <div
+                data-pencil-name="FAQ A"
+                class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+              >
+                早寝・ゆったりした滞在を前提に、無理のないプランをご提案します。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pencil-name="Anxiety CTA"
+          class="box-border w-fit h-fit shrink-0 flex flex-row gap-[16px] justify-start items-center"
+        >
+          <div
+            data-pencil-name="FAQ Link"
+            class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[12px_22px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+          >
+            <div
+              data-pencil-name="FAQ Link Label"
+              class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              FAQをもっと見る
+            </div>
+          </div>
+          <div
+            data-pencil-name="Anxiety Call"
+            class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[12px_22px] justify-start items-center bg-[#4A5D5B] rounded-[2px]"
+          >
+            <div
+              data-pencil-name="Anxiety Call Label"
+              class="text-[14px]/[normal] box-border text-[#F0F4F3] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              まずはお電話で相談
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="アクセス"
+        class="box-border w-full h-fit shrink-0 flex flex-row gap-[48px] p-[88px_80px] justify-start items-center bg-[#FFFFFF]"
+      >
+        <div
+          data-pencil-name="Access Map"
+          class="box-border w-[560px] shrink-0 h-[420px] bg-[url('../assets/images/map.png')] bg-no-repeat bg-cover bg-center"
+        ></div>
+        <div
+          data-pencil-name="Access Text"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
+        >
+          <div
+            data-pencil-name="Access En"
+            class="text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap]"
+          >
+            Access
+          </div>
+          <div
+            data-pencil-name="Access Heading"
+            class="text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+          >
+            アクセス
+          </div>
+          <div
+            data-pencil-name="Access Addr"
+            class="text-[14px]/[normal] box-border text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            〒415-0013 静岡県下田市柿崎700番地
+          </div>
+          <div
+            data-pencil-name="Access Line"
+            class="text-[14px]/[25px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          >
+            電車｜伊豆急下田駅よりタクシー約10分
+          </div>
+          <div
+            data-pencil-name="Access Line"
+            class="text-[14px]/[25px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          >
+            お車｜東名沼津ICより約1時間30分
+          </div>
+          <div
+            data-pencil-name="Access Line"
+            class="text-[14px]/[25px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          >
+            バス｜駅近・駐車場あり。荷物の多いご一行もご相談ください
+          </div>
+          <div
+            data-pencil-name="Access CTA"
+            class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_22px] justify-start items-center [outline:1px_solid_#4A5D5B] [outline-offset:-0.5px] rounded-[2px]"
+          >
+            <div
+              data-pencil-name="Access CTA Label"
+              class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              詳しいアクセス
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="最終CTA"
+        class="box-border w-[1440px] h-[573px] shrink-0 bg-[url('../assets/images/IMGP1204.JPG')] bg-no-repeat bg-cover bg-center overflow-hidden relative"
+      >
+        <div
+          data-pencil-name="Final Overlay"
+          class="box-border w-[1440px] h-[573px] absolute left-0 top-0 bg-[#1a242299] [z-index:0]"
+        ></div>
+        <div
+          data-pencil-name="Final Content"
+          class="box-border w-[1000px] h-fit absolute left-[220px] top-[180.5px] flex flex-col gap-[20px] justify-center items-center [z-index:1]"
+        >
+          <div
+            data-pencil-name="Final Heading"
+            class="text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+          >
+            ただ、家族になる時間。
+          </div>
+          <div
+            data-pencil-name="Final Body"
+            class="text-[16px]/[30px] box-border w-full text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center"
+          >
+            特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。
+            <br />
+            アレルギー対応や幼児グッズのご相談も、心よりお待ちしています。
+          </div>
+          <div
+            data-pencil-name="Final Actions"
+            class="box-border w-fit h-fit shrink-0 flex flex-row gap-[20px] p-[12px_0px_0px_0px] justify-start items-center"
+          >
+            <div
+              data-pencil-name="Final Tel"
+              class="text-[28px]/[normal] box-border text-[#BFA170] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            >
+              0558-36-4500
+            </div>
+            <div
+              data-pencil-name="Final Book"
+              class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#BFA170] rounded-[2px]"
+            >
+              <div
+                data-pencil-name="Final Book Label"
+                class="text-[14px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                空室確認・予約
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="Footer"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[28px] p-[56px_80px_32px_80px] justify-start items-start bg-[#4A5D5B]"
+      >
+        <div
+          data-pencil-name="Footer Main"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[48px] justify-between items-start"
+        >
+          <div
+            data-pencil-name="Footer Brand"
+            class="box-border w-fit shrink-0 h-fit flex flex-col gap-[6px] justify-start items-start"
+          >
+            <div
+              data-pencil-name="Footer Logo Img"
+              class="box-border w-[136px] h-[61px] shrink-0 bg-[url('../assets/images/ロゴ.png')] bg-no-repeat bg-contain bg-center"
+            ></div>
+          </div>
+          <div
+            data-pencil-name="Footer Info"
+            class="box-border w-fit shrink-0 h-fit flex flex-col gap-[14px] justify-start items-end"
+          >
+            <div
+              data-pencil-name="Info Addr"
+              class="text-[12px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-right [white-space:nowrap]"
+            >
+              静岡県下田市柿崎700番地・外浦海水浴場 目の前
+            </div>
+            <div
+              data-pencil-name="Info Nav"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-[20px] justify-start items-center"
+            >
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                客室
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                料理
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                温泉
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                過ごし方
+              </div>
+              <div
+                data-pencil-name="Info おもてなし"
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                おもてなし
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                アクセス
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                FAQ
+              </div>
+            </div>
+            <div
+              data-pencil-name="Info Contact"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-[10px] justify-start items-center"
+            >
+              <div
+                class="text-[16px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+              >
+                0558-36-4500
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#929E9D] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                ・
+              </div>
+              <div
+                class="text-[13px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                空室確認・予約 →
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pencil-name="Footer Rule"
+          class="box-border w-full h-[1px] shrink-0 bg-[#6A7A79]"
+        ></div>
+        <div
+          data-pencil-name="Footer Bottom"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-0 justify-between items-center"
+        >
+          <div
+            data-pencil-name="Copyright"
+            class="text-[11px]/[normal] box-border text-[#AEB6B5] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            © 蒼海の宿 ならいの風 All Rights Reserved.
+          </div>
+          <div
+            data-pencil-name="Footer Locale"
+            class="text-[12px]/[normal] box-border text-[#AEB6B5] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[1px] text-left [white-space:nowrap]"
+          >
+            Izu Shimoda · Soto-ura
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

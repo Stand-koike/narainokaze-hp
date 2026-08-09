@@ -34,6 +34,8 @@
 
       "scripts/luxury-reveal.js",
 
+      "scripts/pen-fade.js",
+
       "scripts/rooms-gallery.js",
 
       "scripts/cuisine-slideshow.js",

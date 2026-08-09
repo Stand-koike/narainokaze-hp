@@ -9,21 +9,9 @@
       sel: '[data-pencil-name="Intro"]',
       items: [
         { name: "Intro Label", dir: "fade" },
-        { name: "Intro Heading", dir: "left" },
+        { name: "Intro Image", dir: "left" },
+        { name: "Intro Heading", dir: "right" },
         { name: "Intro Body", dir: "up", lines: true },
-        { name: "Intro Image", dir: "right" },
-      ],
-    },
-    {
-      sel: '[data-pencil-name="迎える人"]',
-      items: [
-        { name: "Host En", dir: "fade" },
-        { name: "Host Main Photo", dir: "left" },
-        { name: "Host Heading", dir: "right" },
-        { name: "Host Quote", dir: "right" },
-        { name: "Host Role", dir: "right" },
-        { name: "Host Help List", dir: "right", child: '[data-pencil-name^="Help "]' },
-        { name: "Host Phone CTA", dir: "up" },
       ],
     },
     {
@@ -32,16 +20,14 @@
         { name: "Cuisine En", dir: "fade" },
         { name: "Cuisine Heading", dir: "left" },
         { name: "Cuisine Body", dir: "up", lines: true },
+        { name: "Cuisine Tags", dir: "up" },
         { name: "Cuisine CTA", dir: "up" },
         { name: "Cuisine Hero Img", dir: "right" },
-      ],
-    },
-    {
-      sel: '[data-pencil-name="間奏 — 食卓から湯へ"]',
-      kenBurns: true,
-      items: [
-        { name: "Bridge En", dir: "fade" },
-        { name: "Bridge Ja", dir: "up" },
+        {
+          name: "Cuisine Gallery",
+          dir: "up",
+          child: '[data-pencil-name^="Gallery "]',
+        },
       ],
     },
     {
@@ -204,17 +190,20 @@
   function initLuxuryReveal() {
     document
       .querySelectorAll(
-        '[data-pencil-name="News Img"], [data-pencil-name="Onsen Img"], [data-pencil-name="Rooms Img"]'
+        '[data-pencil-name="News Img"], [data-pencil-name="Onsen Img"], [data-pencil-name="Rooms Img"], [data-pencil-name="Gallery Img"]'
       )
       .forEach(function (el) {
         el.classList.add("lux-image-hover");
       });
 
-    var heroSection = document.querySelector('[data-pencil-name="Hero"]');
-    if (heroSection) {
-      heroSection.classList.add("lux-ken-burns");
-      // Ken Burns が background-size を制御できるよう、cover 指定を外す
-      heroSection.style.backgroundSize = "";
+    var heroFade = document.querySelector('[data-pencil-name="Hero Fade"]');
+    if (heroFade) {
+      heroFade
+        .querySelectorAll('[data-pencil-name="Hero Fade Stage"], [data-fade-slide]')
+        .forEach(function (el) {
+          el.classList.add("lux-ken-burns");
+          el.style.backgroundSize = "";
+        });
     }
 
     var prepared = SECTIONS.map(prepareSection).filter(Boolean);

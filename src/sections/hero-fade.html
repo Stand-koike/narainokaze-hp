@@ -1,0 +1,44 @@
+      <div
+        data-pencil-name="Hero Fade"
+        data-facility-bind="hero"
+        data-fade-slider
+        class="box-border w-full h-[560px] md:h-[820px] shrink-0 overflow-hidden relative"
+      >
+        <div class="box-border absolute inset-0 w-full h-full [z-index:0]" aria-hidden="true">
+          <div
+            data-pencil-name="Hero Fade Stage"
+            data-fade-stage
+            class="box-border absolute inset-0 w-full h-full bg-[url('../../assets/images/DSC_3147.JPG')] bg-no-repeat bg-cover bg-center"
+          ></div>
+          <div
+            data-pencil-name="Slide 2"
+            data-fade-slide
+            class="box-border absolute inset-0 w-full h-full opacity-0 bg-[url('../../assets/images/追加/海の家族.png')] bg-no-repeat bg-cover bg-center"
+          ></div>
+        </div>
+        <div
+          data-pencil-name="Hero Overlay"
+          class="box-border absolute inset-0 w-full h-full [background-image:linear-gradient(180deg,_#1a242266_0%,_#1a24223d_45%,_#1a24227a_100%)] bg-no-repeat bg-[length:100%_100%] [z-index:1] pointer-events-none"
+        ></div>
+        <div
+          data-pencil-name="Hero Content"
+          data-animate="hero"
+          class="box-border w-[calc(100%-2rem)] max-w-[520px] md:w-[520px] h-fit absolute left-4 md:left-[80px] top-[140px] md:top-[280px] flex flex-col gap-[28px] justify-start items-start [z-index:2]"
+        >
+          <div
+            data-pencil-name="Hero Sub"
+            class="text-[16px]/[29px] box-border w-full text-[#E8EEEA] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          ></div>
+          <h1
+            data-pencil-name="Hero Catch"
+            class="m-0 text-[32px]/[44px] md:text-[56px]/[76px] box-border w-full text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+          ></h1>
+          <div
+            data-pencil-name="Hero Actions"
+            class="box-border w-full md:w-fit h-fit shrink-0 flex flex-col sm:flex-row flex-wrap gap-[16px] p-[12px_0px_0px_0px] justify-start items-start sm:items-center"
+          >
+            <div data-component="button" data-variant="primary" data-pencil-name="Book Button" data-padding="14px_28px" data-label-font="Shippori_Antique_B1"></div>
+            <div data-component="button" data-variant="ghost-hero" data-pencil-name="Phone Button"></div>
+          </div>
+        </div>
+      </div>

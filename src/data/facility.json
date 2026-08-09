@@ -24,13 +24,14 @@
     "locale": "Izu Shimoda · Soto-ura"
   },
   "hero": {
-    "bgImage": "../assets/images/hero-bg.jpg",
+    "bgImage": "../assets/images/DSC_3147.JPG",
+    "bgImageSlide2": "../assets/images/追加/海の家族.png",
     "subtitleLines": [
       "外浦の海まで徒歩1分。",
       "漁師が届ける地魚と客室温泉の宿。"
     ],
     "catchLines": [
-      "凪が結ぶ、",
+      "風が結ぶ、",
       "三世代の記憶。"
     ],
     "bookingLabel": "空室確認・予約",

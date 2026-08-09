@@ -163,11 +163,19 @@ function buildIntroSection(vars, slots) {
         id="${vars.ID}"
         data-animate="reveal"
         data-pencil-name="${vars.PENCIL_NAME}"
-        class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[64px] px-5 py-16 lg:px-0 lg:py-[100px] lg:pl-[120px] justify-start items-center bg-[#F0F4F3] relative"
+        class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[64px] px-5 py-16 lg:px-0 lg:py-[100px] justify-start items-center bg-[#F0F4F3] relative"
       >
+        <img
+          data-pencil-name="Intro Image"
+          src="${vars.IMAGE_SRC}"
+          alt="${vars.IMAGE_ALT}"
+          loading="lazy"
+          decoding="async"
+          class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[440px] relative [z-index:0] object-cover order-1 lg:order-none"
+        />
         <div
           data-pencil-name="Intro Text"
-          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[24px] justify-start items-start relative [z-index:0]"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[24px] justify-start items-start relative [z-index:1] order-2 lg:order-none"
         >
           <div
             data-pencil-name="Intro Heading"
@@ -185,18 +193,10 @@ function buildIntroSection(vars, slots) {
         <div
           data-pencil-name="Intro Label"
           data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[-9px] top-[22px] text-[#4a5d5b1a] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:1] hidden lg:block"
+          class="text-[230px]/[normal] box-border absolute left-[691px] top-[41px] text-[#4a5d5b1a] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:2] hidden lg:block pointer-events-none"
         >
           ${vars.LABEL_TEXT}
         </div>
-        <img
-          data-pencil-name="Intro Image"
-          src="${vars.IMAGE_SRC}"
-          alt="${vars.IMAGE_ALT}"
-          loading="lazy"
-          decoding="async"
-          class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[440px] relative [z-index:2] object-cover"
-        />
       </section>`;
 }
 

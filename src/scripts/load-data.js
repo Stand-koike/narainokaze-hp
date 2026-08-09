@@ -138,10 +138,27 @@ function applyHeroData(facility) {
 
   const heroData = facility.hero;
 
-  hero.style.backgroundImage = `url('${heroData.bgImage}')`;
-  hero.style.backgroundPosition = "center";
-  hero.style.backgroundRepeat = "no-repeat";
-  hero.style.backgroundSize = "cover";
+  const heroStage =
+    hero.querySelector('[data-pencil-name="Hero Fade Stage"]') ||
+    hero.querySelector('[data-fade-stage]') ||
+    hero;
+  const heroSlide2 = hero.querySelector('[data-pencil-name="Slide 2"]');
+
+  if (heroData.bgImage) {
+    heroStage.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImage)}')`;
+    heroStage.style.backgroundPosition = "center";
+    heroStage.style.backgroundRepeat = "no-repeat";
+    heroStage.style.backgroundSize = "cover";
+  }
+
+  if (heroSlide2 && heroData.bgImageSlide2) {
+    heroSlide2.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImageSlide2)}')`;
+  } else if (!hero.querySelector('[data-fade-stage]') && heroData.bgImage) {
+    hero.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImage)}')`;
+    hero.style.backgroundPosition = "center";
+    hero.style.backgroundRepeat = "no-repeat";
+    hero.style.backgroundSize = "cover";
+  }
 
   const subtitle = hero.querySelector('[data-pencil-name="Hero Sub"]');
   if (subtitle) {

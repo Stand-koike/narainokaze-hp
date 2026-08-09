@@ -2,7 +2,7 @@
   "intro": {
     "id": "intro",
     "pencilName": "Intro",
-    "imageSrc": "../assets/images/intro.jpg",
+    "imageSrc": "../assets/images/追加/砂浜.jpg",
     "imageAlt": "外浦の海を望む宿の風景",
     "labelText": "Welcome",
     "heading": "何もしない贅沢。",
@@ -29,8 +29,8 @@
     "imageSrc": "../assets/images/cuisine-hero.jpg",
     "imageAlt": "地魚を使った宿の料理",
     "labelText": "Dining",
-    "headingHtml": "食卓で、<br />世代がそろう",
-    "bodyHtml": "眼前の海から、目の前の器へ。<br />畑の匂いもそのままに。<br />地魚は自慢ではなく、<br />家族の夜を温めるためのものです。",
+    "headingHtml": "ご馳走と笑顔が並ぶ<br />ここでしか味わえない感動。",
+    "bodyHtml": "眼前の海から、目の前の器へ。<br />畑の匂いもそのままに。<br />漁師宿だからできる贅沢で<br />本物の味に出会える。",
     "buttonLabel": "お料理を見る",
     "buttonHref": "cuisine.html"
   },
@@ -50,8 +50,8 @@
     "id": "stay",
     "pencilName": "温泉と客室",
     "labelText": "Stay",
-    "headingJa": "ペースが違う世代が、",
-    "headingJaLine2": "いっしょに泊まれる理由",
+    "headingJa": "世代を越えて楽しむ。",
+    "headingJaLine2": "皆が一緒に泊まれる理由",
     "features": [
       {
         "id": "onsen",
