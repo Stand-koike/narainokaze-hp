@@ -42,7 +42,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -165,7 +165,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/DSC_3147.JPG",
+            "url": "../assets/images/DSC_3147.JPG",
             "mode": "fill"
           },
           "layout": "none",
@@ -381,7 +381,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "%E8%BF%BD%E5%8A%A0/%E7%A0%82%E6%B5%9C.jpg",
+                "url": "../assets/images/追加/砂浜.jpg",
                 "mode": "fill"
               },
               "width": 720,
@@ -420,7 +420,7 @@
                     {
                       "type": "image",
                       "enabled": true,
-                      "url": "%E8%BF%BD%E5%8A%A0/%E6%B5%B7%E3%81%AE%E5%AE%B6%E6%97%8F.png",
+                      "url": "../assets/images/追加/海の家族.png",
                       "mode": "fill"
                     },
                     "#7a7a7a33"
@@ -721,7 +721,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "%E8%BF%BD%E5%8A%A0/%E9%A3%9F%E3%81%B9%E3%82%8B%E5%AD%90%E3%81%A9%E3%82%82.JPG",
+                "url": "../assets/images/追加/食べる子ども.JPG",
                 "mode": "fill"
               },
               "width": 720,
@@ -739,7 +739,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/温泉湯.jpg",
+            "url": "../assets/images/温泉湯.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -889,7 +889,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/温泉.jpg",
+                        "url": "../assets/images/温泉.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -960,7 +960,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/お部屋2.jpg",
+                        "url": "../assets/images/お部屋2.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -1122,7 +1122,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ウエルカム.webp",
+                        "url": "../assets/images/ウエルカム.webp",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -1178,7 +1178,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/お部屋2.jpg",
+                        "url": "../assets/images/お部屋2.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -1234,7 +1234,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/イセエビ.jpg",
+                        "url": "../assets/images/イセエビ.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -1290,7 +1290,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/野菜.jpg",
+                        "url": "../assets/images/野菜.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -1680,7 +1680,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "narainokaze-hp/assets/images/map.png",
+                "url": "../assets/images/map.png",
                 "mode": "fill"
               },
               "width": 560,
@@ -1804,7 +1804,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "none",
@@ -1945,7 +1945,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -2183,7 +2183,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -2317,7 +2317,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "narainokaze-hp/assets/images/DSC_3147.JPG",
+                "url": "../assets/images/DSC_3147.JPG",
                 "mode": "fill"
               },
               "layout": "none",
@@ -2332,7 +2332,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "%E6%B5%B7%E3%81%AE%E5%AE%B6%E6%97%8F.png",
+                    "url": "../assets/images/追加/海の家族.png",
                     "mode": "fill"
                   },
                   "width": 1440,
@@ -2498,7 +2498,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "%E8%BF%BD%E5%8A%A0/%E7%A0%82%E6%B5%9C.jpg",
+                "url": "../assets/images/追加/砂浜.jpg",
                 "mode": "fill"
               },
               "width": 720,
@@ -2747,7 +2747,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "%E8%BF%BD%E5%8A%A0/%E9%A3%9F%E3%81%B9%E3%82%8B%E5%AD%90%E3%81%A9%E3%82%82.JPG",
+                    "url": "../assets/images/追加/食べる子ども.JPG",
                     "mode": "fill"
                   },
                   "width": 720,
@@ -2776,7 +2776,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/dish/dish-visual-banner.jpg",
+                    "url": "../assets/images/dish/dish-visual-banner.jpg",
                     "mode": "fill"
                   },
                   "layout": "none",
@@ -2791,7 +2791,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "dish-hero-header.jpg",
+                        "url": "../assets/images/dish/dish-hero-header.jpg",
                         "mode": "fill"
                       },
                       "width": 1440,
@@ -2807,7 +2807,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-visual-banner.jpg",
+                        "url": "../assets/images/dish/dish-visual-banner.jpg",
                         "mode": "fill"
                       },
                       "width": 1440,
@@ -2867,7 +2867,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-lobster-salad.jpg",
+                        "url": "../assets/images/dish/dish-lobster-salad.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -2900,7 +2900,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-tokobushi.jpg",
+                        "url": "../assets/images/dish/dish-tokobushi.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -2933,7 +2933,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-veg-tempura.jpg",
+                        "url": "../assets/images/dish/dish-veg-tempura.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -2966,7 +2966,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-farm-veg.jpg",
+                        "url": "../assets/images/dish/dish-farm-veg.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3064,7 +3064,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/温泉.jpg",
+                        "url": "../assets/images/温泉.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3135,7 +3135,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/お部屋2.jpg",
+                        "url": "../assets/images/お部屋2.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3297,7 +3297,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ウエルカム.webp",
+                        "url": "../assets/images/ウエルカム.webp",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3353,7 +3353,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/お部屋2.jpg",
+                        "url": "../assets/images/お部屋2.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3409,7 +3409,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/イセエビ.jpg",
+                        "url": "../assets/images/イセエビ.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3465,7 +3465,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/野菜.jpg",
+                        "url": "../assets/images/野菜.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -3855,7 +3855,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "narainokaze-hp/assets/images/map.png",
+                "url": "../assets/images/map.png",
                 "mode": "fill"
               },
               "width": 560,
@@ -3979,7 +3979,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "none",
@@ -4120,7 +4120,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -4397,7 +4397,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -4529,7 +4529,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "%E8%BF%BD%E5%8A%A0/%E9%81%8E%E3%81%94%E3%81%97%E6%96%B9.JPG",
+                "url": "../assets/images/追加/過ごし方.JPG",
                 "mode": "fill"
               },
               "width": 1440,
@@ -4812,7 +4812,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "%E8%BF%BD%E5%8A%A0/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96.jpg",
+                            "url": "../assets/images/追加/ドライブ.jpg",
                             "mode": "fill"
                           },
                           "width": 300,
@@ -4825,7 +4825,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "%E8%BF%BD%E5%8A%A0/%E8%BB%8A%E7%AA%93.jpg",
+                            "url": "../assets/images/追加/車窓.jpg",
                             "mode": "fill"
                           },
                           "width": 300,
@@ -4861,7 +4861,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-classic/assets/images/%E6%B5%B7%E6%B0%B4%E6%B5%B4.jpg",
+                            "url": "../assets/images/海水浴.jpg",
                             "mode": "fill"
                           },
                           "width": 635,
@@ -5058,7 +5058,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/料理.jpg",
+                            "url": "../assets/images/料理.jpg",
                             "mode": "fill"
                           },
                           "width": 300,
@@ -5073,7 +5073,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/イセエビ.jpg",
+                            "url": "../assets/images/イセエビ.jpg",
                             "mode": "fill"
                           },
                           "width": 300,
@@ -5111,7 +5111,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "%E6%9C%AA%E4%BD%BF%E7%94%A8/IMG_0132.JPG",
+                            "url": "../assets/images/未使用/IMG_0132.JPG",
                             "mode": "fit"
                           },
                           "width": 635,
@@ -5273,7 +5273,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/海水浴.jpg",
+                        "url": "../assets/images/海水浴.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -5343,7 +5343,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/スノーケル.jpg",
+                        "url": "../assets/images/スノーケル.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -5413,7 +5413,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/sup.jpg",
+                        "url": "../assets/images/sup.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -5482,7 +5482,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -5617,7 +5617,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -5842,7 +5842,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -5965,7 +5965,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/お部屋.jpg",
+            "url": "../assets/images/お部屋.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -6147,7 +6147,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/hachijo-hero.jpg",
+                    "url": "../assets/images/hachijo-hero.jpg",
                     "mode": "fill"
                   }
                 },
@@ -6284,7 +6284,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/hachijo-hero.jpg",
+                        "url": "../assets/images/hachijo-hero.jpg",
                         "mode": "fill"
                       }
                     },
@@ -6375,7 +6375,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/niijima-hero.jpg",
+                        "url": "../assets/images/niijima-hero.jpg",
                         "mode": "fill"
                       }
                     },
@@ -6466,7 +6466,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/kaminoshima-02.jpg",
+                        "url": "../assets/images/kaminoshima-02.jpg",
                         "mode": "fill"
                       }
                     },
@@ -6723,7 +6723,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/hachijo-hero.jpg",
+                            "url": "../assets/images/hachijo-hero.jpg",
                             "mode": "fill"
                           }
                         },
@@ -6744,7 +6744,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "narainokaze-hp/assets/images/hachijo-hero.jpg",
+                                "url": "../assets/images/hachijo-hero.jpg",
                                 "mode": "fill"
                               },
                               "stroke": "#4A5D5B",
@@ -6760,7 +6760,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "narainokaze-hp/assets/images/hachijo-02.jpg",
+                                "url": "../assets/images/hachijo-02.jpg",
                                 "mode": "fill"
                               }
                             },
@@ -6774,7 +6774,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "narainokaze-hp/assets/images/hachijo-03.jpg",
+                                "url": "../assets/images/hachijo-03.jpg",
                                 "mode": "fill"
                               }
                             },
@@ -6788,7 +6788,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "narainokaze-hp/assets/images/hachijo-04.jpg",
+                                "url": "../assets/images/hachijo-04.jpg",
                                 "mode": "fill"
                               }
                             }
@@ -7001,7 +7001,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/hachijo-02.jpg",
+                    "url": "../assets/images/hachijo-02.jpg",
                     "mode": "fill"
                   }
                 },
@@ -7191,7 +7191,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/niijima-hero.jpg",
+                        "url": "../assets/images/niijima-hero.jpg",
                         "mode": "fill"
                       }
                     },
@@ -7510,7 +7510,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -7645,7 +7645,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -7870,7 +7870,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -7993,7 +7993,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/温泉湯.jpg",
+            "url": "../assets/images/温泉湯.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -8179,7 +8179,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/大浴場.jpg",
+                        "url": "../assets/images/大浴場.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -8236,7 +8236,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/温泉.jpg",
+                        "url": "../assets/images/温泉.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -8424,7 +8424,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "narainokaze-hp/assets/images/部屋温泉.jpg",
+                "url": "../assets/images/部屋温泉.jpg",
                 "mode": "fill"
               },
               "width": 560,
@@ -8452,7 +8452,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "narainokaze-hp/assets/images/温泉湯.jpg",
+                "url": "../assets/images/温泉湯.jpg",
                 "mode": "fill"
               },
               "width": 560,
@@ -8612,7 +8612,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -8747,7 +8747,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -8972,7 +8972,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -9095,7 +9095,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "%E6%9C%AA%E4%BD%BF%E7%94%A8/%E5%A4%A9%E8%8D%89.jpg",
+            "url": "../assets/images/未使用/天草.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -9285,7 +9285,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-01.jpg",
+                        "url": "../assets/images/dish/dish-kinmedai-01.jpg",
                         "mode": "fill"
                       }
                     },
@@ -9306,7 +9306,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-01.jpg",
+                            "url": "../assets/images/dish/dish-kinmedai-01.jpg",
                             "mode": "fill"
                           },
                           "stroke": "#4A5D5B",
@@ -9322,7 +9322,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-02.jpg",
+                            "url": "../assets/images/dish/dish-kinmedai-02.jpg",
                             "mode": "fill"
                           }
                         },
@@ -9336,7 +9336,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-03.jpg",
+                            "url": "../assets/images/dish/dish-kinmedai-03.jpg",
                             "mode": "fill"
                           }
                         }
@@ -9525,7 +9525,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-04.jpg",
+                    "url": "../assets/images/dish/dish-kinmedai-04.jpg",
                     "mode": "fill"
                   }
                 },
@@ -9539,7 +9539,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/dish/dish-kinmedai-05.jpg",
+                    "url": "../assets/images/dish/dish-kinmedai-05.jpg",
                     "mode": "fill"
                   }
                 }
@@ -9557,7 +9557,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/dish/dish-visual-banner.jpg",
+            "url": "../assets/images/dish/dish-visual-banner.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -9685,7 +9685,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/dish/dish-lobster-salad.jpg",
+                    "url": "../assets/images/dish/dish-lobster-salad.jpg",
                     "mode": "fill"
                   }
                 },
@@ -9799,7 +9799,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/dish/dish-farm-veg.jpg",
+                    "url": "../assets/images/dish/dish-farm-veg.jpg",
                     "mode": "fill"
                   }
                 }
@@ -9830,7 +9830,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-tokobushi.jpg",
+                        "url": "../assets/images/dish/dish-tokobushi.jpg",
                         "mode": "fill"
                       }
                     },
@@ -9864,7 +9864,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-lobster-salad.jpg",
+                        "url": "../assets/images/dish/dish-lobster-salad.jpg",
                         "mode": "fill"
                       }
                     },
@@ -9898,7 +9898,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-veg-tempura.jpg",
+                        "url": "../assets/images/dish/dish-veg-tempura.jpg",
                         "mode": "fill"
                       }
                     },
@@ -9932,7 +9932,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/dish/dish-farm-veg.jpg",
+                        "url": "../assets/images/dish/dish-farm-veg.jpg",
                         "mode": "fill"
                       }
                     },
@@ -9975,7 +9975,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "%E8%BF%BD%E5%8A%A0/%E9%A3%9F%E3%81%B9%E3%82%8B%E5%AD%90%E3%81%A9%E3%82%82.jpg",
+                "url": "../assets/images/追加/食べる子ども.jpg",
                 "mode": "fill"
               }
             },
@@ -10132,7 +10132,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -10267,7 +10267,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -10492,7 +10492,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -10615,7 +10615,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "%E8%BF%BD%E5%8A%A0/%E7%A5%96%E7%88%B6%E6%AF%8D%E3%81%A8%E5%AD%AB.png",
+            "url": "../assets/images/追加/祖父母と孫.png",
             "mode": "fill"
           },
           "layout": "none",
@@ -10794,7 +10794,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/map.png",
+                    "url": "../assets/images/map.png",
                     "mode": "fill"
                   },
                   "width": 560,
@@ -11039,7 +11039,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -11174,7 +11174,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -11399,7 +11399,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -11522,7 +11522,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "%E6%9C%AA%E4%BD%BF%E7%94%A8/%E9%83%A8%E5%B1%8B.jpg",
+            "url": "../assets/images/未使用/部屋.jpg",
             "mode": "fill"
           },
           "layout": "none",
@@ -12878,7 +12878,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -13013,7 +13013,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -13269,7 +13269,7 @@
       "fill": {
         "type": "image",
         "enabled": true,
-        "url": "dish-hero-header.jpg",
+        "url": "../assets/images/dish/dish-hero-header.jpg",
         "mode": "fill"
       },
       "layout": "none",
@@ -13310,7 +13310,7 @@
       "fill": {
         "type": "image",
         "enabled": true,
-        "url": "top-meal-header.jpg",
+        "url": "../assets/images/dish/top-meal-header.jpg",
         "mode": "fill"
       },
       "layout": "none",
@@ -13389,7 +13389,7 @@
       "id": "q3SOE",
       "x": 12738,
       "y": 0,
-      "name": "おもてなし",
+      "name": "おもてなし — スタッフ紹介",
       "clip": true,
       "width": 1440,
       "fill": "#F0F4F3",
@@ -13425,7 +13425,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "narainokaze-hp/assets/images/ロゴ.png",
+                    "url": "../assets/images/ロゴ.png",
                     "mode": "fit"
                   },
                   "width": "fill_container",
@@ -13484,21 +13484,21 @@
                   "type": "text",
                   "id": "O7kGi3",
                   "name": "Nav おもてなし",
-                  "fill": "#4A5D5B",
+                  "fill": "#2E3334",
                   "content": "おもてなし",
                   "fontFamily": "Shippori Antique B1",
                   "fontSize": 16,
-                  "fontWeight": "normal"
+                  "fontWeight": "600"
                 },
                 {
                   "type": "text",
                   "id": "CPJG4",
                   "name": "Nav アクセス",
-                  "fill": "#2E3334",
+                  "fill": "#4A5D5B",
                   "content": "アクセス",
                   "fontFamily": "Shippori Antique B1",
                   "fontSize": 16,
-                  "fontWeight": "600"
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -13548,7 +13548,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "%E6%B5%B7%E3%81%AE%E5%AE%B6%E6%97%8F.png",
+            "url": "../assets/images/追加/海の家族.png",
             "mode": "fill"
           },
           "layout": "none",
@@ -13647,7 +13647,7 @@
               "fill": "#4A5456",
               "textGrowth": "fixed-width",
               "width": 720,
-              "content": "当館では、オーシャンビューのお部屋から海を一望できるほか、\n徒歩1分の外浦海水浴場で海水浴をお楽しみいただけます。\n外浦海水浴場は、小さなお子様連れのお客様でも安心して遊べるビーチとして知られています。",
+              "content": "外浦の海のそばで、皆さまのご到着を心よりお待ちしております。\n漁師の家族が営む宿だからこそ、顔の見えるおもてなしを。",
               "lineHeight": 2,
               "textAlign": "center",
               "fontFamily": "Shippori Mincho",
@@ -13658,32 +13658,30 @@
         },
         {
           "type": "frame",
-          "id": "hZ8Ln",
-          "name": "Location",
+          "id": "secxeb",
+          "name": "Staff Section",
           "width": "fill_container",
-          "fill": "#FFFFFF",
+          "fill": "#E8EEEA",
           "layout": "vertical",
           "gap": 48,
-          "padding": [
-            96,
-            80
-          ],
+          "padding": 80,
           "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "swHXC",
-              "name": "Feat Head",
+              "id": "hyeg",
+              "name": "Staff Head",
+              "width": "fill_container",
               "layout": "vertical",
               "gap": 12,
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "z1sGX",
-                  "name": "Feat En",
+                  "id": "tzw6",
+                  "name": "Staff En",
                   "fill": "#4A5D5B",
-                  "content": "Location",
+                  "content": "Our Team",
                   "fontFamily": "Cormorant Garamond",
                   "fontSize": 14,
                   "fontWeight": "normal",
@@ -13692,10 +13690,10 @@
                 },
                 {
                   "type": "text",
-                  "id": "ibr12",
-                  "name": "Feat Ja",
+                  "id": "t10t4",
+                  "name": "Staff Ja",
                   "fill": "#2E3334",
-                  "content": "所在地",
+                  "content": "私たちが、お待ちしています",
                   "fontFamily": "Shippori Mincho",
                   "fontSize": 32,
                   "fontWeight": "500"
@@ -13704,247 +13702,369 @@
             },
             {
               "type": "frame",
-              "id": "OaA4d",
-              "name": "Feat Row",
+              "id": "g11dc",
+              "name": "Staff Grid",
               "width": "fill_container",
-              "gap": 56,
-              "alignItems": "center",
+              "layout": "vertical",
+              "gap": 40,
               "children": [
                 {
-                  "type": "rectangle",
-                  "id": "wUSY6",
-                  "name": "Feat Img",
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "narainokaze-hp/assets/images/map.png",
-                    "mode": "fill"
-                  },
-                  "width": 560,
-                  "height": 420
-                },
-                {
                   "type": "frame",
-                  "id": "mXGeV",
-                  "name": "Feat Text",
+                  "id": "rgnj",
+                  "name": "Staff Row 1",
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 20,
+                  "gap": 32,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "W89uW",
-                      "name": "Feat Label",
-                      "fill": "#BFA170",
-                      "content": "Address",
-                      "fontFamily": "Cormorant Garamond",
-                      "fontSize": 14,
-                      "fontWeight": "normal",
-                      "letterSpacing": 2,
-                      "fontStyle": "italic"
-                    },
-                    {
-                      "type": "text",
-                      "id": "cyx7O",
-                      "name": "Feat Body",
-                      "fill": "#4A5456",
-                      "textGrowth": "fixed-width",
+                      "type": "frame",
+                      "id": "c2p1",
+                      "name": "Staff 1",
                       "width": "fill_container",
-                      "content": "〒415-0013\n静岡県下田市柿崎700番地\nTEL：0558-36-4500",
-                      "lineHeight": 2,
-                      "fontFamily": "Shippori Mincho",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "p1sd",
+                          "name": "Staff Photo 1",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t3q8",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "t472",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "あおい",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t5vj",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "海の見えるフロントで、最初の笑顔を。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     },
                     {
                       "type": "frame",
-                      "id": "em41L",
-                      "name": "Map CTA",
-                      "cornerRadius": 2,
-                      "stroke": "#4A5D5B",
-                      "strokeWidth": 1,
-                      "padding": [
-                        12,
-                        22
-                      ],
-                      "alignItems": "center",
+                      "id": "c768",
+                      "name": "Staff 2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
                       "children": [
                         {
+                          "type": "frame",
+                          "id": "p6f0",
+                          "name": "Staff Photo 2",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t8u6",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
                           "type": "text",
-                          "id": "T7krwI",
-                          "name": "Map CTA Label",
-                          "fill": "#4A5D5B",
-                          "content": "大きな地図で見る",
+                          "id": "t9z9",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "かず",
                           "fontFamily": "Shippori Mincho",
-                          "fontSize": 14,
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tad4",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "地魚の旬を、毎朝漁港から届けます。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cctl",
+                      "name": "Staff 3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pbdr",
+                          "name": "Staff Photo 3",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tdhv",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "te1w",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "みさき",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tfn4",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "お部屋の準備は、家族のように丁寧に。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
                           "fontWeight": "normal"
                         }
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "JqwkI",
-          "name": "行き方",
-          "width": "fill_container",
-          "fill": "#F0F4F3",
-          "layout": "vertical",
-          "gap": 48,
-          "padding": [
-            96,
-            80
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "aMjdp",
-              "name": "Grid Head",
-              "layout": "vertical",
-              "gap": 12,
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "wTwSm",
-                  "name": "Grid En",
-                  "fill": "#4A5D5B",
-                  "content": "How to Reach",
-                  "fontFamily": "Cormorant Garamond",
-                  "fontSize": 14,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2,
-                  "fontStyle": "italic"
-                },
-                {
-                  "type": "text",
-                  "id": "HnPcl",
-                  "name": "Grid Ja",
-                  "fill": "#2E3334",
-                  "content": "お越しの方法",
-                  "fontFamily": "Shippori Mincho",
-                  "fontSize": 32,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "GMB7v",
-                  "name": "Grid Lead",
-                  "fill": "#4A5456",
-                  "content": "周辺環境・電車・路線バス・タクシーのご案内",
-                  "fontFamily": "Shippori Mincho",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "MJu7n",
-              "name": "Route Row",
-              "width": "fill_container",
-              "gap": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "KAgKt",
-                  "name": "Route 電車で",
-                  "width": "fill_container",
-                  "fill": "#FFFFFF",
-                  "layout": "vertical",
-                  "gap": 14,
-                  "padding": [
-                    32,
-                    28
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "X5B6H",
-                      "name": "R En",
-                      "fill": "#BFA170",
-                      "content": "By Bus",
-                      "fontFamily": "Cormorant Garamond",
-                      "fontSize": 14,
-                      "fontWeight": "normal",
-                      "fontStyle": "italic"
-                    },
-                    {
-                      "type": "text",
-                      "id": "rBffR",
-                      "name": "R Title",
-                      "fill": "#2E3334",
-                      "content": "電車・路線バスでのアクセス",
-                      "fontFamily": "Shippori Mincho",
-                      "fontSize": 22,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Ouigo",
-                      "name": "R Body",
-                      "fill": "#4A5456",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "伊豆急下田駅よりバス10分\n乗り場／9番 「白浜」行き　降り場／「外浦口」バス停下車･･･徒歩5分",
-                      "lineHeight": 1.9,
-                      "fontFamily": "Shippori Mincho",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
                 },
                 {
                   "type": "frame",
-                  "id": "XPZd1",
-                  "name": "Route お車で",
+                  "id": "rwbi",
+                  "name": "Staff Row 2",
                   "width": "fill_container",
-                  "fill": "#FFFFFF",
-                  "layout": "vertical",
-                  "gap": 14,
-                  "padding": [
-                    32,
-                    28
-                  ],
+                  "gap": 32,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "WNzij",
-                      "name": "R En",
-                      "fill": "#BFA170",
-                      "content": "By Taxi",
-                      "fontFamily": "Cormorant Garamond",
-                      "fontSize": 14,
-                      "fontWeight": "normal",
-                      "fontStyle": "italic"
-                    },
-                    {
-                      "type": "text",
-                      "id": "j5xyq",
-                      "name": "R Title",
-                      "fill": "#2E3334",
-                      "content": "タクシーでのアクセス",
-                      "fontFamily": "Shippori Mincho",
-                      "fontSize": 22,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Q7Kon2",
-                      "name": "R Body",
-                      "fill": "#4A5456",
-                      "textGrowth": "fixed-width",
+                      "type": "frame",
+                      "id": "cig8",
+                      "name": "Staff 4",
                       "width": "fill_container",
-                      "content": "伊豆急下田駅より7分\n伊豆急下田駅にタクシー乗り場がございます。",
-                      "lineHeight": 1.9,
-                      "fontFamily": "Shippori Mincho",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "phht",
+                          "name": "Staff Photo 4",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tjkb",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tki0",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "けん",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tlvj",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "温泉の湯加減、いつも見守っています。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cnnw",
+                      "name": "Staff 5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pm8c",
+                          "name": "Staff Photo 5",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "touz",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tpcg",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "ゆう",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tqin",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "お食事の時間が、旅の思い出になりますように。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "csy5",
+                      "name": "Staff 6",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "prn8",
+                          "name": "Staff Photo 6",
+                          "width": "fill_container",
+                          "height": 540,
+                          "fill": "#D1C7BD",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ttay",
+                              "name": "Photo Label",
+                              "fill": "#8A908C",
+                              "content": "Photo",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 18,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tuun",
+                          "name": "Staff Name",
+                          "fill": "#2E3334",
+                          "content": "さち",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tvab",
+                          "name": "Staff Phrase",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "小さなお子様連れも、安心してお任せください。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -13962,7 +14082,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "narainokaze-hp/assets/images/IMGP1204.JPG",
+            "url": "../assets/images/IMGP1204.JPG",
             "mode": "fill"
           },
           "layout": "vertical",
@@ -14097,7 +14217,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "narainokaze-hp/assets/images/ロゴ.png",
+                        "url": "../assets/images/ロゴ.png",
                         "mode": "fit"
                       },
                       "width": 136,
@@ -14171,20 +14291,20 @@
                           "type": "text",
                           "id": "HIFpl",
                           "name": "Info おもてなし",
-                          "fill": "#D1C7BD",
+                          "fill": "#FFFFFF",
                           "content": "おもてなし",
                           "fontFamily": "Shippori Mincho",
                           "fontSize": 13,
-                          "fontWeight": "normal"
+                          "fontWeight": "500"
                         },
                         {
                           "type": "text",
                           "id": "U2e7J",
-                          "fill": "#FFFFFF",
+                          "fill": "#D1C7BD",
                           "content": "アクセス",
                           "fontFamily": "Shippori Mincho",
                           "fontSize": 13,
-                          "fontWeight": "500"
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",

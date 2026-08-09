@@ -7,6 +7,7 @@
     "build": "node scripts/build-production.mjs",
     "preview": "npx --yes serve dist -l 4173",
     "sync:assets": "node scripts/sync-page-assets.mjs",
+    "build:omotenashi": "node scripts/build-omotenashi-page.mjs",
     "optimize:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {

@@ -175,12 +175,77 @@
   },
   "navigation": {
     "items": [
-      { "label": "客室", "href": "rooms.html" },
-      { "label": "温泉", "href": "onsen.html" },
-      { "label": "料理", "href": "cuisine.html" },
-      { "label": "過ごし方", "href": "news.html" },
-      { "label": "アクセス", "href": "access.html" },
-      { "label": "FAQ", "href": "faq.html" }
+      {
+        "label": "客室",
+        "href": "rooms.html"
+      },
+      {
+        "label": "料理",
+        "href": "cuisine.html"
+      },
+      {
+        "label": "温泉",
+        "href": "onsen.html"
+      },
+      {
+        "label": "過ごし方",
+        "href": "news.html"
+      },
+      {
+        "label": "おもてなし",
+        "href": "omotenashi.html"
+      },
+      {
+        "label": "アクセス",
+        "href": "access.html"
+      },
+      {
+        "label": "FAQ",
+        "href": "faq.html"
+      }
+    ]
+  },
+  "omotenashi": {
+    "id": "omotenashi",
+    "pencilName": "おもてなし — スタッフ紹介",
+    "heroImage": "../assets/images/追加/海の家族.png",
+    "staff": [
+      {
+        "id": 1,
+        "name": "あおい",
+        "phrase": "海の見えるフロントで、最初の笑顔を。",
+        "image": "../assets/images/staff/staff-01.jpg"
+      },
+      {
+        "id": 2,
+        "name": "かず",
+        "phrase": "地魚の旬を、毎朝漁港から届けます。",
+        "image": "../assets/images/staff/staff-02.jpg"
+      },
+      {
+        "id": 3,
+        "name": "みさき",
+        "phrase": "お部屋の準備は、家族のように丁寧に。",
+        "image": "../assets/images/staff/staff-03.jpg"
+      },
+      {
+        "id": 4,
+        "name": "けん",
+        "phrase": "温泉の湯加減、いつも見守っています。",
+        "image": "../assets/images/staff/staff-04.jpg"
+      },
+      {
+        "id": 5,
+        "name": "ゆう",
+        "phrase": "お食事の時間が、旅の思い出になりますように。",
+        "image": "../assets/images/staff/staff-05.jpg"
+      },
+      {
+        "id": 6,
+        "name": "さち",
+        "phrase": "小さなお子様連れも、安心してお任せください。",
+        "image": "../assets/images/staff/staff-06.jpg"
+      }
     ]
   }
 }
