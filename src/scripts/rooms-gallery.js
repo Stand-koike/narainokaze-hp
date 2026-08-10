@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   var AUTOPLAY_MS = 4500;
@@ -221,7 +221,7 @@
         var btn = document.createElement("button");
         btn.type = "button";
         btn.className =
-          "rooms-island-tab text-[15px]/[normal] box-border font-['Shippori_Mincho',system-ui,sans-serif] text-left [white-space:nowrap] bg-transparent border-0 p-0 cursor-pointer" +
+          "rooms-island-tab text-[15px]/[normal] box-border shrink-0 font-['Shippori_Mincho',system-ui,sans-serif] text-left [white-space:nowrap] bg-transparent border-0 p-0 cursor-pointer" +
           (i === roomIndex ? " is-active" : "");
         btn.style.color = i === roomIndex ? "#2E3334" : "#4A5456";
         btn.style.fontWeight = i === roomIndex ? "500" : "400";

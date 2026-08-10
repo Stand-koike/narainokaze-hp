@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%400%2C300..700%3B1%2C300..700&family=Shippori+Antique+B1%3Awght%40400&family=Shippori+Mincho%3Awght%40400%3B500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/header-overlay.css" />
+    <link rel="stylesheet" href="styles/mobile-chrome.css" />
     <style>
       *, ::before, ::after {
         box-sizing: border-box;
@@ -112,60 +114,6 @@
         }
       }
 
-      header[data-header-overlay] {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 1440px;
-        z-index: 50;
-        background-color: transparent !important;
-        transition:
-          background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-          box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-
-      header[data-header-overlay].is-scrolled {
-        background-color: #F0F4F3 !important;
-        box-shadow: 0 1px 0 rgba(74, 93, 91, 0.08);
-      }
-
-      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Logo Mark"] {
-        filter:
-          drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55))
-          drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
-      }
-
-      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Nav Links"] a {
-        color: #E8EEEA;
-      }
-
-      header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Header CTA"] {
-        background-color: rgba(255, 255, 255, 0.12);
-        border: 1px solid rgba(255, 255, 255, 0.55);
-        color: #FFFFFF;
-      }
-
-      header[data-header-overlay] [data-pencil-name="Logo Mark"],
-      header[data-header-overlay] [data-pencil-name="Nav Links"] a,
-      header[data-header-overlay] [data-pencil-name="Header CTA"] {
-        transition:
-          color 0.35s ease,
-          background-color 0.35s ease,
-          border-color 0.35s ease,
-          filter 0.35s ease;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        header[data-header-overlay],
-        header[data-header-overlay] [data-pencil-name="Logo Mark"],
-        header[data-header-overlay] [data-pencil-name="Nav Links"] a,
-        header[data-header-overlay] [data-pencil-name="Header CTA"] {
-          transition: none !important;
-        }
-      }
-
       [data-fade-slider] [data-fade-stage],
       [data-fade-slider] [data-fade-slide] {
         background-repeat: no-repeat;
@@ -236,6 +184,7 @@
     <script src="scripts/load-data.js"></script>
     <script src="scripts/load-sections.js"></script>
     <script src="scripts/animation.js"></script>
+    <script src="scripts/mobile-chrome.js"></script>
     <script src="scripts/luxury-reveal.js"></script>
     <script src="scripts/pen-fade.js"></script>
   </body>

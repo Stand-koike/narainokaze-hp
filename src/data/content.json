@@ -159,12 +159,6 @@
     "callLabel": "まずはお電話で相談",
     "callHref": "tel:0558-36-4500"
   },
-  "bridge": {
-    "pencilName": "間奏 — 食卓から湯へ",
-    "bgImage": "../assets/images/bridge-bg.jpg",
-    "labelEn": "From Table to Quiet",
-    "labelJa": "食卓から、湯と部屋へ。"
-  },
   "finalCta": {
     "pencilName": "最終CTA",
     "bgImage": "../assets/images/final-cta-bg.jpg",
@@ -212,37 +206,37 @@
     "staff": [
       {
         "id": 1,
-        "name": "あおい",
-        "phrase": "海の見えるフロントで、最初の笑顔を。",
+        "name": "オーナー　たかちゃん",
+        "phrase": "笑顔で皆をお迎えします。",
         "image": "../assets/images/staff/staff-01.jpg"
       },
       {
         "id": 2,
-        "name": "かず",
+        "name": "女将　あかりさん",
         "phrase": "地魚の旬を、毎朝漁港から届けます。",
         "image": "../assets/images/staff/staff-02.jpg"
       },
       {
         "id": 3,
-        "name": "みさき",
+        "name": "料理長　みほさん",
         "phrase": "お部屋の準備は、家族のように丁寧に。",
         "image": "../assets/images/staff/staff-03.jpg"
       },
       {
         "id": 4,
-        "name": "けん",
+        "name": "スタッフ　きんちゃん",
         "phrase": "温泉の湯加減、いつも見守っています。",
         "image": "../assets/images/staff/staff-04.jpg"
       },
       {
         "id": 5,
-        "name": "ゆう",
+        "name": "会長",
         "phrase": "お食事の時間が、旅の思い出になりますように。",
         "image": "../assets/images/staff/staff-05.jpg"
       },
       {
         "id": 6,
-        "name": "さち",
+        "name": "大女将",
         "phrase": "小さなお子様連れも、安心してお任せください。",
         "image": "../assets/images/staff/staff-06.jpg"
       }

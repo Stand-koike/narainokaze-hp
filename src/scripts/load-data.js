@@ -183,11 +183,27 @@ function applyHeroData(facility) {
   }
 }
 
+function applyMobileChromeData(facility) {
+  if (!facility?.contact?.phone || !facility?.booking) {
+    return;
+  }
+
+  document.body.dataset.phoneTel = facility.contact.phone.tel;
+  document.body.dataset.bookingHref = facility.booking.href;
+  document.body.dataset.bookingLabel = facility.booking.label || "空室確認・予約";
+
+  if (typeof window.applyMobileChromeFromFacility === "function") {
+    window.applyMobileChromeFromFacility(facility);
+  }
+}
+
 function applyFacilityData(facility) {
+  window.__FACILITY_DATA__ = facility;
   applyHeaderData(facility);
   applyFooterData(facility);
   applyHeroData(facility);
   applyPhoneDisplayData(facility);
+  applyMobileChromeData(facility);
 }
 
 async function loadContentData() {
@@ -491,28 +507,6 @@ function applyFaqData(content) {
   }
 }
 
-function applyBridgeData(content) {
-  const bridge = document.querySelector('[data-content-bind="bridge"]');
-  if (!bridge || !content.bridge) {
-    return;
-  }
-
-  const bridgeData = content.bridge;
-
-  bridge.dataset.pencilName = bridgeData.pencilName;
-  bridge.dataset.bgImage = bridgeData.bgImage;
-
-  const labelEnSlot = bridge.querySelector('template[data-slot="label-en"]');
-  if (labelEnSlot) {
-    labelEnSlot.innerHTML = bridgeData.labelEn;
-  }
-
-  const labelJaSlot = bridge.querySelector('template[data-slot="label-ja"]');
-  if (labelJaSlot) {
-    labelJaSlot.innerHTML = bridgeData.labelJa;
-  }
-}
-
 function buildFinalCtaActionsHtml(finalCtaData) {
   return `<div
               data-component="phone-display"
@@ -588,7 +582,6 @@ function applyContentData(content) {
   applyStayData(content);
   applyNewsData(content);
   applyFaqData(content);
-  applyBridgeData(content);
   applyFinalCtaData(content);
   applyNavGroupData(content);
 }

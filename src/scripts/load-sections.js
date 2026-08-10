@@ -37,7 +37,7 @@ const BUTTON_VARIANTS = {
   },
   "header-cta": {
     classes:
-      "box-border order-2 md:order-3 ml-auto lg:ml-0 w-fit shrink-0 h-fit flex flex-row gap-0 py-[10px] px-[18px] md:px-4 lg:px-[18px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] md:text-[13px] lg:text-[14px] text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
+      "box-border order-2 md:order-3 ml-auto lg:ml-0 w-fit shrink-0 h-fit hidden md:flex flex-row gap-0 py-[10px] px-[18px] md:px-4 lg:px-[18px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] md:text-[13px] lg:text-[14px] text-[#F0F4F3] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
   },
 };
 
@@ -427,21 +427,28 @@ function buildHeaderHtml(element, vars) {
 
   return `<header
         data-pencil-name="Header"
-        class="box-border w-full shrink-0 flex flex-wrap md:flex-nowrap md:flex-row md:h-[72px] gap-3 md:gap-0 p-4 md:p-[0px_56px] md:justify-between md:items-center bg-[#F0F4F3]"
+        class="box-border w-full shrink-0 flex flex-row h-[72px] gap-0 px-4 md:px-[56px] justify-between items-center bg-[#F0F4F3]"
       >
         <a
           href="${vars.HOME_HREF || "/"}"
           data-pencil-name="Logo"
           aria-label="${vars.LOGO_ARIA_LABEL}"
-          class="box-border order-1 w-[181px] max-w-[50%] md:max-w-none shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
+          class="box-border order-1 w-[160px] md:w-[181px] max-w-[50%] md:max-w-none shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center no-underline"
         >
           <img
             data-pencil-name="Logo Mark"
             src="${vars.LOGO_SRC}"
             alt="${vars.LOGO_ALT}"
-            class="box-border [flex:1_1_0] h-[57px] w-full object-contain"
+            class="box-border [flex:1_1_0] h-[48px] md:h-[57px] w-full object-contain"
           />
         </a>
+        <nav
+          data-pencil-name="Nav Links"
+          aria-label="メインナビゲーション"
+          class="box-border order-2 w-fit shrink-0 h-fit hidden md:flex flex-row flex-nowrap gap-[28px] justify-start items-center"
+        >
+          ${navItems}
+        </nav>
         <div
           data-component="button"
           data-variant="header-cta"
@@ -449,13 +456,26 @@ function buildHeaderHtml(element, vars) {
           data-href="${vars.CTA_HREF}"
           data-label="${vars.CTA_LABEL}"
         ></div>
-        <nav
-          data-pencil-name="Nav Links"
-          aria-label="メインナビゲーション"
-          class="box-border order-3 md:order-2 w-full md:w-fit shrink-0 h-fit basis-full md:basis-auto flex flex-row flex-wrap md:flex-nowrap gap-x-5 gap-y-2 md:gap-[28px] justify-start items-center"
+        <button
+          type="button"
+          data-mobile-nav-toggle
+          aria-label="メニューを開く"
+          aria-controls="mobile-nav-drawer"
+          aria-expanded="false"
         >
-          ${navItems}
-        </nav>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <div
+          id="mobile-nav-drawer"
+          data-mobile-nav-drawer
+          aria-hidden="true"
+          role="dialog"
+          aria-label="サイトメニュー"
+        >
+          <nav data-mobile-nav-links aria-label="モバイルナビゲーション"></nav>
+        </div>
       </header>`;
 }
 
@@ -555,47 +575,11 @@ function buildFooterHtml(element, vars) {
 }
 
 function buildFullBleedBannerHtml(element, vars) {
-  switch (vars.VARIANT) {
-    case "bridge":
-      return buildBridgeBannerHtml(element, vars);
-    case "final-cta":
-      return buildFinalCtaBannerHtml(element, vars);
-    default:
-      throw new Error(`Unknown full-bleed-banner variant: ${vars.VARIANT}`);
+  if (vars.VARIANT === "final-cta") {
+    return buildFinalCtaBannerHtml(element, vars);
   }
-}
 
-function buildBridgeBannerHtml(element, vars) {
-  const labelEn = getSlotContent(element, "label-en");
-  const labelJa = getSlotContent(element, "label-ja");
-
-  return `<div
-        data-pencil-name="${vars.PENCIL_NAME}"
-        class="box-border w-full min-h-[400px] md:h-[560px] shrink-0 overflow-hidden relative"
-        style="background-image: url('${vars.BG_IMAGE}'); background-position: center; background-repeat: no-repeat; background-size: cover"
-      >
-        <div
-          data-pencil-name="Bridge Overlay"
-          class="box-border absolute inset-0 w-full h-full [background-image:linear-gradient(180deg,_#1A242266_0%,_#1A242288_55%,_#1A2422AA_100%)] bg-no-repeat bg-[length:100%_100%] [z-index:0]"
-        ></div>
-        <div
-          data-pencil-name="Bridge Content"
-          class="box-border w-full max-w-[640px] md:w-[640px] h-fit absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[200px] md:translate-y-0 px-5 md:px-0 flex flex-col gap-[14px] justify-start items-center [z-index:1]"
-        >
-          <div
-            data-pencil-name="Bridge En"
-            class="text-[20px]/[normal] box-border text-[#BFA170] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center md:text-left md:[white-space:nowrap]"
-          >
-            ${labelEn}
-          </div>
-          <div
-            data-pencil-name="Bridge Ja"
-            class="text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
-          >
-            ${labelJa}
-          </div>
-        </div>
-      </div>`;
+  throw new Error(`Unknown full-bleed-banner variant: ${vars.VARIANT}`);
 }
 
 function buildFinalCtaBannerHtml(element, vars) {

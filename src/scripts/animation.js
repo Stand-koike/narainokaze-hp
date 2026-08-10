@@ -83,9 +83,9 @@ function initFaqPageAnimation() {
   });
 }
 
-function initTopHeaderOverlay() {
+function initHeaderOverlay() {
   const header = document.querySelector('[data-pencil-name="Header"]');
-  if (!header) {
+  if (!header || header.dataset.headerOverlay !== undefined) {
     return;
   }
 
@@ -98,6 +98,19 @@ function initTopHeaderOverlay() {
 
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
+}
+
+function bootstrapHeaderOverlay() {
+  if (isDevRuntime()) {
+    document.addEventListener("page:ready", initHeaderOverlay);
+    return;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHeaderOverlay);
+  } else {
+    initHeaderOverlay();
+  }
 }
 
 function initTopHeroAnimation() {
@@ -246,7 +259,6 @@ function initAnimations() {
   // TOP: Hero Content のみ GSAP。以降のセクションは luxury-reveal.js
   if (isTopLuxuryPage()) {
     initTopHeroAnimation();
-    initTopHeaderOverlay();
     return;
   }
 
@@ -281,3 +293,4 @@ function bootstrapAnimations() {
 }
 
 bootstrapAnimations();
+bootstrapHeaderOverlay();

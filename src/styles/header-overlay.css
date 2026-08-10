@@ -1,0 +1,85 @@
+header[data-header-overlay] {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  z-index: 50;
+  background-color: transparent !important;
+  transition:
+    background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header[data-header-overlay].is-scrolled {
+  background-color: #F0F4F3 !important;
+  box-shadow: 0 1px 0 rgba(74, 93, 91, 0.08);
+}
+
+header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Logo Mark"] {
+  filter:
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55))
+    drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
+}
+
+header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Nav Links"] a {
+  color: #E8EEEA;
+}
+
+header[data-header-overlay]:not(.is-scrolled) [data-pencil-name="Header CTA"] {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #FFFFFF;
+}
+
+header[data-header-overlay] [data-pencil-name="Logo Mark"],
+header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+header[data-header-overlay] [data-pencil-name="Header CTA"] {
+  transition:
+    color 0.35s ease,
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    filter 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header[data-header-overlay],
+  header[data-header-overlay] [data-pencil-name="Logo Mark"],
+  header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+  header[data-header-overlay] [data-pencil-name="Header CTA"] {
+    transition: none !important;
+  }
+}
+
+/* Hero: fullscreen on mobile, fixed 820px on desktop */
+.page-hero {
+  min-height: 100svh;
+}
+
+@media (min-width: 768px) {
+  .page-hero {
+    min-height: 0;
+    height: 820px;
+  }
+}
+
+.page-hero__content {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  top: auto;
+  width: calc(100% - 2rem);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .page-hero__content {
+    left: 80px;
+    right: auto;
+    bottom: auto;
+    top: 280px;
+    width: auto;
+  }
+}

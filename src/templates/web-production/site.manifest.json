@@ -32,6 +32,8 @@
 
       "scripts/animation.js",
 
+      "scripts/mobile-chrome.js",
+
       "scripts/luxury-reveal.js",
 
       "scripts/pen-fade.js",

@@ -125,10 +125,13 @@ async function buildPage(entry, manifest, facility, loadDataJs, loadSectionsJs) 
   output = removeScriptTags(output, manifest.output.removeScripts);
   output = applyAssetPaths(output, manifest);
   output = output.replaceAll("../scripts/animation.js", "scripts/animation.js");
+  output = output.replaceAll("../scripts/mobile-chrome.js", "scripts/mobile-chrome.js");
   output = output.replaceAll("../scripts/luxury-reveal.js", "scripts/luxury-reveal.js");
   output = output.replaceAll("../scripts/rooms-gallery.js", "scripts/rooms-gallery.js");
   output = output.replaceAll("../scripts/cuisine-slideshow.js", "scripts/cuisine-slideshow.js");
   output = output.replaceAll("../scripts/faq-accordion.js", "scripts/faq-accordion.js");
+  output = output.replaceAll("../styles/header-overlay.css", "styles/header-overlay.css");
+  output = output.replaceAll("../styles/mobile-chrome.css", "styles/mobile-chrome.css");
 
   if (entry.isIndex) {
     const title = `${facility.brand.name} | 外浦の海まで徒歩1分`;
@@ -178,6 +181,10 @@ async function buildSite() {
     await fs.mkdir(path.dirname(outputScriptPath), { recursive: true });
     await fs.copyFile(path.join(SRC, scriptPath), outputScriptPath);
   }
+
+  const stylesSource = path.join(SRC, "styles");
+  const stylesDest = path.join(distDir, "styles");
+  await copyDirectory(stylesSource, stylesDest);
 
   const assetsSource = path.join(ROOT, "assets");
   const assetsDest = path.join(distDir, "assets");
