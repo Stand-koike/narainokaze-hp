@@ -1,77 +1,54 @@
       <div
         data-pencil-name="Location"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[48px] px-5 py-12 md:p-[96px_80px] justify-start items-center bg-[#FFFFFF]"
+        class="box-border w-full h-fit shrink-0 flex flex-col bg-[#FFFFFF]"
       >
         <div
           data-pencil-name="Feat Head"
-          class="box-border w-fit h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] px-5 pt-12 pb-8 md:px-[80px] md:pt-[96px] md:pb-[40px] justify-start items-center text-center"
         >
           <div
             data-pencil-name="Feat En"
-            class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap]"
+            class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center [white-space:nowrap]"
           >
             Location
           </div>
           <div
             data-pencil-name="Feat Ja"
-            class="text-[32px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+            class="text-[32px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center [white-space:nowrap]"
           >
             所在地
           </div>
+          <div
+            data-pencil-name="Feat Body"
+            class="text-[16px]/[32px] box-border w-full max-w-[640px] text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center"
+          >
+            〒415-0013 静岡県下田市柿崎700番地
+            <br />
+            TEL：0558-36-4500
+          </div>
+          <a
+            data-pencil-name="Map CTA"
+            data-access-map-link
+            href="https://www.google.com/maps?q=34.6741752,138.9718225&hl=ja"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center underline underline-offset-4 decoration-[#BFA170]/60 hover:decoration-[#BFA170] transition-colors"
+          >
+            Google Mapsで開く
+          </a>
         </div>
         <div
-          data-pencil-name="Feat Row"
-          class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[56px] justify-start items-center"
+          data-pencil-name="Feat Img"
+          data-content-bind="access-map"
+          class="box-border w-full shrink-0 h-[320px] md:h-[480px] overflow-hidden"
         >
-          <div
-            data-pencil-name="Feat Img"
-            data-content-bind="access-map"
-            class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[280px] md:h-[420px] overflow-hidden"
-          >
-            <iframe
-              data-access-map-embed
-              title="蒼海の宿 ならいの風の地図"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen=""
-              class="box-border w-full h-full border-0"
-            ></iframe>
-          </div>
-          <div
-            data-pencil-name="Feat Text"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[20px] justify-start items-start"
-          >
-            <div
-              data-pencil-name="Feat Label"
-              class="text-[14px]/[normal] box-border text-[#BFA170] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap]"
-            >
-              Address
-            </div>
-            <div
-              data-pencil-name="Feat Body"
-              class="text-[16px]/[32px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
-            >
-              〒415-0013
-              <br />
-              静岡県下田市柿崎700番地
-              <br />
-              TEL：0558-36-4500
-            </div>
-            <a
-              data-pencil-name="Map CTA"
-              data-access-map-link
-              href="https://www.google.com/maps?q=34.6741752,138.9718225&hl=ja"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_22px] justify-start items-center [border:1px_solid_#4A5D5B] rounded-[2px] no-underline"
-            >
-              <div
-                data-pencil-name="Map CTA Label"
-                class="text-[14px]/[normal] box-border text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
-              >
-                大きな地図で見る
-              </div>
-            </a>
-          </div>
+          <iframe
+            data-access-map-embed
+            title="蒼海の宿 ならいの風の地図"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen=""
+            class="box-border w-full h-full border-0"
+          ></iframe>
         </div>
       </div>
