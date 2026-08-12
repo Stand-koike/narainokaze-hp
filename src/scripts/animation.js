@@ -85,11 +85,14 @@ function initFaqPageAnimation() {
 
 function initHeaderOverlay() {
   const header = document.querySelector('[data-pencil-name="Header"]');
-  if (!header || header.dataset.headerOverlay !== undefined) {
+  if (!header) {
     return;
   }
 
-  header.dataset.headerOverlay = "";
+  if (header.dataset.headerOverlay === undefined) {
+    header.dataset.headerOverlay = "";
+  }
+
   const threshold = 48;
 
   function updateHeader() {

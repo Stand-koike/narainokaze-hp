@@ -117,7 +117,6 @@ function applyFooterData(facility) {
   footer.dataset.bookingHref = facility.booking.href;
   footer.dataset.bookingLabel = facility.booking.label;
   footer.dataset.copyrightText = facility.footer.copyright;
-  footer.dataset.localeText = facility.footer.locale;
 }
 
 function applyPhoneDisplayData(facility) {
@@ -352,13 +351,32 @@ function applyAccessData(content) {
 
   access.dataset.id = accessData.id;
   access.dataset.pencilName = accessData.pencilName;
-  access.dataset.imageSrc = accessData.imageSrc;
-  access.dataset.imageAlt = accessData.imageAlt;
+  access.dataset.mapEmbedUrl = accessData.mapEmbedUrl;
+  access.dataset.mapTitle = accessData.mapTitle;
   access.dataset.addrText = accessData.addrText;
 
   const accessLinesSlot = access.querySelector('template[data-slot="access-lines"]');
   if (accessLinesSlot) {
     accessLinesSlot.innerHTML = buildAccessLinesHtml(accessData.routes);
+  }
+}
+
+function applyAccessLocationData(content) {
+  if (!content.access) {
+    return;
+  }
+
+  const { mapEmbedUrl, mapLinkUrl, mapTitle } = content.access;
+  const mapEmbed = document.querySelector("[data-access-map-embed]");
+  const mapLink = document.querySelector("[data-access-map-link]");
+
+  if (mapEmbed && mapEmbedUrl) {
+    mapEmbed.src = mapEmbedUrl;
+    mapEmbed.title = mapTitle || "蒼海の宿 ならいの風の地図";
+  }
+
+  if (mapLink && mapLinkUrl) {
+    mapLink.href = mapLinkUrl;
   }
 }
 
@@ -574,16 +592,49 @@ function applyNavGroupData(content) {
   applyNavGroupBind("nav-footer", itemsJson);
 }
 
+function applyOmotenashiData(content) {
+  const staff = content.omotenashi?.staff;
+  if (!staff || staff.length === 0) {
+    return;
+  }
+
+  staff.forEach((member, index) => {
+    const card = document.querySelector(`[data-pencil-name="Staff ${index + 1}"]`);
+    if (!card) {
+      return;
+    }
+
+    const name = card.querySelector('[data-pencil-name="Staff Name"]');
+    const phrase = card.querySelector('[data-pencil-name="Staff Phrase"]');
+    const img = card.querySelector("img");
+
+    if (name) {
+      name.textContent = member.name;
+    }
+
+    if (phrase) {
+      phrase.textContent = member.phrase;
+    }
+
+    if (img) {
+      img.src = resolveAssetPath(member.image);
+      img.alt = `${member.name} の写真`;
+    }
+  });
+}
+
 function applyContentData(content) {
   applyIntroData(content);
   applyHostData(content);
   applyCuisineData(content);
   applyAccessData(content);
+  applyAccessLocationData(content);
   applyStayData(content);
   applyNewsData(content);
   applyFaqData(content);
   applyFinalCtaData(content);
   applyNavGroupData(content);
+  applyOmotenashiData(content);
 }
 
 window.loadFacilityData = loadFacilityData;

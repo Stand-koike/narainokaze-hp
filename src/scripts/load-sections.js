@@ -319,14 +319,19 @@ function buildAccessSection(vars, slots) {
         data-pencil-name="${vars.PENCIL_NAME}"
         class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[48px] px-5 py-16 lg:px-[80px] lg:py-[88px] justify-start items-start lg:items-center bg-[#FFFFFF]"
       >
-        <img
+        <div
           data-pencil-name="Access Map"
-          src="${vars.IMAGE_SRC}"
-          alt="${vars.IMAGE_ALT}"
-          loading="lazy"
-          decoding="async"
-          class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[420px] object-cover"
-        />
+          class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[420px] overflow-hidden"
+        >
+          <iframe
+            src="${vars.MAP_EMBED_URL}"
+            title="${vars.MAP_TITLE || "蒼海の宿 ならいの風の地図"}"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen=""
+            class="box-border w-full h-full border-0"
+          ></iframe>
+        </div>
         <div
           data-pencil-name="Access Text"
           class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
@@ -427,6 +432,7 @@ function buildHeaderHtml(element, vars) {
 
   return `<header
         data-pencil-name="Header"
+        data-header-overlay
         class="box-border w-full shrink-0 flex flex-row h-[72px] gap-0 px-4 md:px-[56px] justify-between items-center bg-[#F0F4F3]"
       >
         <a
@@ -564,12 +570,6 @@ function buildFooterHtml(element, vars) {
           >
             ${vars.COPYRIGHT_TEXT}
           </small>
-          <div
-            data-pencil-name="Footer Locale"
-            class="text-[12px]/[normal] box-border text-[#AEB6B5] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[1px] text-left md:[white-space:nowrap]"
-          >
-            ${vars.LOCALE_TEXT}
-          </div>
         </div>
       </footer>`;
 }

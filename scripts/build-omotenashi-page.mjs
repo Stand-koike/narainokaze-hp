@@ -14,14 +14,13 @@ const ASSET_MAP = {
   "相談CTA": "../../assets/images/IMGP1204.JPG",
 };
 
-const STAFF = [
-  ["オーナー　たかちゃん", "笑顔で皆をお迎えします。"],
-  ["女将　あかりさん", "地魚の旬を、毎朝漁港から届けます。"],
-  ["料理長　みほさん", "お部屋の準備は、家族のように丁寧に。"],
-  ["スタッフ　きんちゃん", "温泉の湯加減、いつも見守っています。"],
-  ["会長", "お食事の時間が、旅の思い出になりますように。"],
-  ["大女将", "小さなお子様連れも、安心してお任せください。"],
-];
+function loadStaffFromContent() {
+  const contentPath = path.join(SRC, "data/content.json");
+  const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
+  return (content.omotenashi?.staff ?? []).map((member) => [member.name, member.phrase]);
+}
+
+const STAFF = loadStaffFromContent();
 
 function readPenTexts() {
   const pen = JSON.parse(fs.readFileSync(PEN, "utf8"));
@@ -199,37 +198,63 @@ ${row2}
 function buildCta() {
   return `      <div
         data-pencil-name="相談CTA"
-        class="box-border w-full h-fit min-h-[480px] md:min-h-[573px] md:h-[573px] shrink-0 flex flex-col gap-[20px] px-5 py-16 md:p-[80px_100px] justify-center items-center bg-[url('../../assets/images/IMGP1204.JPG')] bg-no-repeat bg-cover bg-center overflow-hidden relative"
+        class="box-border w-full min-h-[520px] md:h-[573px] shrink-0 flex flex-col md:flex-row gap-10 md:gap-[120px] px-5 py-12 md:p-[80px_100px] justify-center items-center bg-[url('../../assets/images/IMGP1204.JPG')] bg-no-repeat bg-cover bg-center overflow-hidden relative"
       >
         <div
           data-pencil-name="CTA Overlay"
           class="box-border absolute inset-0 w-full h-full bg-[#1a242299] [z-index:0]"
         ></div>
         <div
-          data-pencil-name="CTA Heading"
-          class="text-[28px]/[40px] md:text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center relative [z-index:1]"
-        >
-          お電話でのご予約・お問い合わせ
-        </div>
-        <div
-          data-pencil-name="CTA Actions"
-          class="box-border w-full max-w-[560px] h-fit shrink-0 flex flex-col sm:flex-row gap-[16px] sm:gap-[20px] p-[12px_0px_0px_0px] justify-center items-center relative [z-index:3]"
+          data-pencil-name="Staff 4"
+          class="box-border w-full max-w-[299px] md:w-[299px] shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start relative [z-index:1]"
         >
           <div
-            data-pencil-name="CTA Tel"
-            class="text-[28px]/[normal] box-border text-[#BFA170] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            data-pencil-name="Staff Photo 4"
+            class="box-border w-full md:w-[299px] h-[220px] md:h-[246px] shrink-0 flex flex-col gap-0 justify-center items-center overflow-hidden [background-image:linear-gradient(#ffffff1a,_#ffffff1a),_url('../../assets/images/staff/staff-00.jpg')] [background-repeat:no-repeat,_no-repeat] [background-size:100%_100%,_cover] [background-position:0%_0%,_center]"
+          ></div>
+          <div
+            data-pencil-name="Staff Name"
+            class="text-[16px]/[normal] box-border text-[#fafafaff] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
           >
-            0558-36-4500
+            ミニ女将　娘のかいりちゃん
           </div>
           <div
-            data-pencil-name="CTA Book"
-            class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#BFA170] rounded-[2px]"
+            data-pencil-name="Staff Phrase"
+            class="text-[13px]/[21px] box-border w-full text-[#edededff] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+          >
+            遊びに来てね。
+          </div>
+        </div>
+        <div
+          data-pencil-name="Frame 2"
+          class="box-border w-full md:w-fit shrink-0 h-fit flex flex-col gap-[20px] justify-center items-center relative [z-index:2]"
+        >
+          <div
+            data-pencil-name="CTA Heading"
+            class="text-[28px]/[normal] md:text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
+          >
+            お電話でのご予約・お問い合わせ
+          </div>
+          <div
+            data-pencil-name="CTA Actions"
+            class="box-border w-full md:w-fit h-fit shrink-0 flex flex-col sm:flex-row gap-4 md:gap-[20px] p-[12px_0px_0px_0px] justify-center items-center"
           >
             <div
-              data-pencil-name="CTA Book Label"
-              class="text-[14px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              data-pencil-name="CTA Tel"
+              class="text-[22px]/[normal] md:text-[28px]/[normal] box-border text-[#BFA170] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-center md:text-left md:[white-space:nowrap]"
             >
-              空室確認・予約
+              0558-36-4500
+            </div>
+            <div
+              data-pencil-name="CTA Book"
+              class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#BFA170] rounded-[2px]"
+            >
+              <div
+                data-pencil-name="CTA Book Label"
+                class="text-[14px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                空室確認・予約
+              </div>
             </div>
           </div>
         </div>

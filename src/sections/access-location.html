@@ -25,8 +25,18 @@
         >
           <div
             data-pencil-name="Feat Img"
-            class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[280px] md:h-[420px] bg-[url('../../assets/images/map.jpg')] bg-no-repeat bg-cover bg-center"
-          ></div>
+            data-content-bind="access-map"
+            class="box-border w-full max-w-[560px] lg:w-[560px] shrink-0 h-[280px] md:h-[420px] overflow-hidden"
+          >
+            <iframe
+              data-access-map-embed
+              title="蒼海の宿 ならいの風の地図"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""
+              class="box-border w-full h-full border-0"
+            ></iframe>
+          </div>
           <div
             data-pencil-name="Feat Text"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[20px] justify-start items-start"
@@ -47,9 +57,13 @@
               <br />
               TEL：0558-36-4500
             </div>
-            <div
+            <a
               data-pencil-name="Map CTA"
-              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_22px] justify-start items-center [border:1px_solid_#4A5D5B] rounded-[2px]"
+              data-access-map-link
+              href="https://www.google.com/maps?q=34.6741752,138.9718225&hl=ja"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[12px_22px] justify-start items-center [border:1px_solid_#4A5D5B] rounded-[2px] no-underline"
             >
               <div
                 data-pencil-name="Map CTA Label"
@@ -57,7 +71,7 @@
               >
                 大きな地図で見る
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

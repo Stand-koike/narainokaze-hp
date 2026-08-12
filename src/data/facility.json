@@ -10,7 +10,7 @@
       "display": "0558-36-4500",
       "tel": "tel:0558-36-4500"
     },
-    "address": "静岡県下田市柿崎700番地・外浦海水浴場 目の前"
+    "address": "静岡県下田市柿崎700番地"
   },
   "booking": {
     "href": "tel:0558-36-4500",
@@ -20,8 +20,7 @@
     "ctaLabel": "ご予約・ご相談"
   },
   "footer": {
-    "copyright": "© 蒼海の宿 ならいの風 All Rights Reserved.",
-    "locale": "Izu Shimoda · Soto-ura"
+    "copyright": "© 蒼海の宿 ならいの風 All Rights Reserved."
   },
   "hero": {
     "bgImage": "../assets/images/DSC_3147.JPG",

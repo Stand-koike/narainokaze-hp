@@ -52,15 +52,57 @@ header[data-header-overlay] [data-pencil-name="Header CTA"] {
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sub-page Page Hero: pull under fixed header and preserve visible height */
+body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
+  box-sizing: border-box;
+  margin-top: -72px;
+}
+
 /* Hero: fullscreen on mobile, fixed 820px on desktop */
 .page-hero {
   min-height: 100svh;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 768px) {
   .page-hero {
     min-height: 0;
     height: 820px;
+  }
+
+  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
+    height: calc(820px + 72px);
+    min-height: calc(820px + 72px);
+  }
+
+  /* 過ごし方のみ: Pencil準拠（Hero Image y:-140, height:960） */
+  .page-hero__bg--offset {
+    inset: auto;
+    left: 0;
+    right: 0;
+    top: -68px;
+    height: 960px;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
+    min-height: calc(100svh + 72px);
   }
 }
 
@@ -71,7 +113,7 @@ header[data-header-overlay] [data-pencil-name="Header CTA"] {
   bottom: calc(88px + env(safe-area-inset-bottom, 0px));
   top: auto;
   width: calc(100% - 2rem);
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
