@@ -31,6 +31,10 @@ const BUTTON_VARIANTS = {
     classes:
       "box-border w-fit max-w-full shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#FFFFFF22] [border:1px_solid_#FFFFFF99] rounded-[2px] text-[14px]/[normal] text-[#FFFFFF] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
   },
+  "hero-phone": {
+    classes:
+      "box-border w-fit max-w-full shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#FFFFFF22] [border:1px_solid_#FFFFFF99] rounded-[2px] text-[14px]/[normal] text-[#FFFFFF] font-['{{LABEL_FONT}}',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
+  },
   "cta-dark": {
     classes:
       "box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[12px_22px] justify-start items-center bg-[#4A5D5B] rounded-[2px] text-[14px]/[normal] text-[#F0F4F3] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap] no-underline",
