@@ -143,18 +143,36 @@ function applyHeroData(facility) {
     hero;
   const heroSlide2 = hero.querySelector('[data-pencil-name="Slide 2"]');
 
+  function setCoverImage(container, imagePath, position) {
+    if (!container || !imagePath) {
+      return;
+    }
+
+    const img = container.querySelector("[data-hero-slide-img]");
+    const resolvedPath = resolveAssetPath(imagePath);
+    const objectPosition = position || "center center";
+
+    if (img) {
+      img.src = resolvedPath;
+      img.style.objectPosition = objectPosition;
+      return;
+    }
+
+    container.style.backgroundImage = `url('${resolvedPath}')`;
+    container.style.backgroundPosition = objectPosition;
+    container.style.backgroundRepeat = "no-repeat";
+    container.style.backgroundSize = "cover";
+  }
+
   if (heroData.bgImage) {
-    heroStage.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImage)}')`;
-    heroStage.style.backgroundPosition = "center";
-    heroStage.style.backgroundRepeat = "no-repeat";
-    heroStage.style.backgroundSize = "cover";
+    setCoverImage(heroStage, heroData.bgImage, heroData.bgImagePosition);
   }
 
   if (heroSlide2 && heroData.bgImageSlide2) {
-    heroSlide2.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImageSlide2)}')`;
+    setCoverImage(heroSlide2, heroData.bgImageSlide2, heroData.bgImageSlide2Position);
   } else if (!hero.querySelector('[data-fade-stage]') && heroData.bgImage) {
     hero.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImage)}')`;
-    hero.style.backgroundPosition = "center";
+    hero.style.backgroundPosition = heroData.bgImagePosition || "center center";
     hero.style.backgroundRepeat = "no-repeat";
     hero.style.backgroundSize = "cover";
   }
@@ -503,6 +521,7 @@ function applyFaqData(content) {
   if (sectionHeading) {
     sectionHeading.dataset.labelEn = faqData.headingEn;
     sectionHeading.dataset.labelJa = faqData.headingJa;
+    sectionHeading.dataset.labelJaLine2 = faqData.headingJaLine2 || "";
   }
 
   const anxietyGrid = faq.querySelector('[data-pencil-name="Anxiety Grid"]');

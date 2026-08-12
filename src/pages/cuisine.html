@@ -31,6 +31,60 @@
         overflow-x: hidden;
       }
 
+      /* 天草.jpg: 右側の人物・天草が入るようトリミング位置を右寄せ */
+      .page-hero__bg--cuisine {
+        background-position: 78% center;
+      }
+
+      .cuisine-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .cuisine-intro-body__line {
+        display: block;
+      }
+
+      .cuisine-feat-body {
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+      }
+
+      @media (max-width: 767px) {
+        .page-hero__bg--cuisine {
+          background-position: 88% center;
+        }
+
+        .cuisine-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.02em;
+        }
+
+        .cuisine-intro-body__line {
+          white-space: nowrap;
+        }
+
+        .cuisine-feat-body {
+          font-size: 15px;
+          line-height: 2;
+          letter-spacing: -0.01em;
+        }
+      }
+
+      .cuisine-slideshow__thumbs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+      }
+
+      .cuisine-slideshow__thumbs--2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .cuisine-slideshow__main-img,
       .cuisine-slideshow__thumb-img {
         width: 100%;
@@ -44,6 +98,9 @@
       }
 
       .cuisine-slideshow__thumb {
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 12 / 5;
         border: 2px solid transparent;
       }
 

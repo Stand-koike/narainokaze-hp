@@ -70,15 +70,17 @@
         transform: none !important;
       }
 
-      @keyframes luxKenBurns {
-        from { background-size: 100% 100%; }
-        to { background-size: 108% 108%; }
+      @keyframes luxKenBurnsScale {
+        from { transform: scale(1); }
+        to { transform: scale(1.08); }
       }
 
       .lux-ken-burns {
+        background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
-        animation: luxKenBurns 22s var(--lux-ease) forwards;
+        transform-origin: center center;
+        animation: luxKenBurnsScale 22s var(--lux-ease) forwards;
       }
 
       [data-pencil-name^="News 20"],
@@ -114,11 +116,12 @@
         }
       }
 
-      [data-fade-slider] [data-fade-stage],
-      [data-fade-slider] [data-fade-slide] {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+      [data-fade-slider] .media-cover {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
 
       .pen-fade-dots {

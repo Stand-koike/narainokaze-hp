@@ -128,7 +128,8 @@
     "id": "faq",
     "pencilName": "ご不安への答え",
     "headingEn": "Before You Book",
-    "headingJa": "ご予約前の、よくあるご不安へ",
+    "headingJa": "ご予約前の",
+    "headingJaLine2": "よくあるご不安へ",
     "rows": [
       [
         {
@@ -164,7 +165,7 @@
     "pencilName": "最終CTA",
     "bgImage": "../assets/images/final-cta-bg.jpg",
     "heading": "ただ、家族になる時間。",
-    "bodyHtml": "特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。<br />アレルギー対応や幼児グッズのご相談も、心よりお待ちしています。",
+    "bodyHtml": "特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。<br />アレルギー対応や幼児グッズのご相談も、<br class=\"md:hidden\" />心よりお待ちしています。",
     "bookingLabel": "空室確認・予約",
     "bookingHref": "tel:0558-36-4500"
   },

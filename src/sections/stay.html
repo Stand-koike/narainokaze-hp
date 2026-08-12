@@ -4,18 +4,21 @@
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[40px] px-5 py-12 md:p-[96px_80px] justify-start items-center bg-[#E8EEEA] relative"
       >
         <div
-          data-pencil-name="Stay En Label"
-          data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[132px] top-[-47px] text-[#4a5d5b14] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:0] hidden md:block"
-        ></div>
-        <div
           data-component="section-heading"
           data-variant="centered-ja-only"
           data-head-pencil-name="Stay Head"
           data-ja-pencil-name="Stay Heading"
+          class="relative [z-index:1]"
         ></div>
-        <div
-          data-pencil-name="Stay Row"
-          class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[32px] justify-start items-start relative [z-index:2]"
-        ></div>
+        <div class="box-border relative w-full lg:static [z-index:2]">
+          <div
+            data-pencil-name="Stay En Label"
+            data-animate="label"
+            class="section-en-label-on-image section-en-label-on-image--stay lg:text-[230px]/[normal] lg:box-border lg:absolute lg:left-[132px] lg:top-[-47px] lg:text-[#4a5d5b14] lg:font-['Cormorant_Garamond',system-ui,sans-serif] lg:font-normal lg:italic lg:tracking-[2px] lg:text-left lg:[white-space:nowrap] lg:[z-index:0] lg:pointer-events-none lg:transform-none lg:[text-shadow:none]"
+          ></div>
+          <div
+            data-pencil-name="Stay Row"
+            class="box-border w-full h-fit shrink-0 grid grid-cols-2 lg:flex lg:flex-row gap-3 lg:gap-[32px] justify-start items-start relative"
+          ></div>
+        </div>
       </section>

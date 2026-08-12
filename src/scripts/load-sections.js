@@ -59,7 +59,7 @@ const SECTION_HEADING_VARIANTS = {
     enClass:
       "text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left md:[white-space:nowrap]",
     jaClass:
-      "text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left md:[white-space:nowrap]",
+      "text-[28px]/[40px] md:text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]",
     includeEn: true,
     wrapper: true,
   },
@@ -75,7 +75,7 @@ const SECTION_HEADING_VARIANTS = {
     wrapperClass:
       "box-border w-full max-w-[640px] md:w-[640px] h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center relative [z-index:1]",
     jaClass:
-      "text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center",
+      "text-[28px]/[40px] md:text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center",
     includeEn: false,
     wrapper: true,
   },
@@ -158,6 +158,23 @@ function getSlotContent(element, slotName) {
   return template.innerHTML.trim();
 }
 
+function getNavSlotHtml(element, slotName) {
+  const template = element.querySelector(`template[data-slot="${slotName}"]`);
+  if (!template) {
+    return "";
+  }
+
+  const navGroup = template.content.querySelector('[data-component="nav-group"]');
+  if (navGroup) {
+    const vars = getTemplateVars(navGroup);
+    if (vars.ITEMS) {
+      return buildNavGroupHtml(navGroup, vars);
+    }
+  }
+
+  return getSlotContent(element, slotName);
+}
+
 function buildIntroSection(vars, slots) {
   return `<section
         id="${vars.ID}"
@@ -165,14 +182,25 @@ function buildIntroSection(vars, slots) {
         data-pencil-name="${vars.PENCIL_NAME}"
         class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[64px] px-5 py-16 lg:px-0 lg:py-[100px] justify-start items-center bg-[#F0F4F3] relative"
       >
-        <img
-          data-pencil-name="Intro Image"
-          src="${vars.IMAGE_SRC}"
-          alt="${vars.IMAGE_ALT}"
-          loading="lazy"
-          decoding="async"
-          class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-[440px] relative [z-index:0] object-cover order-1 lg:order-none"
-        />
+        <div
+          class="box-border relative w-full max-w-[720px] lg:w-[720px] shrink-0 overflow-hidden lg:static lg:overflow-visible order-1 lg:order-none"
+        >
+          <img
+            data-pencil-name="Intro Image"
+            src="${vars.IMAGE_SRC}"
+            alt="${vars.IMAGE_ALT}"
+            loading="lazy"
+            decoding="async"
+            class="box-border w-full h-[440px] object-cover"
+          />
+          <div
+            data-pencil-name="Intro Label"
+            data-animate="label"
+            class="section-en-label-on-image lg:text-[230px]/[normal] lg:box-border lg:absolute lg:left-[691px] lg:top-[41px] lg:text-[#4a5d5b1a] lg:font-['Cormorant_Garamond',system-ui,sans-serif] lg:font-normal lg:italic lg:tracking-[2px] lg:text-left lg:[white-space:nowrap] lg:[z-index:2] lg:pointer-events-none lg:transform-none lg:[text-shadow:none]"
+          >
+            ${vars.LABEL_TEXT}
+          </div>
+        </div>
         <div
           data-pencil-name="Intro Text"
           class="box-border [flex:1_1_0] h-fit flex flex-col gap-[24px] justify-start items-start relative [z-index:1] order-2 lg:order-none"
@@ -189,13 +217,6 @@ function buildIntroSection(vars, slots) {
           >
             ${slots.body}
           </div>
-        </div>
-        <div
-          data-pencil-name="Intro Label"
-          data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[691px] top-[41px] text-[#4a5d5b1a] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left [white-space:nowrap] [z-index:2] hidden lg:block pointer-events-none"
-        >
-          ${vars.LABEL_TEXT}
         </div>
       </section>`;
 }
@@ -386,7 +407,7 @@ function buildFeatureCardHtml(element, vars) {
   return `<div
           id="${vars.ID}"
           data-pencil-name="${vars.BLOCK_PENCIL_NAME}"
-          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[18px] justify-start items-start"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-2 md:gap-[18px] justify-start items-start min-w-0"
         >
           <img
             data-pencil-name="${vars.IMG_PENCIL_NAME}"
@@ -394,7 +415,7 @@ function buildFeatureCardHtml(element, vars) {
             alt="${vars.IMAGE_ALT}"
             loading="lazy"
             decoding="async"
-            class="box-border w-full h-[468px] shrink-0 object-cover"
+            class="box-border w-full h-[120px] md:h-[468px] shrink-0 object-cover"
           />
           <div
             data-pencil-name="${vars.TITLE_PENCIL_NAME}"
@@ -404,11 +425,11 @@ function buildFeatureCardHtml(element, vars) {
           </div>
           <div
             data-pencil-name="${vars.BODY_PENCIL_NAME}"
-            class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
+            class="text-[14px]/[27px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left hidden md:block"
           >
             ${body}
           </div>
-          <div data-component="button" data-variant="outline" data-pencil-name="${vars.CTA_PENCIL_NAME}" data-padding="${vars.CTA_PADDING}" data-label="${vars.CTA_LABEL}" data-href="${vars.CTA_HREF}"></div>
+          <div class="hidden md:block w-full" data-component="button" data-variant="outline" data-pencil-name="${vars.CTA_PENCIL_NAME}" data-padding="${vars.CTA_PADDING}" data-label="${vars.CTA_LABEL}" data-href="${vars.CTA_HREF}"></div>
         </div>`;
 }
 
@@ -428,7 +449,7 @@ function buildNavGroupHtml(element, vars) {
 }
 
 function buildHeaderHtml(element, vars) {
-  const navItems = getSlotContent(element, "nav-items");
+  const navItems = getNavSlotHtml(element, "nav-items");
 
   return `<header
         data-pencil-name="Header"
@@ -486,7 +507,7 @@ function buildHeaderHtml(element, vars) {
 }
 
 function buildFooterHtml(element, vars) {
-  const navItems = getSlotContent(element, "nav-items");
+  const navItems = getNavSlotHtml(element, "nav-items");
 
   return `<footer
         data-pencil-name="Footer"
@@ -527,7 +548,7 @@ function buildFooterHtml(element, vars) {
             <nav
               data-pencil-name="Info Nav"
               aria-label="フッターナビゲーション"
-              class="box-border w-full md:w-fit h-fit shrink-0 flex flex-row flex-wrap md:flex-nowrap gap-x-5 gap-y-2 md:gap-[20px] justify-start md:justify-start items-center"
+              class="box-border w-full md:w-fit h-fit shrink-0 grid grid-cols-4 justify-items-start gap-x-4 gap-y-2 md:flex md:flex-row md:flex-wrap md:gap-[20px] justify-start items-center"
             >
               ${navItems}
             </nav>
@@ -591,8 +612,12 @@ function buildFinalCtaBannerHtml(element, vars) {
         data-animate="reveal"
         data-pencil-name="${vars.PENCIL_NAME}"
         class="box-border w-full min-h-[520px] md:h-[573px] shrink-0 overflow-hidden relative"
-        style="background-image: url('${vars.BG_IMAGE}'); background-position: center; background-repeat: no-repeat; background-size: cover"
       >
+        <div
+          data-pencil-name="Final Bg"
+          class="box-border absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center [z-index:0]"
+          style="background-image: url('${vars.BG_IMAGE}')"
+        ></div>
         <div
           data-pencil-name="Final Overlay"
           class="box-border absolute inset-0 w-full h-full bg-[#1a242299] [z-index:0]"

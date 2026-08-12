@@ -27,15 +27,15 @@
         </div>
         <div
           data-pencil-name="Room Row"
-          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-6 md:gap-[28px] justify-start items-start"
+          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-6 md:gap-[28px] justify-start items-stretch"
         >
           <div
             data-pencil-name="Room OV Onsen"
-            class="room-type-card room-type-card--hover box-border [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
+            class="room-type-card room-type-card--hover box-border w-full min-w-0 [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
           >
             <div
               data-pencil-name="Room Img"
-              class="room-type-card__img-wrap box-border w-full h-[310px] shrink-0 overflow-hidden"
+              class="room-type-card__img-wrap box-border relative w-full h-[310px] shrink-0 overflow-hidden"
             >
               <div
                 class="room-type-card__img box-border bg-[url('../../assets/images/rooms/hachijo-hero.jpg')] bg-no-repeat bg-cover bg-center"
@@ -68,7 +68,8 @@
               data-pencil-name="Room Desc"
               class="text-[14px]/[25px] box-border w-full text-[#4A5456] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
             >
-              客室温泉・半露天風呂付き。八丈島・初島・大島の3室。
+              客室温泉・半露天風呂付き。<br />
+              八丈島・初島・大島の3室。
               <br />
               ファミリーからカップルまで。
             </div>
@@ -83,11 +84,11 @@
           </div>
           <div
             data-pencil-name="Room OV Standard"
-            class="room-type-card room-type-card--hover box-border [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
+            class="room-type-card room-type-card--hover box-border w-full min-w-0 [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
           >
             <div
               data-pencil-name="Room Img"
-              class="room-type-card__img-wrap box-border w-full h-[310px] shrink-0 overflow-hidden"
+              class="room-type-card__img-wrap box-border relative w-full h-[310px] shrink-0 overflow-hidden"
             >
               <div
                 class="room-type-card__img box-border bg-[url('../../assets/images/rooms/niijima-hero.jpg')] bg-no-repeat bg-cover bg-center"
@@ -135,11 +136,11 @@
           </div>
           <div
             data-pencil-name="Room Mountain Twin"
-            class="room-type-card room-type-card--hover box-border [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
+            class="room-type-card room-type-card--hover box-border w-full min-w-0 [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start"
           >
             <div
               data-pencil-name="Room Img"
-              class="room-type-card__img-wrap box-border w-full h-[310px] shrink-0 overflow-hidden"
+              class="room-type-card__img-wrap box-border relative w-full h-[310px] shrink-0 overflow-hidden"
             >
               <div
                 class="room-type-card__img box-border bg-[url('../../assets/images/rooms/kouzushima-02.jpg')] bg-no-repeat bg-cover bg-center"
@@ -190,7 +191,7 @@
           id="room-detail"
           data-room-panel
           data-pencil-name="Room Detail Panel"
-          class="box-border w-full h-fit shrink-0 flex flex-col gap-[24px] p-[48px_40px] justify-start items-start bg-[#FFFFFF] [border:1px_solid_#E8EEEA] rounded-[2px]"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[24px] p-6 px-5 md:p-[48px_40px] justify-start items-start bg-[#FFFFFF] [border:1px_solid_#E8EEEA] rounded-[2px]"
         >
           <script type="application/json" data-room-data>
 {
@@ -338,13 +339,13 @@
           </div>
           <div
             data-pencil-name="Island Tabs"
-            class="box-border w-full max-w-full h-fit shrink-0 flex flex-row gap-[28px] justify-start items-center overflow-x-auto"
+            class="box-border w-full max-w-full h-fit shrink-0 flex flex-col gap-2 md:flex-row md:items-center md:gap-[28px] justify-start overflow-x-auto md:overflow-visible"
           >
             <div data-island-tabs class="box-border w-fit h-fit shrink-0 flex flex-row flex-nowrap gap-[28px] justify-start items-center"></div>
             <span
               data-island-note
               data-pencil-name="Tab Note"
-              class="text-[12px]/[normal] box-border text-[#8A908C] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[12px]/[normal] box-border text-[#8A908C] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap]"
             ></span>
           </div>
           <div
@@ -421,7 +422,7 @@
                 data-pencil-name="Room Full Title"
                 class="text-[20px]/[30px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
               >
-                【八丈島】オーシャンビュー 半露天温泉風呂付 和洋室
+                【八丈島】オーシャンビュー <br class="md:hidden" />半露天温泉風呂付 和洋室
               </div>
               <div
                 data-room-lead

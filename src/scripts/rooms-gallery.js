@@ -10,6 +10,10 @@
     onChange: null,
   };
 
+  function formatRoomTitle(title) {
+    return title.replace(/^(【.+?】オーシャンビュー) /, "$1 <br class=\"md:hidden\" />");
+  }
+
   function isDevRuntime() {
     return Boolean(document.querySelector('script[src*="load-sections.js"]'));
   }
@@ -292,7 +296,7 @@
         enEl.textContent = room.en;
       }
       if (titleEl) {
-        titleEl.textContent = room.title;
+        titleEl.innerHTML = formatRoomTitle(room.title);
       }
       if (leadEl) {
         leadEl.textContent = room.lead;

@@ -164,8 +164,12 @@
 
     section.classList.add("lux-section");
     if (cfg.kenBurns) {
-      section.classList.add("lux-ken-burns");
-      section.style.backgroundSize = "";
+      var bgLayer =
+        section.querySelector('[data-pencil-name="Final Bg"]') || section;
+      bgLayer.classList.add("lux-ken-burns");
+      if (bgLayer === section) {
+        section.style.backgroundSize = "";
+      }
     }
 
     var items = collectItems(section, cfg);
@@ -195,16 +199,6 @@
       .forEach(function (el) {
         el.classList.add("lux-image-hover");
       });
-
-    var heroFade = document.querySelector('[data-pencil-name="Hero Fade"]');
-    if (heroFade) {
-      heroFade
-        .querySelectorAll('[data-pencil-name="Hero Fade Stage"], [data-fade-slide]')
-        .forEach(function (el) {
-          el.classList.add("lux-ken-burns");
-          el.style.backgroundSize = "";
-        });
-    }
 
     var prepared = SECTIONS.map(prepareSection).filter(Boolean);
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

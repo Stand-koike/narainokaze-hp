@@ -78,6 +78,14 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
   background-position: center center;
 }
 
+.media-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (min-width: 768px) {
   .page-hero {
     min-height: 0;
@@ -103,6 +111,15 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
 @media (max-width: 767px) {
   body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
     min-height: calc(100svh + 72px);
+  }
+
+  body[data-page="top"] .page-hero {
+    min-height: 0;
+    height: 560px;
+  }
+
+  body[data-page="top"] [data-pencil-name="Hero Fade"] .media-cover {
+    object-fit: cover;
   }
 }
 

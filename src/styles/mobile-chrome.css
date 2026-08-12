@@ -196,3 +196,65 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     transition: none !important;
   }
 }
+
+/* —— TOP SP: News / Footer / FAQ / labels on image —— */
+@media (max-width: 767px) {
+  [data-pencil-name="News Grid"] {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  [data-pencil-name="News Grid"]::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-pencil-name="Anxiety CTA"] a {
+    font-size: 12px;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+
+  [data-pencil-name="最終CTA"] [data-pencil-name="Final Bg"] {
+    background-position: 80% 85% !important;
+  }
+
+  .section-en-label-on-image {
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    font-family: "Cormorant Garamond", system-ui, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 0.82;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 2px 28px rgba(26, 36, 34, 0.4);
+    font-size: clamp(58px, 19vw, 78px);
+    left: -4px;
+    bottom: -8px;
+    transform: rotate(-2.5deg);
+    transform-origin: left bottom;
+  }
+
+  .section-en-label-on-image--stay {
+    top: 86px;
+    bottom: auto;
+    left: -2px;
+    font-size: clamp(52px, 15vw, 68px);
+    transform: rotate(-2.5deg);
+    transform-origin: left bottom;
+  }
+
+  .section-en-label-on-image--cuisine {
+    top: 212px;
+    bottom: auto;
+    left: -4px;
+  }
+}
+
+@media (min-width: 768px) {
+  [data-pencil-name="最終CTA"] [data-pencil-name="Final Bg"] {
+    background-position: center !important;
+  }
+}
