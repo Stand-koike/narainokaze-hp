@@ -258,3 +258,161 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     background-position: center !important;
   }
 }
+
+/* —— Tablet (768–1023px): shrink type/images; keep md/lg layout —— */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header[data-header-overlay],
+  header[data-pencil-name="Header"] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    gap: 12px;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Logo"],
+  header[data-pencil-name="Header"] [data-pencil-name="Logo"] {
+    width: 140px !important;
+    max-width: 140px !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Logo Mark"],
+  header[data-pencil-name="Header"] [data-pencil-name="Logo Mark"] {
+    height: 48px !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Nav Links"],
+  header[data-pencil-name="Header"] [data-pencil-name="Nav Links"] {
+    gap: 16px !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+  header[data-pencil-name="Header"] [data-pencil-name="Nav Links"] a {
+    font-size: 13px !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Header CTA"],
+  header[data-pencil-name="Header"] [data-pencil-name="Header CTA"] {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+
+  .page-hero {
+    height: min(820px, 70vh) !important;
+  }
+
+  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
+    height: calc(min(820px, 70vh) + 72px) !important;
+    min-height: calc(min(820px, 70vh) + 72px) !important;
+  }
+
+  [data-pencil-name="Hero Catch"],
+  .omotenashi-hero-catch {
+    font-size: 40px !important;
+    line-height: 1.35 !important;
+  }
+
+  [data-pencil-name="Hero H1"] {
+    font-size: 36px !important;
+    line-height: 1.35 !important;
+  }
+
+  [data-pencil-name="Banner Title"] {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+  }
+
+  [data-pencil-name="Intro Heading"] {
+    font-size: 28px !important;
+    line-height: 1.45 !important;
+  }
+
+  [data-pencil-name="CTA Heading"],
+  [data-pencil-name="Final Heading"],
+  .news-cta-heading {
+    font-size: 28px !important;
+    white-space: normal !important;
+  }
+
+  [data-pencil-name="CTA Tel"],
+  [data-pencil-name="Final Tel"] {
+    font-size: 22px !important;
+    white-space: nowrap !important;
+  }
+
+  [data-pencil-name="Room Title"],
+  [data-pencil-name="R Title"],
+  [data-pencil-name="Grid Ja"],
+  [data-pencil-name="Feat Ja"],
+  [data-pencil-name="Stay Ja"],
+  [data-pencil-name="Dine Ja"],
+  [data-pencil-name="Other Ja"] {
+    white-space: normal !important;
+  }
+
+  [data-pencil-name="Grid Ja"],
+  [data-pencil-name="Feat Ja"],
+  [data-pencil-name="Stay Ja"],
+  [data-pencil-name="Dine Ja"],
+  [data-pencil-name="Other Ja"] {
+    font-size: 26px !important;
+  }
+
+  .omotenashi-staff-ja {
+    font-size: 24px !important;
+    white-space: normal !important;
+  }
+
+  [data-pencil-name="相談CTA"]:has([data-pencil-name="Staff 4"]) {
+    gap: clamp(24px, 6vw, 64px) !important;
+    padding: 64px 40px !important;
+    height: auto !important;
+    min-height: 480px;
+  }
+
+  [data-pencil-name="Staff 4"],
+  [data-pencil-name="Staff Photo 4"] {
+    width: 220px !important;
+    max-width: 220px !important;
+  }
+
+  .staff-photo {
+    height: clamp(280px, 42vw, 400px) !important;
+  }
+
+  .room-type-card__img-wrap,
+  .cuisine-card__img-wrap,
+  [data-pencil-name="Act Img"] {
+    height: clamp(200px, 28vw, 260px) !important;
+  }
+
+  [data-pencil-name="Intro Image"] {
+    height: clamp(280px, 42vw, 360px) !important;
+  }
+
+  [data-pencil-name="Host Main Photo"] {
+    height: clamp(280px, 42vw, 380px) !important;
+  }
+
+  [data-pencil-name="Cuisine Hero Img"] {
+    height: clamp(240px, 38vw, 360px) !important;
+  }
+
+  [data-pencil-name="Feat Img"],
+  [data-pencil-name="Priv Img"],
+  [data-pencil-name="Gen Img"],
+  [data-pencil-name="Fam Img"],
+  [data-pencil-name="Bath Img"],
+  [data-pencil-name="Img 14:00 Main"],
+  [data-pencil-name="Imgs 翌朝"],
+  .cuisine-split__img,
+  .cuisine-banner {
+    height: clamp(240px, 38vw, 360px) !important;
+  }
+
+  [data-pencil-name="Location"] [data-pencil-name="Feat Img"] {
+    height: clamp(280px, 42vw, 400px) !important;
+  }
+
+  .cuisine-slideshow__main {
+    height: clamp(220px, 32vw, 300px) !important;
+  }
+}
