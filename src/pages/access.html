@@ -30,6 +30,76 @@
         margin: 0;
         overflow-x: hidden;
       }
+
+      .access-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .access-intro-body__line {
+        display: block;
+      }
+
+      .access-intro-body__part {
+        display: inline;
+      }
+
+      @media (max-width: 767px) {
+        .access-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.025em;
+        }
+
+        .access-intro-body__part {
+          white-space: nowrap;
+        }
+      }
+
+      .access-route-bus__line {
+        display: inline;
+      }
+
+      .access-route-bus__part {
+        display: inline;
+      }
+
+      .access-route-bus__line:first-child::after {
+        content: "　";
+      }
+
+      @media (max-width: 767px) {
+        .access-route-bus__line {
+          display: block;
+        }
+
+        .access-route-bus__line:first-child::after {
+          content: none;
+        }
+
+        .access-route-bus__part {
+          white-space: nowrap;
+        }
+      }
+
+      [data-pencil-name="Route Row"] {
+        align-items: stretch;
+      }
+
+      [data-pencil-name="Route Row"] > [data-pencil-name^="Route "] {
+        flex: 1 1 0;
+        min-width: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      @media (min-width: 768px) {
+        [data-pencil-name="Route Row"] > [data-pencil-name^="Route "] {
+          height: 100%;
+        }
+      }
     </style>
   </head>
   <body>

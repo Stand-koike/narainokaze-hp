@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   "use strict";
 
   var AUTOPLAY_MS = 4500;
@@ -299,7 +299,7 @@
         titleEl.innerHTML = formatRoomTitle(room.title);
       }
       if (leadEl) {
-        leadEl.textContent = room.lead;
+        leadEl.innerHTML = room.lead;
       }
       if (specsEl) {
         specsEl.innerHTML = "";

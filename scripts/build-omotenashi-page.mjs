@@ -218,12 +218,6 @@ function buildCta() {
           >
             ミニ女将　娘のかいりちゃん
           </div>
-          <div
-            data-pencil-name="Staff Phrase"
-            class="text-[13px]/[21px] box-border w-full text-[#edededff] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
-          >
-            遊びに来てね。
-          </div>
         </div>
         <div
           data-pencil-name="Frame 2"
@@ -233,7 +227,7 @@ function buildCta() {
             data-pencil-name="CTA Heading"
             class="text-[28px]/[normal] md:text-[36px]/[normal] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]"
           >
-            お電話でのご予約・お問い合わせ
+            ご予約・お問い合わせ
           </div>
           <div
             data-pencil-name="CTA Actions"

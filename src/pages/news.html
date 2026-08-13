@@ -30,6 +30,221 @@
         margin: 0;
         overflow-x: hidden;
       }
+
+      .news-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .news-intro-body__line {
+        display: block;
+      }
+
+      .news-intro-body__part {
+        display: inline;
+      }
+
+      @media (max-width: 767px) {
+        .news-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.025em;
+        }
+
+        .news-intro-body__line {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .news-intro-body__part {
+          white-space: nowrap;
+        }
+
+        .news-cta-heading {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 24px;
+          line-height: 1.55;
+          letter-spacing: -0.02em;
+        }
+
+        .news-cta-heading__part {
+          display: block;
+          white-space: nowrap;
+        }
+      }
+
+      .news-cta-heading__part {
+        display: inline;
+      }
+
+      @media (min-width: 768px) {
+        .news-cta-heading {
+          display: block;
+          white-space: nowrap;
+        }
+      }
+
+      .news-activities__track {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+      }
+
+      .news-activities__track::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .news-activities__track {
+          display: flex;
+          flex-direction: row;
+          scroll-snap-type: none;
+        }
+
+        .news-activities__card {
+          flex: 1 1 0;
+          min-width: 0;
+          width: auto;
+        }
+
+        [data-pencil-name="Act Img"] {
+          height: 310px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .news-activities__track {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 16px;
+          padding-right: 20px;
+        }
+
+        .news-activities__card {
+          flex: 0 0 calc(100% - 48px);
+          width: calc(100% - 48px);
+          scroll-snap-align: start;
+        }
+
+        [data-pencil-name="Act Img"] {
+          height: 240px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        [data-pencil-name="Day Timeline"] {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+          height: auto !important;
+        }
+
+        [data-pencil-name="Day Timeline"] > [data-pencil-name^="Slot"] {
+          position: relative !important;
+          top: auto !important;
+          left: auto !important;
+          width: 100%;
+          height: auto !important;
+        }
+
+        [data-pencil-name="Slot 14:00"],
+        [data-pencil-name="Slot 翌朝"] {
+          flex-direction: column-reverse;
+        }
+
+        [data-pencil-name^="Text "] {
+          width: 100%;
+          max-width: none;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        [data-pencil-name^="Body "] {
+          max-width: none;
+          width: 100%;
+          text-align: center;
+        }
+
+        [data-pencil-name^="Title "] {
+          max-width: none;
+          width: 100%;
+        }
+
+        [data-pencil-name^="Imgs "] {
+          width: 100%;
+          max-width: none;
+        }
+
+        [data-pencil-name="Imgs 10:00"],
+        [data-pencil-name="Imgs 18:00"] {
+          display: flex;
+          flex-direction: row;
+          gap: 12px;
+        }
+
+        [data-pencil-name="Imgs 10:00"] > [data-pencil-name^="Img"],
+        [data-pencil-name="Imgs 18:00"] > [data-pencil-name^="Img"] {
+          position: relative !important;
+          left: auto !important;
+          top: auto !important;
+          width: calc(50% - 6px) !important;
+          max-width: none;
+          height: 160px;
+        }
+
+        [data-pencil-name="Img 14:00 Main"] {
+          width: 100%;
+          height: 220px;
+        }
+
+        [data-pencil-name="Imgs 翌朝"] {
+          height: 220px;
+        }
+
+        [data-pencil-name="Img 07:00 Main"] {
+          background-size: cover !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        [data-pencil-name="相談CTA"] {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 480px;
+          padding: 56px 0;
+        }
+
+        [data-pencil-name="相談CTA"] [data-pencil-name="CTA Content"] {
+          position: relative;
+          left: auto;
+          top: auto;
+          transform: none;
+          width: 100%;
+        }
+
+        [data-pencil-name="CTA Body"] {
+          font-size: 14px;
+          line-height: 1.9;
+          letter-spacing: -0.02em;
+        }
+
+        [data-pencil-name="CTA Actions"] {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        [data-pencil-name="CTA Tel"] {
+          font-size: 22px;
+        }
+      }
     </style>
   </head>
   <body>

@@ -38,6 +38,75 @@
       .staff-photo.has-photo [data-pencil-name="Photo Label"] {
         display: none;
       }
+
+      .omotenashi-hero-catch__line {
+        display: block;
+      }
+
+      .omotenashi-hero-catch__part {
+        display: inline;
+      }
+
+      .omotenashi-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .omotenashi-intro-body__line {
+        display: block;
+      }
+
+      .omotenashi-intro-body__part {
+        display: inline;
+      }
+
+      .omotenashi-staff-ja__part {
+        display: inline;
+      }
+
+      @media (max-width: 767px) {
+        .omotenashi-hero-catch {
+          font-size: clamp(28px, 8.5vw, 34px);
+          line-height: 1.45;
+          letter-spacing: -0.025em;
+        }
+
+        .omotenashi-hero-catch__part {
+          white-space: nowrap;
+        }
+
+        .omotenashi-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.025em;
+        }
+
+        .omotenashi-intro-body__part {
+          white-space: nowrap;
+        }
+
+        .omotenashi-staff-ja {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 24px;
+          line-height: 1.5;
+          letter-spacing: -0.02em;
+        }
+
+        .omotenashi-staff-ja__part {
+          white-space: nowrap;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .omotenashi-staff-ja {
+          font-size: 32px;
+          white-space: nowrap;
+        }
+      }
     </style>
   </head>
   <body data-page="omotenashi">

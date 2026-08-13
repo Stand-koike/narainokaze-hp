@@ -52,6 +52,16 @@
         overflow-wrap: anywhere;
       }
 
+      .cuisine-fam-body {
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+      }
+
+      .cuisine-harvest-body {
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+      }
+
       @media (max-width: 767px) {
         .page-hero__bg--cuisine {
           background-position: 88% center;
@@ -71,6 +81,26 @@
           font-size: 15px;
           line-height: 2;
           letter-spacing: -0.01em;
+        }
+
+        .cuisine-fam-body {
+          font-size: 14px;
+          line-height: 1.9;
+          letter-spacing: -0.02em;
+        }
+
+        .cuisine-fam-body__line {
+          display: inline-block;
+        }
+
+        .cuisine-harvest-body {
+          font-size: 15px;
+          line-height: 2;
+          letter-spacing: -0.01em;
+        }
+
+        .cuisine-cta-body {
+          letter-spacing: -0.025em;
         }
       }
 
@@ -126,6 +156,23 @@
 
       .cuisine-card--hover:hover .cuisine-card__img {
         transform: scale(1.04);
+      }
+
+      .cuisine-food-scroll__track {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .cuisine-food-scroll__track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .cuisine-food-scroll__page {
+        min-width: 100%;
+      }
+
+      .cuisine-food-scroll__img-wrap {
+        height: 180px;
       }
 
       @media (prefers-reduced-motion: reduce) {

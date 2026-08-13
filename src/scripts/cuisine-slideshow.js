@@ -19,6 +19,10 @@
     var dots = Array.prototype.slice.call(root.querySelectorAll("[data-slide-dot]"));
     var sources = [];
 
+    var sourceEls = Array.prototype.slice.call(
+      root.querySelectorAll("[data-slide-source]")
+    );
+
     if (thumbs.length) {
       sources = thumbs
         .map(function (thumb) {
@@ -26,6 +30,12 @@
             thumb.getAttribute("data-src") ||
             (thumb.querySelector("img") && thumb.querySelector("img").src)
           );
+        })
+        .filter(Boolean);
+    } else if (sourceEls.length) {
+      sources = sourceEls
+        .map(function (el) {
+          return el.getAttribute("data-slide-source");
         })
         .filter(Boolean);
     } else if (root.dataset.slides) {
@@ -75,9 +85,22 @@
       go(index + 1);
     }
 
+    function isVisible() {
+      if (!root.isConnected) {
+        return false;
+      }
+
+      var style = window.getComputedStyle(root);
+      return (
+        style.display !== "none" &&
+        style.visibility !== "hidden" &&
+        root.getClientRects().length > 0
+      );
+    }
+
     function start() {
       stop();
-      if (paused || sources.length < 2) {
+      if (paused || sources.length < 2 || !isVisible()) {
         return;
       }
       timer = window.setInterval(next, AUTOPLAY_MS);
@@ -104,18 +127,31 @@
       });
     });
 
-    root.addEventListener("mouseenter", function () {
-      paused = true;
-      stop();
-    });
+    if (window.matchMedia("(hover: hover)").matches) {
+      root.addEventListener("mouseenter", function () {
+        paused = true;
+        stop();
+      });
 
-    root.addEventListener("mouseleave", function () {
-      paused = false;
-      start();
-    });
+      root.addEventListener("mouseleave", function () {
+        paused = false;
+        start();
+      });
+    }
+
+    function handleVisibilityChange() {
+      if (isVisible()) {
+        start();
+      } else {
+        stop();
+      }
+    }
+
+    window.addEventListener("resize", handleVisibilityChange);
+    window.addEventListener("orientationchange", handleVisibilityChange);
 
     render();
-    start();
+    handleVisibilityChange();
   }
 
   function initAll() {

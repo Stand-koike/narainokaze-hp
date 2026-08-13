@@ -31,6 +31,84 @@
         overflow-x: hidden;
       }
 
+      .faq-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .faq-intro-body__line {
+        display: block;
+      }
+
+      .faq-intro-body__part {
+        display: inline;
+      }
+
+      @media (max-width: 767px) {
+        .faq-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.025em;
+        }
+
+        .faq-intro-body__part {
+          white-space: nowrap;
+        }
+      }
+
+      .faq-cta-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .faq-cta-body__line {
+        display: block;
+      }
+
+      .faq-cta-body__part {
+        display: inline;
+      }
+
+      @media (max-width: 767px) {
+        [data-pencil-name="相談CTA"] {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 480px;
+          padding: 56px 0;
+        }
+
+        [data-pencil-name="相談CTA"] [data-pencil-name="CTA Content"] {
+          position: relative;
+          left: auto;
+          top: auto;
+          transform: none;
+          width: 100%;
+        }
+
+        .faq-cta-body {
+          letter-spacing: -0.025em;
+        }
+
+        .faq-cta-body__part {
+          white-space: nowrap;
+        }
+
+        [data-pencil-name="CTA Actions"] {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        [data-pencil-name="CTA Tel"] {
+          font-size: 22px;
+        }
+      }
+
       /* FAQ accordion（参照: narainokaze-hp/faq.html）
          初期状態で回答を閉じておく（レイアウト確定 → CTA が消えない） */
       [data-pencil-name="Stay List"] > [data-pencil-name^="FAQ "] > [data-pencil-name="A"],

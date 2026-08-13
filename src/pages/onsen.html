@@ -30,6 +30,79 @@
         margin: 0;
         overflow-x: hidden;
       }
+
+      .onsen-intro-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .onsen-intro-body__line {
+        display: block;
+      }
+
+      .onsen-intro-body__part {
+        display: inline;
+      }
+
+      [data-pencil-name="Bath Row"] > [data-pencil-name^="Bath "] {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+
+      @media (min-width: 768px) {
+        [data-pencil-name="Bath Row"] {
+          flex-direction: row;
+          gap: 32px;
+        }
+      }
+
+      [data-pencil-name="Bath Img"] {
+        box-sizing: border-box;
+        width: 100%;
+        height: 280px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media (min-width: 768px) {
+        [data-pencil-name="Bath Img"] {
+          height: 468px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .onsen-intro-body {
+          font-size: 13px;
+          line-height: 2;
+          letter-spacing: -0.025em;
+        }
+
+        .onsen-intro-body__line {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .onsen-intro-body__part {
+          white-space: nowrap;
+        }
+
+        [data-pencil-name="Priv Body"],
+        [data-pencil-name="Fam Body"],
+        [data-pencil-name="Bath Desc"] {
+          letter-spacing: -0.02em;
+        }
+
+        [data-pencil-name="Priv Body"],
+        [data-pencil-name="Fam Body"] {
+          font-size: 14px;
+          line-height: 1.9;
+        }
+      }
     </style>
   </head>
   <body>

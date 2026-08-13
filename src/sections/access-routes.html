@@ -27,11 +27,11 @@
         </div>
         <div
           data-pencil-name="Route Row"
-          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-[24px] justify-start items-start"
+          class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-[24px] justify-start items-stretch"
         >
           <div
             data-pencil-name="Route 電車で"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] p-[32px_28px] justify-start items-start bg-[#FFFFFF]"
+            class="box-border w-full [flex:1_1_0] min-w-0 h-full flex flex-col gap-[14px] p-[32px_28px] justify-start items-start bg-[#FFFFFF]"
           >
             <div
               data-pencil-name="R En"
@@ -51,12 +51,15 @@
             >
               伊豆急下田駅よりバス10分
               <br />
-              乗り場／9番 「白浜」行き　降り場／「外浦口」バス停下車･･･徒歩5分
+              <span class="access-route-bus">
+                <span class="access-route-bus__line"><span class="access-route-bus__part">乗り場／9番 「白浜」行き</span></span>
+                <span class="access-route-bus__line"><span class="access-route-bus__part">降り場／「外浦口」バス停下車･･･徒歩5分</span></span>
+              </span>
             </div>
           </div>
           <div
             data-pencil-name="Route お車で"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[14px] p-[32px_28px] justify-start items-start bg-[#FFFFFF]"
+            class="box-border w-full [flex:1_1_0] min-w-0 h-full flex flex-col gap-[14px] p-[32px_28px] justify-start items-start bg-[#FFFFFF]"
           >
             <div
               data-pencil-name="R En"
