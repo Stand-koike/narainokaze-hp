@@ -25,8 +25,8 @@
   "hero": {
     "bgImage": "../assets/images/DSC_3147.JPG",
     "bgImagePosition": "center center",
-    "bgImageSlide2": "../assets/images/追加/海の家族.png",
-    "bgImageSlide2Position": "center 35%",
+    "bgImageSlide2": "../assets/images/追加/祖父母と孫.jpg",
+    "bgImageSlide2Position": "center center",
     "subtitleLines": [
       "外浦の海まで徒歩1分。",
       "漁師が届ける地魚と客室温泉の宿。"
