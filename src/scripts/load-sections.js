@@ -61,9 +61,9 @@ const SECTION_HEADING_VARIANTS = {
     wrapperClass:
       "box-border w-fit h-fit shrink-0 flex flex-col gap-[12px] justify-start items-center",
     enClass:
-      "text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-left md:[white-space:nowrap]",
+      "text-[20px]/[normal] box-border text-[#4A5D5B] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center md:[white-space:nowrap]",
     jaClass:
-      "text-[28px]/[40px] md:text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:text-left md:[white-space:nowrap]",
+      "text-[28px]/[40px] md:text-[36px]/[normal] box-border text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-center md:[white-space:nowrap]",
     includeEn: true,
     wrapper: true,
   },
