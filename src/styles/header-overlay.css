@@ -67,6 +67,15 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
 /* Hero: fullscreen on mobile, fixed 820px on desktop */
 .page-hero {
   min-height: 100svh;
+  --hero-content-reserve: 320px;
+}
+
+body[data-page="top"] .page-hero {
+  --hero-content-reserve: 380px;
+}
+
+body:not([data-page="top"]) .page-hero {
+  --hero-content-reserve: 240px;
 }
 
 .page-hero__bg {
@@ -89,12 +98,12 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
 @media (min-width: 768px) {
   .page-hero {
     min-height: 0;
-    height: 820px;
+    height: clamp(560px, 85svh, 820px);
   }
 
   body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
-    height: calc(820px + 72px);
-    min-height: calc(820px + 72px);
+    height: calc(clamp(560px, 85svh, 820px) + 72px);
+    min-height: calc(clamp(560px, 85svh, 820px) + 72px);
   }
 
   /* 過ごし方のみ: Pencil準拠（Hero Image y:-140, height:960） */
@@ -114,7 +123,7 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
   }
 
   body[data-page="top"] .page-hero {
-    min-height: 0;
+    min-height: 560px;
     height: 560px;
   }
 
@@ -142,7 +151,19 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
     left: 80px;
     right: auto;
     bottom: auto;
-    top: 280px;
+    top: min(280px, calc(100% - var(--hero-content-reserve)));
     width: auto;
+    max-height: calc(100% - clamp(48px, 8svh, 80px));
+  }
+}
+
+@media (min-width: 768px) and (max-height: 720px) {
+  body[data-page="top"] .page-hero__content {
+    gap: clamp(16px, 2.5svh, 28px) !important;
+  }
+
+  [data-pencil-name="Hero Catch"] {
+    font-size: clamp(36px, 4.8vw, 48px) !important;
+    line-height: 1.35 !important;
   }
 }

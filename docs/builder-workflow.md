@@ -95,7 +95,7 @@ Pencil 生 HTML を **50行程度のシェル** に置き換える。
 ```html
 <div data-include="sections/header.html"></div>
 <main>
-  <div data-include="sections/hero.html"></div>
+  <div data-include="sections/hero-fade.html"></div>
   <!-- ... -->
 </main>
 <div data-include="sections/footer.html"></div>
@@ -433,7 +433,41 @@ Pencil エクスポート固有パスが残ると、下層ページほど修正�
 2. Header / Footer は `w-full` → 1440px 幅
 3. Hero / CTA の `w-[1440px]` absolute が狭い main からはみ出す → 横幅不一致・横スクロール
 
-本知見は **`web-production-template` リポジトリ**（`docs/PROJECT_CONTEXT.md` 参照）へのフィードバック対象。案件側ではページシェル・セクションを手修正済み。
+本知見は **`web-production-template` リポジトリ**（`docs/PROJECT_CONTEXT.md` 参照）へのフィードバック対象。案件側ではページシェル・セクションを手修正済み。テンプレ反映: `docs/responsive-patterns.md` / `src/styles/responsive-fluid.css`
+
+### 12. Compact desktop（1024–1439px）用の流体 CSS を標準装備する
+
+1440px デザインを崩さず、**タブレット幅〜デスクトップ最大の間**で横はみ出しを防ぐ。  
+固定幅（720px + 520px、padding 80px 等）を `clamp()` / `min()` で viewport に合わせて縮小する。
+
+| 項目 | 内容 |
+|------|------|
+| ファイル | `src/styles/responsive-fluid.css`（全ページシェルに link） |
+| 対象帯 | `@media (min-width: 1024px) and (max-width: 1439px)` |
+| 共通 | Header padding/gap、split 行 gap、padding-inline の fluid 化 |
+| 案件固有 | `data-pencil-name` セレクタ・セクション別 clamp は **案件側で追記** |
+| ビルド | `build-production.mjs` で `../styles/responsive-fluid.css` → `styles/responsive-fluid.css` |
+| manifest | `site.manifest.json` の `output.styles` に登録 |
+
+768–1023px は `mobile-chrome.css`（案件）で型・画像縮小。1440px 以上は Pencil 値そのまま。
+
+### 13. Hero の縦高さとコンテンツ位置を連動させる
+
+`height: min(820px, 70vh)` だけ縮め、`top: 280px` 固定にすると短い viewport でテキストが切れる。
+
+| 項目 | 正 |
+|------|-----|
+| 高さ（768px+） | `clamp(560px, 85svh, 820px)` |
+| コンテンツ位置 | `top: min(280px, calc(100% - var(--hero-content-reserve)))` |
+| TOP 予約高 | `--hero-content-reserve: 380px` |
+| 下層 Hero 予約高 | `--hero-content-reserve: 240px` |
+
+実装: `header-overlay.css`（overlay header 案件）。テンプレ標準は `main.css` + token `--hero-height-fluid`。
+
+### 14. linkedom ビルド時の Hero 動画 API をスキップ
+
+`video.load()` / `video.play()` / `matchMedia` は linkedom に未実装。  
+`load-data.js` で `window.__SITE_BUILD__` 時は src/poster 設定のみ行い、再生処理を return する。
 
 ---
 
@@ -442,6 +476,9 @@ Pencil エクスポート固有パスが残ると、下層ページほど修正�
 | ファイル | 役割 |
 |----------|------|
 | `docs/reviewer-checklist.md` | Reviewer 品質確認（レスポンシブ必須） |
+| `src/styles/responsive-fluid.css` | 1024–1439px 流体スケーリング（テンプレ FB 済） |
+| `src/styles/header-overlay.css` | Hero 高さ・overlay header |
+| `src/styles/mobile-chrome.css` | 768–1023px タブレット帯 |
 | `src/scripts/load-sections.js` | section / pattern / component 展開 |
 | `src/scripts/load-data.js` | JSON 注入・リンク解決 |
 | `scripts/build-production.mjs` | 本番静的 HTML 生成 |

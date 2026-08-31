@@ -129,88 +129,70 @@ function joinHeroLines(lines) {
   return lines.join("<br />");
 }
 
-function applyHeroData(facility) {
-  const hero = document.querySelector('[data-facility-bind="hero"]');
-  if (!hero || !facility.hero) {
+function setHeroVideo(video, videoSrc, posterPath) {
+  if (!video || !videoSrc) {
     return;
   }
 
-  const heroData = facility.hero;
+  const resolvedSrc = resolveAssetPath(videoSrc);
+  const source = video.querySelector("source");
 
-  const heroStage =
-    hero.querySelector('[data-pencil-name="Hero Fade Stage"]') ||
-    hero.querySelector('[data-fade-stage]') ||
-    hero;
-  const heroSlide1 = hero.querySelector('[data-pencil-name="Slide 1"]');
-  const heroSlide2 = hero.querySelector('[data-pencil-name="Slide 2"]');
-  const heroVideo = hero.querySelector("[data-hero-video]");
+  if (source) {
+    source.src = resolvedSrc;
+    source.setAttribute("src", resolvedSrc);
+  } else {
+    video.src = resolvedSrc;
+    video.setAttribute("src", resolvedSrc);
+  }
 
-  function setHeroVideo(video, videoSrc, posterPath) {
-    if (!video || !videoSrc) {
-      return;
-    }
+  if (posterPath) {
+    video.poster = resolveAssetPath(posterPath);
+  } else {
+    video.removeAttribute("poster");
+  }
 
-    const source = video.querySelector("source");
-    if (source) {
-      source.src = videoSrc;
-    } else {
-      video.src = videoSrc;
-    }
+  if (window.__SITE_BUILD__) {
+    return;
+  }
 
-    if (posterPath) {
-      video.poster = resolveAssetPath(posterPath);
-    }
-
+  if (typeof video.load === "function") {
     video.load();
+  }
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (typeof video.pause === "function") {
       video.pause();
-      return;
     }
+    return;
+  }
 
+  if (typeof video.play === "function") {
     video.play().catch(function () {});
   }
+}
 
-  function setCoverImage(container, imagePath, position) {
-    if (!container || !imagePath) {
-      return;
-    }
-
-    const img = container.querySelector("[data-hero-slide-img]");
-    const resolvedPath = resolveAssetPath(imagePath);
-    const objectPosition = position || "center center";
-
-    if (img) {
-      img.src = resolvedPath;
-      img.style.objectPosition = objectPosition;
-      return;
-    }
-
-    container.style.backgroundImage = `url('${resolvedPath}')`;
-    container.style.backgroundPosition = objectPosition;
-    container.style.backgroundRepeat = "no-repeat";
-    container.style.backgroundSize = "cover";
+function setCoverImage(container, imagePath, position) {
+  if (!container || !imagePath) {
+    return;
   }
 
-  if (heroVideo && heroData.videoSrc) {
-    setHeroVideo(heroVideo, heroData.videoSrc, heroData.videoPoster || heroData.bgImage);
+  const img = container.querySelector("[data-hero-slide-img]");
+  const resolvedPath = resolveAssetPath(imagePath);
+  const objectPosition = position || "center center";
+
+  if (img) {
+    img.src = resolvedPath;
+    img.style.objectPosition = objectPosition;
+    return;
   }
 
-  if (heroSlide1 && heroData.bgImage) {
-    setCoverImage(heroSlide1, heroData.bgImage, heroData.bgImagePosition);
-  } else if (!heroVideo && heroData.bgImage) {
-    setCoverImage(heroStage, heroData.bgImage, heroData.bgImagePosition);
-  }
+  container.style.backgroundImage = `url('${resolvedPath}')`;
+  container.style.backgroundPosition = objectPosition;
+  container.style.backgroundRepeat = "no-repeat";
+  container.style.backgroundSize = "cover";
+}
 
-  if (heroSlide2 && heroData.bgImageSlide2) {
-    setCoverImage(heroSlide2, heroData.bgImageSlide2, heroData.bgImageSlide2Position);
-  } else if (!hero.querySelector('[data-fade-stage]') && heroData.bgImage) {
-    hero.style.backgroundImage = `url('${resolveAssetPath(heroData.bgImage)}')`;
-    hero.style.backgroundPosition = heroData.bgImagePosition || "center center";
-    hero.style.backgroundRepeat = "no-repeat";
-    hero.style.backgroundSize = "cover";
-  }
-
+function applyHeroCopyAndActions(hero, heroData, facility) {
   const subtitle = hero.querySelector('[data-pencil-name="Hero Sub"]');
   if (subtitle) {
     subtitle.innerHTML = joinHeroLines(heroData.subtitleLines);
@@ -232,6 +214,34 @@ function applyHeroData(facility) {
     phoneButton.dataset.href = facility.contact.phone.tel;
     phoneButton.dataset.label = `${heroData.phoneLabelPrefix} ${facility.contact.phone.display}`;
   }
+}
+
+function applyHeroData(facility) {
+  const hero = document.querySelector('[data-facility-bind="hero"]');
+  if (!hero || !facility.hero) {
+    return;
+  }
+
+  const heroData = facility.hero;
+  const heroVideo = hero.querySelector("[data-hero-video]");
+
+  if (heroVideo && heroData.videoSrc) {
+    hero.style.removeProperty("background-image");
+    setHeroVideo(heroVideo, heroData.videoSrc, heroData.videoPoster);
+    applyHeroCopyAndActions(hero, heroData, facility);
+    return;
+  }
+
+  const heroStage =
+    hero.querySelector('[data-pencil-name="Hero Fade Stage"]') ||
+    hero.querySelector("[data-fade-stage]") ||
+    hero;
+
+  if (heroData.bgImage) {
+    setCoverImage(heroStage, heroData.bgImage, heroData.bgImagePosition);
+  }
+
+  applyHeroCopyAndActions(hero, heroData, facility);
 }
 
 function applyMobileChromeData(facility) {
@@ -294,59 +304,6 @@ function applyIntroData(content) {
   const bodySlot = intro.querySelector('template[data-slot="body"]');
   if (bodySlot) {
     bodySlot.innerHTML = introData.bodyHtml;
-  }
-}
-
-function buildHostHelpListHtml(items) {
-  return items
-    .map(
-      (text) => `<div
-              data-pencil-name="Help ${text}"
-              class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-center"
-            >
-              <div
-                data-pencil-name="Help Dot"
-                class="box-border w-[6px] shrink-0 h-[6px] bg-[#BFA170] rounded-full"
-              ></div>
-              <div
-                data-pencil-name="Help Text"
-                class="text-[14px]/[normal] box-border text-[#E8EEEA] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
-              >
-                ${text}
-              </div>
-            </div>`
-    )
-    .join("\n            ");
-}
-
-function applyHostData(content) {
-  const host = document.querySelector('[data-content-bind="host"]');
-  if (!host || !content.host) {
-    return;
-  }
-
-  const hostData = content.host;
-
-  host.dataset.id = hostData.id;
-  host.dataset.pencilName = hostData.pencilName;
-  host.dataset.imageSrc = hostData.imageSrc;
-  host.dataset.imageAlt = hostData.imageAlt;
-  host.dataset.labelText = hostData.labelText;
-  host.dataset.roleText = hostData.roleText;
-
-  const headingSlot = host.querySelector('template[data-slot="heading"]');
-  if (headingSlot) {
-    headingSlot.innerHTML = hostData.headingHtml;
-  }
-
-  const quoteSlot = host.querySelector('template[data-slot="quote"]');
-  if (quoteSlot) {
-    quoteSlot.innerHTML = hostData.quote;
-  }
-
-  const helpListSlot = host.querySelector('template[data-slot="help-list"]');
-  if (helpListSlot) {
-    helpListSlot.innerHTML = buildHostHelpListHtml(hostData.helpItems);
   }
 }
 
@@ -678,7 +635,6 @@ function applyOmotenashiData(content) {
 
 function applyContentData(content) {
   applyIntroData(content);
-  applyHostData(content);
   applyCuisineData(content);
   applyAccessData(content);
   applyAccessLocationData(content);

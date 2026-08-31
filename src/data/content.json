@@ -6,22 +6,7 @@
     "imageAlt": "外浦の海を望む宿の風景",
     "labelText": "Welcome",
     "heading": "漁師だから知れる味がある。",
-    "bodyHtml": "代々受け継がれてきた海とのつながり。<br />海に育てられ、時に命を懸け、自然を享受する。<br />そんな私たちが、その日一番の美味しいでおもてなしする漁師宿です。"
-  },
-  "host": {
-    "id": "host",
-    "pencilName": "迎える人",
-    "imageSrc": "../assets/images/host-main.jpg",
-    "imageAlt": "この海で生きる家族",
-    "labelText": "People",
-    "roleText": "主人・女将より",
-    "headingHtml": "迎えるのは、<br />この海で生きる家族",
-    "quote": "「小さなご不安も、事前にお聞かせください。」",
-    "helpItems": [
-      "アレルギー・離乳食のご相談",
-      "幼児用のお風呂グッズのご用意",
-      "早寝・静かな時間帯のご要望"
-    ]
+    "bodyHtml": "代々受け継がれてきた海とのつながり。<br />海に育てられ、時に命を懸け、<br />そんな私たちが、その日一番の美味しいでおもてなしする漁師宿です。"
   },
   "cuisine": {
     "id": "cuisine",
@@ -58,8 +43,8 @@
         "id": "onsen",
         "blockPencilName": "Onsen Block",
         "imgPencilName": "Onsen Img",
-        "imageSrc": "../assets/images/onsen.jpg",
-        "imageAlt": "客室温泉",
+        "imageSrc": "../assets/images/追加/大浴場.jpg",
+        "imageAlt": "大浴場",
         "titlePencilName": "Onsen Title",
         "bodyPencilName": "Onsen Body",
         "ctaPencilName": "Onsen CTA",

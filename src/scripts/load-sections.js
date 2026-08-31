@@ -27,10 +27,6 @@ const BUTTON_VARIANTS = {
     classes:
       "box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[{{PADDING}}] justify-start items-center [border:1px_solid_#4A5D5B] rounded-[2px] text-[14px]/[normal] text-[#4A5D5B] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap] no-underline",
   },
-  "ghost-hero": {
-    classes:
-      "box-border w-fit max-w-full shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#FFFFFF22] [border:1px_solid_#FFFFFF99] rounded-[2px] text-[14px]/[normal] text-[#FFFFFF] font-['Shippori_Antique_B1',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
-  },
   "hero-phone": {
     classes:
       "box-border w-fit max-w-full shrink-0 h-fit flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#FFFFFF22] [border:1px_solid_#FFFFFF99] rounded-[2px] text-[14px]/[normal] text-[#FFFFFF] font-['{{LABEL_FONT}}',system-ui,sans-serif] font-normal text-left md:[white-space:nowrap] no-underline",
@@ -225,74 +221,6 @@ function buildIntroSection(vars, slots) {
       </section>`;
 }
 
-function buildHostSection(vars, slots) {
-  return `<section
-        id="${vars.ID}"
-        data-animate="reveal"
-        data-pencil-name="${vars.PENCIL_NAME}"
-        class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-8 lg:gap-[40px] px-5 py-16 lg:px-0 lg:py-[88px] lg:pr-[80px] justify-start items-center bg-[#4A5D5B] relative"
-      >
-        <div
-          data-pencil-name="Host Photos"
-          class="box-border w-full max-w-[720px] lg:w-[720px] shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start relative [z-index:0]"
-        >
-          <div
-            data-pencil-name="Host Main Photo"
-            class="box-border w-full max-w-[720px] lg:w-[720px] h-[465px] shrink-0 relative overflow-hidden"
-          >
-            <img
-              src="${vars.IMAGE_SRC}"
-              alt="${vars.IMAGE_ALT}"
-              loading="lazy"
-              decoding="async"
-              class="box-border w-full h-full object-cover"
-            />
-            <div
-              class="box-border absolute inset-0 bg-[#7a7a7a33]"
-              aria-hidden="true"
-            ></div>
-          </div>
-        </div>
-        <div
-          data-pencil-name="Host Text"
-          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[16px] justify-start items-start relative [z-index:1]"
-        >
-          <div
-            data-pencil-name="Host Heading"
-            class="text-[32px]/[46px] box-border w-full text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
-          >
-            ${slots.heading}
-          </div>
-          <div
-            data-pencil-name="Host Quote"
-            class="text-[16px]/[30px] box-border w-full text-[#D1C7BD] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left"
-          >
-            ${slots.quote}
-          </div>
-          <div
-            data-pencil-name="Host Role"
-            class="text-[14px]/[normal] box-border text-[#BFA170] font-['Shippori_Mincho',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
-          >
-            ${vars.ROLE_TEXT}
-          </div>
-          <div
-            data-pencil-name="Host Help List"
-            class="box-border w-full h-fit shrink-0 flex flex-col gap-[10px] p-[8px_0px_0px_0px] justify-start items-start"
-          >
-            ${slots.helpList}
-          </div>
-          <div data-component="button" data-variant="primary" data-pencil-name="Host Phone CTA" data-padding="14px_24px" data-label-font="Shippori_Mincho" data-label="お電話でご相談 0558-36-4500" data-href="tel:0558-36-4500"></div>
-        </div>
-        <div
-          data-pencil-name="Host En"
-          data-animate="label"
-          class="text-[230px]/[normal] box-border absolute left-[769px] top-[30px] text-[#bfa1701a] font-['Cormorant_Garamond',system-ui,sans-serif] font-normal italic tracking-[2px] text-center [white-space:nowrap] [z-index:2] hidden lg:block"
-        >
-          ${vars.LABEL_TEXT}
-        </div>
-      </section>`;
-}
-
 function buildCuisineSection(vars, slots, element) {
   const button = element ? getSlotContent(element, "button") : "";
   return `<section
@@ -393,8 +321,6 @@ function buildImageTextSectionHtml(element, vars) {
   switch (vars.VARIANT) {
     case "intro":
       return buildIntroSection(vars, slots);
-    case "host":
-      return buildHostSection(vars, slots);
     case "cuisine":
       return buildCuisineSection(vars, slots, element);
     case "access":

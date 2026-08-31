@@ -132,6 +132,7 @@ async function buildPage(entry, manifest, facility, loadDataJs, loadSectionsJs) 
   output = output.replaceAll("../scripts/faq-accordion.js", "scripts/faq-accordion.js");
   output = output.replaceAll("../styles/header-overlay.css", "styles/header-overlay.css");
   output = output.replaceAll("../styles/mobile-chrome.css", "styles/mobile-chrome.css");
+  output = output.replaceAll("../styles/responsive-fluid.css", "styles/responsive-fluid.css");
 
   if (entry.isIndex) {
     const title = `${facility.brand.name} | 外浦の海まで徒歩1分`;

@@ -320,14 +320,7 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     font-size: 12px !important;
   }
 
-  .page-hero {
-    height: min(820px, 70vh) !important;
-  }
-
-  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
-    height: calc(min(820px, 70vh) + 72px) !important;
-    min-height: calc(min(820px, 70vh) + 72px) !important;
-  }
+  /* Hero height/position: see header-overlay.css */
 
   [data-pencil-name="Hero Catch"],
   .omotenashi-hero-catch {
@@ -400,14 +393,30 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     min-height: 480px;
   }
 
-  [data-pencil-name="Staff 4"],
-  [data-pencil-name="Staff Photo 4"] {
+  [data-pencil-name="相談CTA"] [data-pencil-name="Staff 4"],
+  [data-pencil-name="相談CTA"] [data-pencil-name="Staff Photo 4"] {
     width: 220px !important;
     max-width: 220px !important;
   }
 
-  .staff-photo {
+  [data-pencil-name="Staff Section"] .staff-photo {
     height: clamp(280px, 42vw, 400px) !important;
+  }
+
+  [data-pencil-name="Staff Grid"] {
+    gap: clamp(28px, 4vw, 40px) !important;
+  }
+
+  [data-pencil-name="Staff Row 1"],
+  [data-pencil-name="Staff Row 2"] {
+    gap: clamp(16px, 2.5vw, 32px) !important;
+  }
+
+  [data-pencil-name="Staff Section"] article {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
   }
 
   .room-type-card__img-wrap,
