@@ -2,11 +2,11 @@
   "intro": {
     "id": "intro",
     "pencilName": "Intro",
-    "imageSrc": "../assets/images/追加/砂浜.jpg",
+    "imageSrc": "../assets/images/host-main.jpg",
     "imageAlt": "外浦の海を望む宿の風景",
     "labelText": "Welcome",
-    "heading": "何もしない贅沢。",
-    "bodyHtml": "おじいちゃん、おばあちゃん、パパ、ママ、そして小さな君へ。<br />観光地を巡る慌ただしい旅ではなく、<br />三世代がそれぞれのペースで過ごす、<br class=\"md:hidden\" />小さな漁師宿です。"
+    "heading": "漁師だから知れる味がある。",
+    "bodyHtml": "代々受け継がれてきた海とのつながり。<br />海に育てられ、時に命を懸け、自然を享受する。<br />そんな私たちが、その日一番の美味しいでおもてなしする漁師宿です。"
   },
   "host": {
     "id": "host",

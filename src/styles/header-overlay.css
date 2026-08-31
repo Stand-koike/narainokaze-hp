@@ -121,6 +121,10 @@ body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child {
   body[data-page="top"] [data-pencil-name="Hero Fade"] .media-cover {
     object-fit: cover;
   }
+
+  body[data-page="top"] [data-pencil-name="Hero Fade"] [data-hero-video] {
+    pointer-events: none;
+  }
 }
 
 .page-hero__content {

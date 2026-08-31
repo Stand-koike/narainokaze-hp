@@ -141,7 +141,35 @@ function applyHeroData(facility) {
     hero.querySelector('[data-pencil-name="Hero Fade Stage"]') ||
     hero.querySelector('[data-fade-stage]') ||
     hero;
+  const heroSlide1 = hero.querySelector('[data-pencil-name="Slide 1"]');
   const heroSlide2 = hero.querySelector('[data-pencil-name="Slide 2"]');
+  const heroVideo = hero.querySelector("[data-hero-video]");
+
+  function setHeroVideo(video, videoSrc, posterPath) {
+    if (!video || !videoSrc) {
+      return;
+    }
+
+    const source = video.querySelector("source");
+    if (source) {
+      source.src = videoSrc;
+    } else {
+      video.src = videoSrc;
+    }
+
+    if (posterPath) {
+      video.poster = resolveAssetPath(posterPath);
+    }
+
+    video.load();
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      video.pause();
+      return;
+    }
+
+    video.play().catch(function () {});
+  }
 
   function setCoverImage(container, imagePath, position) {
     if (!container || !imagePath) {
@@ -164,7 +192,13 @@ function applyHeroData(facility) {
     container.style.backgroundSize = "cover";
   }
 
-  if (heroData.bgImage) {
+  if (heroVideo && heroData.videoSrc) {
+    setHeroVideo(heroVideo, heroData.videoSrc, heroData.videoPoster || heroData.bgImage);
+  }
+
+  if (heroSlide1 && heroData.bgImage) {
+    setCoverImage(heroSlide1, heroData.bgImage, heroData.bgImagePosition);
+  } else if (!heroVideo && heroData.bgImage) {
     setCoverImage(heroStage, heroData.bgImage, heroData.bgImagePosition);
   }
 

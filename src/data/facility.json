@@ -23,6 +23,8 @@
     "copyright": "© 蒼海の宿 ならいの風 All Rights Reserved."
   },
   "hero": {
+    "videoSrc": "../assets/videos/test-hero-video.mp4",
+    "videoPoster": "../assets/images/DSC_3147.JPG",
     "bgImage": "../assets/images/DSC_3147.JPG",
     "bgImagePosition": "center center",
     "bgImageSlide2": "../assets/images/追加/祖父母と孫.jpg",
@@ -32,8 +34,8 @@
       "漁師が届ける地魚と客室温泉の宿。"
     ],
     "catchLines": [
-      "風が結ぶ、",
-      "三世代の記憶。"
+      "迎えるのは、",
+      "この海で生きる家族"
     ],
     "bookingLabel": "空室確認・予約",
     "bookingHref": "tel:0558-36-4500",

@@ -22,9 +22,29 @@
     var dotsRoot = root.querySelector("[data-fade-dots]");
     var index = 0;
     var timer = null;
+    var initialTimer = null;
+    var autoplayStarted = false;
+    var waitVisible = root.hasAttribute("data-fade-wait-visible");
+    var intervalMs = Number(root.dataset.fadeInterval) || INTERVAL_MS;
 
     function applyTransition(el) {
       el.style.transition = "opacity " + FADE_MS + "ms " + EASE;
+    }
+
+    function syncSlideVideos(activeIndex) {
+      slides.forEach(function (slide, idx) {
+        var video = slide.querySelector("[data-hero-video]");
+        if (!video) {
+          return;
+        }
+
+        if (idx === activeIndex && !prefersReducedMotion()) {
+          video.play().catch(function () {});
+          return;
+        }
+
+        video.pause();
+      });
     }
 
     function showSlide(nextIndex) {
@@ -47,6 +67,7 @@
       }
 
       index = nextIndex;
+      syncSlideVideos(nextIndex);
     }
 
     function nextSlide() {
@@ -58,6 +79,10 @@
         clearInterval(timer);
         timer = null;
       }
+      if (initialTimer) {
+        clearTimeout(initialTimer);
+        initialTimer = null;
+      }
     }
 
     function startAutoplay() {
@@ -65,7 +90,21 @@
       if (slides.length < 2 || prefersReducedMotion()) {
         return;
       }
-      timer = setInterval(nextSlide, INTERVAL_MS);
+
+      initialTimer = setTimeout(function () {
+        initialTimer = null;
+        nextSlide();
+        timer = setInterval(nextSlide, intervalMs);
+      }, intervalMs);
+    }
+
+    function beginAutoplay() {
+      if (autoplayStarted) {
+        return;
+      }
+      autoplayStarted = true;
+      showSlide(0);
+      startAutoplay();
     }
 
     if (dotsRoot && slides.length > 1) {
@@ -79,6 +118,7 @@
         dot.setAttribute("aria-current", idx === 0 ? "true" : "false");
         dot.addEventListener("click", function () {
           showSlide(idx);
+          autoplayStarted = true;
           startAutoplay();
         });
         dotsRoot.appendChild(dot);
@@ -86,12 +126,37 @@
     }
 
     showSlide(0);
-    startAutoplay();
+
+    if (waitVisible && "IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            beginAutoplay();
+            observer.disconnect();
+          });
+        },
+        { threshold: 0.35 }
+      );
+      observer.observe(root);
+    } else {
+      beginAutoplay();
+    }
 
     root.addEventListener("mouseenter", stopAutoplay);
-    root.addEventListener("mouseleave", startAutoplay);
+    root.addEventListener("mouseleave", function () {
+      if (autoplayStarted) {
+        startAutoplay();
+      }
+    });
     root.addEventListener("focusin", stopAutoplay);
-    root.addEventListener("focusout", startAutoplay);
+    root.addEventListener("focusout", function () {
+      if (autoplayStarted) {
+        startAutoplay();
+      }
+    });
   }
 
   function initPenFade() {

@@ -86,15 +86,39 @@
           </div>
           <div
             data-pencil-name="Cuisine Hero Img"
+            data-fade-slider
+            data-fade-wait-visible
             class="box-border w-full lg:w-[720px] shrink-0 h-[280px] md:h-[480px] overflow-hidden relative [z-index:2] order-1 lg:order-2"
           >
-            <img
-              src="../../assets/images/追加/食べる子ども.jpg"
-              alt="食卓を囲む家族"
-              loading="lazy"
-              decoding="async"
-              class="media-cover"
-            />
+            <div class="box-border absolute inset-0 w-full h-full [z-index:0]" aria-hidden="true">
+              <div
+                data-pencil-name="Cuisine Hero Fade Stage"
+                data-fade-stage
+                class="box-border absolute inset-0 w-full h-full overflow-hidden"
+              >
+                <img
+                  src="../../assets/images/料理.jpg"
+                  alt="食卓を囲む家族"
+                  loading="lazy"
+                  decoding="async"
+                  class="media-cover"
+                />
+              </div>
+              <div
+                data-pencil-name="Cuisine Hero Slide 2"
+                data-fade-slide
+                class="box-border absolute inset-0 w-full h-full opacity-0 overflow-hidden"
+              >
+                <img
+                  src="../../assets/images/追加/食べる子ども.jpg"
+                  alt="食事を楽しむお子様"
+                  loading="lazy"
+                  decoding="async"
+                  class="media-cover"
+                />
+              </div>
+            </div>
+            <div data-fade-dots class="pen-fade-dots" aria-hidden="true"></div>
           </div>
         </div>
         <div
@@ -109,7 +133,7 @@
               class="box-border absolute inset-0 w-full h-full overflow-hidden"
             >
               <img
-                src="../../assets/images/dish/dish-visual-banner.jpg"
+                src="../../assets/images/ならい提供画像/香ばしさ香る伊勢海老鬼殻焼.jpg"
                 alt=""
                 decoding="async"
                 class="media-cover"
@@ -121,10 +145,10 @@
               class="box-border absolute inset-0 w-full h-full opacity-0 overflow-hidden"
             >
               <img
-                src="../../assets/images/dish/dish-hero-header.jpg"
+                src="../../assets/images/ならい提供画像/地魚のソテー.jpg"
                 alt=""
                 decoding="async"
-                class="media-cover [object-position:center_40%] md:[object-position:center_center]"
+                class="media-cover cuisine-banner-slide-img--close [object-position:center_40%] md:[object-position:center_center]"
               />
             </div>
             <div
@@ -138,42 +162,6 @@
                 decoding="async"
                 class="media-cover [object-position:center_40%] md:[object-position:center_center]"
               />
-            </div>
-          </div>
-          <div
-            data-fade-caption
-            data-pencil-name="Banner Caption 1"
-            class="box-border w-[calc(100%-2rem)] max-w-[586px] h-fit absolute left-4 md:left-[93px] bottom-8 md:top-[196px] md:bottom-auto flex flex-row gap-0 justify-start items-start bg-[#4a5d5b99] px-3 py-2 md:p-0 [z-index:2]"
-          >
-            <div
-              data-pencil-name="Banner Title"
-              class="text-[12px]/[18px] md:text-[32px]/[46px] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap] md:[white-space:normal]"
-            >
-              伊豆下田、キンメダイ水揚げ量日本一。
-            </div>
-          </div>
-          <div
-            data-fade-caption
-            data-pencil-name="Banner Caption 2"
-            class="box-border w-[calc(100%-2rem)] max-w-[429px] h-fit absolute left-4 md:left-[93px] bottom-8 md:top-[196px] md:bottom-auto flex flex-row gap-0 justify-start items-start bg-[#4a5d5b99] px-3 py-2 md:p-0 opacity-0 [z-index:2]"
-          >
-            <div
-              data-pencil-name="Banner Title"
-              class="text-[12px]/[18px] md:text-[32px]/[46px] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap] md:[white-space:normal]"
-            >
-              自船で水揚げされる伊勢海老
-            </div>
-          </div>
-          <div
-            data-fade-caption
-            data-pencil-name="Banner Caption 3"
-            class="box-border w-[calc(100%-2rem)] max-w-[482px] h-fit absolute left-4 md:left-[93px] bottom-8 md:top-[196px] md:bottom-auto flex flex-row gap-0 justify-start items-start bg-[#4a5d5b99] px-3 py-2 md:p-0 opacity-0 [z-index:2]"
-          >
-            <div
-              data-pencil-name="Banner Title"
-              class="text-[12px]/[18px] md:text-[32px]/[46px] box-border text-[#FFFFFF] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left [white-space:nowrap] md:[white-space:normal]"
-            >
-              漁師宿だからできる贅沢に舌鼓み
             </div>
           </div>
           <div data-fade-dots class="pen-fade-dots" aria-hidden="true"></div>
