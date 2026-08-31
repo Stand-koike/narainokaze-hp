@@ -195,7 +195,7 @@ function buildIntroSection(vars, slots) {
             alt="${vars.IMAGE_ALT}"
             loading="lazy"
             decoding="async"
-            class="box-border w-full h-[440px] object-cover"
+            class="box-border w-full max-w-full h-[280px] md:h-[360px] lg:h-[440px] object-cover object-center max-md:object-[center_40%]"
           />
           <div
             data-pencil-name="Intro Label"
@@ -207,11 +207,11 @@ function buildIntroSection(vars, slots) {
         </div>
         <div
           data-pencil-name="Intro Text"
-          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[24px] justify-start items-start relative [z-index:1] order-2 lg:order-none"
+          class="box-border w-full max-w-[520px] lg:w-[520px] shrink-0 h-fit flex flex-col gap-[22px] justify-start items-start relative [z-index:1] order-2 lg:order-none"
         >
           <div
             data-pencil-name="Intro Heading"
-            class="text-[36px]/[54px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
+            class="text-[24px]/[36px] md:text-[32px]/[46px] box-border w-full text-[#2E3334] font-['Shippori_Mincho',system-ui,sans-serif] font-medium text-left"
           >
             ${slots.heading}
           </div>

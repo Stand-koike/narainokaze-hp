@@ -218,6 +218,31 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     background-position: 80% 85% !important;
   }
 
+  [data-pencil-name="Intro"] {
+    overflow-x: clip;
+  }
+
+  [data-pencil-name="Intro"] > div:first-of-type {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  [data-pencil-name="Intro Image"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+    max-height: min(72vw, 300px);
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  [data-pencil-name="Intro"] [data-pencil-name="Intro Label"] {
+    font-size: clamp(40px, 12vw, 56px);
+  }
+
   .section-en-label-on-image {
     position: absolute;
     z-index: 3;
@@ -247,8 +272,8 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
   }
 
   .section-en-label-on-image--cuisine {
-    top: 212px;
-    bottom: auto;
+    top: auto;
+    bottom: 8px;
     left: -4px;
   }
 }
@@ -320,9 +345,16 @@ body.mobile-nav-open [data-mobile-nav-toggle] span:nth-child(3) {
     line-height: 1.4 !important;
   }
 
-  [data-pencil-name="Intro Heading"] {
+  [data-pencil-name="Intro Heading"],
+  [data-pencil-name="Cuisine Heading"] {
     font-size: 28px !important;
     line-height: 1.45 !important;
+  }
+
+  [data-pencil-name="Intro Body"],
+  [data-pencil-name="Cuisine Body"] {
+    font-size: 16px !important;
+    line-height: 2 !important;
   }
 
   [data-pencil-name="CTA Heading"],
