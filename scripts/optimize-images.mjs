@@ -15,6 +15,8 @@ const jobs = [
   { src: "assets/images/map.png", out: "assets/images/access-map.jpg", width: 1200, quality: 82 },
   // access hero full-bleed
   { src: "assets/images/追加/祖父母と孫.png", out: "assets/images/追加/祖父母と孫.jpg", width: 1920, quality: 80 },
+  { src: "assets/images/追加/過ごし方hero.jpg", out: "assets/images/追加/過ごし方hero.jpg", width: 1920, quality: 80 },
+  { src: "assets/images/追加/FAQhero.jpg", out: "assets/images/追加/FAQhero.jpg", width: 1920, quality: 80 },
   // timeline thumbs ~300–600 CSS px
   { src: "assets/images/追加/ドライブ.jpg", out: "assets/images/追加/ドライブ.jpg", width: 900, quality: 80 },
   { src: "assets/images/追加/車窓.jpg", out: "assets/images/追加/車窓.jpg", width: 900, quality: 80 },
@@ -26,6 +28,8 @@ const jobs = [
   { src: "assets/images/intro.jpg", out: "assets/images/intro.jpg", width: 1440, quality: 80 },
   { src: "assets/images/cuisine-hero.jpg", out: "assets/images/cuisine-hero.jpg", width: 1440, quality: 80 },
   { src: "assets/images/onsen.jpg", out: "assets/images/onsen.jpg", width: 1200, quality: 80 },
+  { src: "assets/images/onsen/onsen-tsuwabuki.jpg", out: "assets/images/onsen/onsen-tsuwabuki.jpg", width: 1200, quality: 80 },
+  { src: "assets/images/onsen/onsen-hamayu.jpg", out: "assets/images/onsen/onsen-hamayu.jpg", width: 1200, quality: 80 },
   { src: "assets/images/rooms.jpg", out: "assets/images/rooms.jpg", width: 1200, quality: 80 },
   { src: "assets/images/host-main.png", out: "assets/images/host-main.jpg", width: 1200, quality: 80 },
 ];

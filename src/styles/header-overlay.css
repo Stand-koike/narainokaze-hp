@@ -95,6 +95,10 @@ body:not([data-page="top"]) .page-hero {
   object-position: center;
 }
 
+.page-hero__bg--offset {
+  background-position: center 90%;
+}
+
 @media (min-width: 768px) {
   .page-hero {
     min-height: 0;
@@ -106,14 +110,14 @@ body:not([data-page="top"]) .page-hero {
     min-height: calc(clamp(560px, 85svh, 820px) + 72px);
   }
 
-  /* 過ごし方のみ: Pencil準拠（Hero Image y:-140, height:960） */
+  /* 過ごし方のみ: 下端の砂浜・人物が切れないよう表示位置を下寄せ */
   .page-hero__bg--offset {
     inset: auto;
     left: 0;
     right: 0;
-    top: -68px;
+    top: -150px;
     height: 960px;
-    background-position: center;
+    background-position: center bottom;
   }
 }
 
