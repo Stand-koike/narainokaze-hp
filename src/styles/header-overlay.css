@@ -142,7 +142,10 @@ body:not([data-page="top"]) .page-hero {
 
   /* 被写体のバランス調整（background-size: cover は変更しない） */
   .page-hero__bg--family {
-    background-position: 50% 42%;
+    /* 海の家族: 少し引いて中央の2人を中心に */
+    background-size: auto 92%;
+    background-position: 38% 44%;
+    background-color: #2f3d3b;
   }
 
   .page-hero__bg--cuisine {
@@ -162,7 +165,8 @@ body:not([data-page="top"]) .page-hero {
   }
 
   .page-hero__bg--faq {
-    background-position: 56% 46%;
+    /* FAQ: 畳・クッション側（部屋の右）を見せる */
+    background-position: 76% 48%;
   }
 
   .page-hero__bg--access {
