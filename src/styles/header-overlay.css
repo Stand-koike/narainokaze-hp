@@ -133,10 +133,59 @@ body:not([data-page="top"]) .page-hero {
 
   body[data-page="top"] [data-pencil-name="Hero Fade"] .media-cover {
     object-fit: cover;
+    object-position: center 42%;
   }
 
   body[data-page="top"] [data-pencil-name="Hero Fade"] [data-hero-video] {
     pointer-events: none;
+  }
+
+  /*
+    SP: 横位置の写真を縦画面に contain せず、被写体へ cover で切り込む。
+    ヒーロー高さ・コピー位置は変更しない。
+  */
+  .page-hero__bg--family {
+    /* 海の家族: 中央の船上の人物。手を残し、船体と空を切る */
+    background-position: 48% 38%;
+    background-size: auto 142%;
+  }
+
+  .page-hero__bg--cuisine {
+    /* 地魚のソテー: 皿の余白を切り、料理とセージを大きく */
+    background-position: 86% 46%;
+    background-size: auto 168%;
+  }
+
+  .page-hero__bg--onsen {
+    /* 温泉湯: 木の湯口と青い湯面。白飛びした窓を切る */
+    background-position: 30% 58%;
+    background-size: auto 145%;
+  }
+
+  .page-hero__bg--rooms {
+    /* お部屋hero: テーブルと海。空を少し切る */
+    background-position: 50% 58%;
+    background-size: auto 138%;
+  }
+
+  .page-hero__bg--offset {
+    /* 過ごし方: 砂浜の人物と左の緑の岬。空と沖を切る */
+    inset: 0;
+    height: auto;
+    background-position: 40% 78%;
+    background-size: auto 148%;
+  }
+
+  .page-hero__bg--faq {
+    /* FAQ: 中央〜右の海と客室。天井と手前床を切る */
+    background-position: 58% 48%;
+    background-size: auto 140%;
+  }
+
+  .page-hero__bg--access {
+    /* 祖父母と孫: 3人とその映り込み。山と空を切る */
+    background-position: 50% 70%;
+    background-size: auto 158%;
   }
 }
 

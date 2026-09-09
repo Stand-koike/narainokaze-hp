@@ -32,9 +32,11 @@
         overflow-x: hidden;
       }
 
-      /* 地魚のソテー.jpg: 料理が見切れないようトリミング位置を調整 */
-      .page-hero__bg--cuisine {
-        background-position: 78% center;
+      /* 地魚のソテー.jpg: 料理が見切れないようトリミング位置を調整（PC） */
+      @media (min-width: 768px) {
+        .page-hero__bg--cuisine {
+          background-position: 78% center;
+        }
       }
 
       .cuisine-intro-body {
@@ -64,10 +66,6 @@
       }
 
       @media (max-width: 767px) {
-        .page-hero__bg--cuisine {
-          background-position: 88% center;
-        }
-
         .cuisine-intro-body {
           font-size: 13px;
           line-height: 2;
