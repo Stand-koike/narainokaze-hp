@@ -144,7 +144,7 @@ body:not([data-page="top"]) .page-hero {
   .page-hero__bg--family {
     /* 海の家族: 少し引いて中央の2人を中心に */
     background-size: auto 92%;
-    background-position: 38% 44%;
+    background-position: 32% 44%;
     background-color: #2f3d3b;
   }
 
@@ -166,7 +166,7 @@ body:not([data-page="top"]) .page-hero {
 
   .page-hero__bg--faq {
     /* FAQ: 畳・クッション側（部屋の右）を見せる */
-    background-position: 76% 48%;
+    background-position: 84% 48%;
   }
 
   .page-hero__bg--access {
