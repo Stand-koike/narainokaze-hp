@@ -126,40 +126,6 @@ body:not([data-page="top"]) .page-hero {
     min-height: calc(100svh + 72px);
   }
 
-  /*
-    SP: 写真比率に合わせてヒーロー枠を引き、cover の最小倍率で
-    余白なく最大限の画像を見せる（ズームインはしない）。
-  */
-  body:not([data-page="top"]) .page-hero[class*="page-hero--ratio-"] {
-    min-height: 0;
-    height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
-  }
-
-  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child[class*="page-hero--ratio-"] {
-    min-height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
-    height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
-  }
-
-  body:not([data-page="top"]) .page-hero--ratio-3x2 {
-    --hero-ratio-w: 3;
-    --hero-ratio-h: 2;
-  }
-
-  body:not([data-page="top"]) .page-hero--ratio-5x3 {
-    --hero-ratio-w: 5;
-    --hero-ratio-h: 3;
-  }
-
-  body:not([data-page="top"]) .page-hero--ratio-1x1 {
-    --hero-ratio-w: 1;
-    --hero-ratio-h: 1;
-  }
-
-  body:not([data-page="top"]) .page-hero--ratio-2x3 {
-    --hero-ratio-w: 2;
-    --hero-ratio-h: 3;
-  }
-
   body[data-page="top"] .page-hero {
     min-height: 560px;
     height: 560px;
