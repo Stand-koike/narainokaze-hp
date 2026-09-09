@@ -18870,6 +18870,2221 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "I6b5e",
+      "x": 17615,
+      "y": -116,
+      "name": "TOP — 料理推し案",
+      "clip": true,
+      "width": 1440,
+      "fill": "#F0F4F3",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xXXKt",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "#F0F4F3",
+          "padding": [
+            0,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yrZao",
+              "name": "Logo",
+              "width": 181,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "ttw3Y",
+                  "name": "Logo Mark",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../assets/images/ロゴ.png",
+                    "mode": "fit"
+                  },
+                  "width": "fill_container",
+                  "height": 57
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j3aym",
+              "name": "Nav Links",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l3YjH",
+                  "name": "Nav 客室",
+                  "fill": "#4A5D5B",
+                  "content": "客室",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Wjm1W",
+                  "name": "Nav 料理",
+                  "fill": "#4A5D5B",
+                  "content": "料理",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FZ1Ix",
+                  "name": "Nav 温泉",
+                  "fill": "#4A5D5B",
+                  "content": "温泉",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "V96gjC",
+                  "name": "Nav 過ごし方",
+                  "fill": "#4A5D5B",
+                  "content": "過ごし方",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qXQaQ",
+                  "name": "Nav おもてなし",
+                  "fill": "#4A5D5B",
+                  "content": "おもてなし",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "H4xe6v",
+                  "name": "Nav アクセス",
+                  "fill": "#4A5D5B",
+                  "content": "アクセス",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OptdS",
+                  "name": "Nav FAQ",
+                  "fill": "#4A5D5B",
+                  "content": "FAQ",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kIf7j",
+              "name": "Header CTA",
+              "fill": "#4A5D5B",
+              "cornerRadius": 2,
+              "padding": [
+                10,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jBK87",
+                  "name": "Header CTA Label",
+                  "fill": "#F0F4F3",
+                  "content": "ご予約・ご相談",
+                  "fontFamily": "Shippori Antique B1",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fmusY",
+          "name": "Hero Fade",
+          "clip": true,
+          "width": "fill_container",
+          "height": 820,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zCE2e",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Fade Stage",
+              "clip": true,
+              "width": "fill_container(1440)",
+              "height": 820,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../assets/images/DSC_3147.JPG",
+                "mode": "fill"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Sjrd1",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Slide 2",
+                  "opacity": 0,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../assets/images/追加/海の家族.png",
+                    "mode": "fill"
+                  },
+                  "width": 1440,
+                  "height": 820
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BfkcW",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Hero Overlay",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "opacity": 0.6,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#1A2422AA",
+                        "position": 0
+                      },
+                      {
+                        "color": "#1A242266",
+                        "position": 0.45
+                      },
+                      {
+                        "color": "#1A2422CC",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 1440,
+                  "height": 820
+                },
+                {
+                  "type": "frame",
+                  "id": "lempZ",
+                  "x": 80,
+                  "y": 280,
+                  "name": "Hero Content",
+                  "width": 520,
+                  "layout": "vertical",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hinte",
+                      "name": "Hero Sub",
+                      "fill": "#E8EEEA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "外浦の海まで徒歩1分。\n漁師が届ける地魚と客室温泉の宿。",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p29iAV",
+                      "name": "Hero Catch",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "風が結ぶ、\n三世代の記憶。",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 56,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DalfL",
+                      "name": "Hero Actions",
+                      "gap": 16,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "znT3t",
+                          "name": "Book Button",
+                          "fill": "#BFA170",
+                          "cornerRadius": 2,
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pzDjU",
+                              "name": "Book Label",
+                              "fill": "#2E3334",
+                              "content": "空室確認・予約",
+                              "fontFamily": "Shippori Antique B1",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Cm5kV",
+                          "name": "Phone Button",
+                          "fill": "#FFFFFF22",
+                          "cornerRadius": 2,
+                          "stroke": "#FFFFFF99",
+                          "strokeWidth": 1,
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "B8CShq",
+                              "name": "Phone Label",
+                              "fill": "#FFFFFF",
+                              "content": "ご相談 0558-36-4500",
+                              "fontFamily": "Shippori Antique B1",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KUWlR",
+          "name": "Intro",
+          "width": "fill_container",
+          "height": 640,
+          "fill": "#F0F4F3",
+          "gap": 64,
+          "padding": [
+            100,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "a19xdx",
+              "layoutPosition": "absolute",
+              "x": 691,
+              "y": 41,
+              "name": "Intro Label",
+              "enabled": false,
+              "fill": "#4a5d5b1a",
+              "content": "Welcome",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 230,
+              "fontWeight": "normal",
+              "letterSpacing": 2,
+              "fontStyle": "italic"
+            },
+            {
+              "type": "frame",
+              "id": "duXaY",
+              "name": "Intro",
+              "width": "fill_container",
+              "fill": "#F0F4F3",
+              "gap": 64,
+              "padding": [
+                100,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "WyKHA",
+                  "name": "Intro Image",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../assets/images/追加/砂浜.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 720,
+                  "height": 440
+                },
+                {
+                  "type": "frame",
+                  "id": "o1TK0h",
+                  "name": "Intro Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B7c13",
+                      "name": "Intro Heading",
+                      "fill": "#2E3334",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "何もしない贅沢。",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 36,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BCVxs",
+                      "name": "Intro Body",
+                      "fill": "#4A5456",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "おじいちゃん、おばあちゃん、パパ、ママ、そして小さな君へ。\n観光地を巡る慌ただしい旅ではなく、\n三世代がそれぞれのペースで過ごす、小さな漁師宿です。",
+                      "lineHeight": 2,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "epvfy",
+                  "layoutPosition": "absolute",
+                  "x": 691,
+                  "y": 41,
+                  "name": "Intro Label",
+                  "fill": "#4a5d5b1a",
+                  "content": "Welcome",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 230,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2,
+                  "fontStyle": "italic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kICpB",
+          "name": "料理",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 100,
+          "padding": [
+            96,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "d4Jcki",
+              "name": "Cuisine Banner Fade",
+              "clip": true,
+              "width": "fill_container",
+              "height": 560,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tclVz",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Banner Fade Stage",
+                  "clip": true,
+                  "width": "fill_container(1440)",
+                  "height": 560,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../assets/images/dish/dish-visual-banner.jpg",
+                    "mode": "fill"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "hOYZ1",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Slide 2",
+                      "opacity": 0,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-hero-header.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 1440,
+                      "height": 560
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "zBgTc",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Slide 3",
+                      "opacity": 0,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-visual-banner.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 1440,
+                      "height": 560
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vcfMa",
+                      "x": 93,
+                      "y": 280,
+                      "name": "Frame 1",
+                      "width": "fill_container(586)",
+                      "fill": "#4a5d5b99",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gm4SY",
+                          "name": "Banner Title",
+                          "fill": "#FFFFFF",
+                          "textGrowth": "fixed-width",
+                          "width": 589,
+                          "content": "伊豆下田、キンメダイ水揚げ量日本一。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 32,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "xiu0o",
+                      "x": 0,
+                      "y": 0,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "%E9%A6%99%E3%81%B0%E3%81%97%E3%81%95%E9%A6%99%E3%82%8B%E4%BC%8A%E5%8B%A2%E6%B5%B7%E8%80%81%E9%AC%BC%E6%AE%BB%E7%84%BC.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 1440,
+                      "height": 560
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cFzJe",
+              "name": "Cuisine Gallery",
+              "width": "fill_container",
+              "gap": 20,
+              "padding": [
+                0,
+                80
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j1Ccc",
+                  "name": "Gallery 伊勢海老入りサラダ",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "qOOqm",
+                      "name": "Gallery Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-lobster-salad.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 220
+                    },
+                    {
+                      "type": "text",
+                      "id": "a4umU1",
+                      "name": "Gallery Cap",
+                      "fill": "#4A5456",
+                      "content": "伊勢海老入りサラダ",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "k6WR4t",
+                  "name": "Gallery とこぶしご飯",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "WoZ6k",
+                      "name": "Gallery Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-tokobushi.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 220
+                    },
+                    {
+                      "type": "text",
+                      "id": "rZFCO",
+                      "name": "Gallery Cap",
+                      "fill": "#4A5456",
+                      "content": "とこぶしご飯",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ec6Qq",
+                  "name": "Gallery 旬の野菜天ぷら",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "zhf7M",
+                      "name": "Gallery Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-veg-tempura.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 220
+                    },
+                    {
+                      "type": "text",
+                      "id": "c8nuTV",
+                      "name": "Gallery Cap",
+                      "fill": "#4A5456",
+                      "content": "旬の野菜天ぷら",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a2Zwp",
+                  "name": "Gallery 朝採りの旬野菜",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "cIHjY",
+                      "name": "Gallery Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/dish/dish-farm-veg.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 220
+                    },
+                    {
+                      "type": "text",
+                      "id": "X3mkF",
+                      "name": "Gallery Cap",
+                      "fill": "#4A5456",
+                      "content": "朝採りの旬野菜",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XfTAv",
+              "name": "Cuisine Split",
+              "width": "fill_container",
+              "gap": 56,
+              "padding": [
+                0,
+                0,
+                0,
+                80
+              ],
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MeZrL",
+                  "name": "Cuisine Text",
+                  "width": 520,
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gGA2H",
+                      "name": "Cuisine Heading",
+                      "fill": "#2E3334",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "ご馳走と笑顔が並ぶ\nここでしか味わえない感動。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 32,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gPqcU",
+                      "name": "Cuisine Body",
+                      "fill": "#4A5456",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "眼前の海から、目の前の器へ。\n畑の匂いもそのままに。\n漁師宿だからできる贅沢で\n本物の味に出会える。",
+                      "lineHeight": 2,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vu45S",
+                      "name": "Cuisine Tags",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oJ7Hv",
+                          "name": "Tag 地魚",
+                          "fill": "#E8EEEA",
+                          "cornerRadius": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YFisS",
+                              "name": "Tag Label",
+                              "fill": "#4A5D5B",
+                              "content": "地魚",
+                              "fontFamily": "Shippori Mincho",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "z1rkiw",
+                          "name": "Tag 伊勢海老",
+                          "fill": "#E8EEEA",
+                          "cornerRadius": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FaPE0",
+                              "name": "Tag Label",
+                              "fill": "#4A5D5B",
+                              "content": "伊勢海老",
+                              "fontFamily": "Shippori Mincho",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E1uBOz",
+                          "name": "Tag 朝どり野菜",
+                          "fill": "#E8EEEA",
+                          "cornerRadius": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bfmAh",
+                              "name": "Tag Label",
+                              "fill": "#4A5D5B",
+                              "content": "朝どり野菜",
+                              "fontFamily": "Shippori Mincho",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rxpqL",
+                      "name": "Cuisine CTA",
+                      "cornerRadius": 2,
+                      "stroke": "#4A5D5B",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "evv99",
+                          "name": "Cuisine CTA Label",
+                          "fill": "#4A5D5B",
+                          "content": "お料理を見る",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "CvO8x",
+                  "layoutPosition": "absolute",
+                  "x": 17,
+                  "y": 311,
+                  "name": "Cuisine En",
+                  "fill": "#4a5d5b14",
+                  "content": "Dining",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 230,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "wG32x",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "dish-kinmedai-02.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 720,
+                  "height": 480
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a1q8lH",
+          "name": "温泉と客室",
+          "width": "fill_container",
+          "fill": "#E8EEEA",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nQL93",
+              "layoutPosition": "absolute",
+              "x": 132,
+              "y": -47,
+              "name": "Stay En Label",
+              "fill": "#4a5d5b14",
+              "content": "Stay",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 230,
+              "fontWeight": "normal",
+              "letterSpacing": 2,
+              "fontStyle": "italic"
+            },
+            {
+              "type": "frame",
+              "id": "XGFhT",
+              "name": "Stay Head",
+              "width": 640,
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j97te",
+                  "name": "Stay Heading",
+                  "fill": "#2E3334",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "世代を越えて楽しむ。\n皆が一緒に泊まれる理由",
+                  "lineHeight": 1.45,
+                  "textAlign": "center",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 32,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tjNfc",
+              "name": "Stay Row",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gWyRv",
+                  "name": "Onsen Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "B6e2Tp",
+                      "name": "Onsen Img",
+                      "fill": [
+                        {
+                          "type": "image",
+                          "enabled": true,
+                          "url": "../assets/images/温泉.jpg",
+                          "mode": "fill"
+                        },
+                        {
+                          "type": "image",
+                          "enabled": true,
+                          "url": "20260403_1.jpg",
+                          "mode": "fill"
+                        }
+                      ],
+                      "width": "fill_container",
+                      "height": 468
+                    },
+                    {
+                      "type": "text",
+                      "id": "l767mr",
+                      "name": "Onsen Title",
+                      "fill": "#2E3334",
+                      "content": "温泉",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 22,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oiDHj",
+                      "name": "Onsen Body",
+                      "fill": "#4A5456",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "祖父母も子どもも、自分の時間で湯に。\n海と湯に身をあずけて、芯からほどける。",
+                      "lineHeight": 1.9,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o04DV1",
+                      "name": "Onsen CTA",
+                      "cornerRadius": 2,
+                      "stroke": "#4A5D5B",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KjLEt",
+                          "name": "Onsen CTA Label",
+                          "fill": "#4A5D5B",
+                          "content": "温泉を見る",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rOVVQ",
+                  "name": "Rooms Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "CWC1o",
+                      "name": "Rooms Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/お部屋2.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 468
+                    },
+                    {
+                      "type": "text",
+                      "id": "G5gBI",
+                      "name": "Rooms Title",
+                      "fill": "#2E3334",
+                      "content": "客室",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 22,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lRvBa",
+                      "name": "Rooms Body",
+                      "fill": "#4A5456",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "みんなで、でもそれぞれの時間を過ごせる部屋。\n波音を枕に、思い出を語らう。",
+                      "lineHeight": 1.9,
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QZI3L",
+                      "name": "Rooms CTA",
+                      "cornerRadius": 2,
+                      "stroke": "#4A5D5B",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M0bmH",
+                          "name": "Rooms CTA Label",
+                          "fill": "#4A5D5B",
+                          "content": "客室を見る",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "f6hnys",
+              "layoutPosition": "absolute",
+              "x": 80,
+              "y": 40,
+              "name": "Stay En",
+              "enabled": false,
+              "fill": "#4a5d5b14",
+              "textGrowth": "fixed-width-height",
+              "width": 520,
+              "height": 280,
+              "content": "Stay",
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 230,
+              "fontWeight": "normal",
+              "letterSpacing": 2,
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xX5Jr",
+          "name": "お知らせ",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            96,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ugoju",
+              "name": "News Head",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TuJSZ",
+                  "name": "News En",
+                  "fill": "#4A5D5B",
+                  "content": "Topics",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "qcoFN",
+                  "name": "News Ja",
+                  "fill": "#2E3334",
+                  "content": "お知らせ",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 36,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "TNXId",
+                  "x": 0,
+                  "y": 87,
+                  "name": "News Lead",
+                  "enabled": false,
+                  "fill": "#4A5456",
+                  "content": "宿からのご案内",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lJRKT",
+              "name": "News Grid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a99bW",
+                  "name": "News 2025.04.01",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "HQqYP",
+                      "name": "News Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/ウエルカム.webp",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 230
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bmXic",
+                      "name": "News Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pJfKH",
+                          "name": "News Date",
+                          "fill": "#4A5D5B",
+                          "content": "2025.04.01",
+                          "fontFamily": "Cormorant Garamond",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "v1wT9",
+                          "name": "News Title",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "おかげ様で10周年を迎えました",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TpnEN",
+                  "name": "News 2025.03.15",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Z2ddd",
+                      "name": "News Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/お部屋2.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 230
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dSZfa",
+                      "name": "News Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XmA2D",
+                          "name": "News Date",
+                          "fill": "#4A5D5B",
+                          "content": "2025.03.15",
+                          "fontFamily": "Cormorant Garamond",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w0q18a",
+                          "name": "News Title",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "館内改装に伴う休館のお知らせ",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a878B",
+                  "name": "News 2025.01.20",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "djAwd",
+                      "name": "News Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/イセエビ.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 230
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D0HAM",
+                      "name": "News Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oKCsw",
+                          "name": "News Date",
+                          "fill": "#4A5D5B",
+                          "content": "2025.01.20",
+                          "fontFamily": "Cormorant Garamond",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VfgQZ",
+                          "name": "News Title",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "伊勢海老漁体験のご案内",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dofAd",
+                  "name": "News 2025.01.05",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "fJvE0",
+                      "name": "News Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/野菜.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 230
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ULnRU",
+                      "name": "News Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J1CsO7",
+                          "name": "News Date",
+                          "fill": "#4A5D5B",
+                          "content": "2025.01.05",
+                          "fontFamily": "Cormorant Garamond",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HojB0",
+                          "name": "News Title",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "早春の河津桜まつりと菜の花まつり",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uYDek",
+              "name": "News More",
+              "cornerRadius": 2,
+              "stroke": "#4A5D5B",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mDEOZ",
+                  "name": "News More Label",
+                  "fill": "#4A5D5B",
+                  "content": "お知らせ一覧",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "K6Tnmh",
+          "name": "ご不安への答え",
+          "width": "fill_container",
+          "fill": "#E8EEEA",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            88,
+            100,
+            96,
+            100
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Zscgl",
+              "name": "Anxiety Head",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wtl8u",
+                  "name": "Anxiety En",
+                  "fill": "#4A5D5B",
+                  "content": "Before You Book",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "OYfVk",
+                  "name": "Anxiety Ja",
+                  "fill": "#2E3334",
+                  "content": "ご予約前の、よくあるご不安へ",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 36,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DDFiq",
+              "name": "Anxiety Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R51DoE",
+                  "name": "FAQ Row 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aF2kv",
+                      "name": "FAQ 部屋は三世代で足りますか？",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        28,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vb7pk",
+                          "name": "FAQ Q",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "部屋は三世代で足りますか？",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "G5fKa",
+                          "name": "FAQ A",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "定員と間取りをご案内します。布団の配置も事前にご相談ください。",
+                          "lineHeight": 1.9,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PV1ZO",
+                      "name": "FAQ 階段やバリアフリーは？",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        28,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "r4mFKY",
+                          "name": "FAQ Q",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "階段やバリアフリーは？",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kNN6b",
+                          "name": "FAQ A",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "館内の段差や移動のしやすさを、お電話で正直にお伝えします。",
+                          "lineHeight": 1.9,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "loKWt",
+                  "name": "FAQ Row 2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BqF7u",
+                      "name": "FAQ 子どもの食事は？",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        28,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ivY8L",
+                          "name": "FAQ Q",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "子どもの食事は？",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BwbRo",
+                          "name": "FAQ A",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "アレルギー・離乳食対応も可能です。人数と年齢を教えてください。",
+                          "lineHeight": 1.9,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ETwqg",
+                      "name": "FAQ 祖父母の静かな時間は？",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        28,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oc6jU",
+                          "name": "FAQ Q",
+                          "fill": "#2E3334",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "祖父母の静かな時間は？",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LuQuF",
+                          "name": "FAQ A",
+                          "fill": "#4A5456",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "早寝・ゆったりした滞在を前提に、無理のないプランをご提案します。",
+                          "lineHeight": 1.9,
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kbDre",
+              "name": "Anxiety CTA",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dnU2a",
+                  "name": "FAQ Link",
+                  "cornerRadius": 2,
+                  "stroke": "#4A5D5B",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    22
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z1neC",
+                      "name": "FAQ Link Label",
+                      "fill": "#4A5D5B",
+                      "content": "FAQをもっと見る",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C1ihX",
+                  "name": "Anxiety Call",
+                  "fill": "#4A5D5B",
+                  "cornerRadius": 2,
+                  "padding": [
+                    12,
+                    22
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G40h4",
+                      "name": "Anxiety Call Label",
+                      "fill": "#F0F4F3",
+                      "content": "まずはお電話で相談",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NrTBQ",
+          "name": "アクセス",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 48,
+          "padding": [
+            88,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "J4STI",
+              "name": "Access Map",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../assets/images/map.png",
+                "mode": "fill"
+              },
+              "width": 560,
+              "height": 420
+            },
+            {
+              "type": "frame",
+              "id": "afgpJ",
+              "name": "Access Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vufHF",
+                  "name": "Access En",
+                  "fill": "#4A5D5B",
+                  "content": "Access",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "FJAAj",
+                  "name": "Access Heading",
+                  "fill": "#2E3334",
+                  "content": "アクセス",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 36,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "k5Pel",
+                  "name": "Access Addr",
+                  "fill": "#4A5456",
+                  "content": "〒415-0013 静岡県下田市柿崎700番地",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ctF57",
+                  "name": "Access Line",
+                  "fill": "#4A5456",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "電車｜伊豆急下田駅よりタクシー約10分",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ts6t3",
+                  "name": "Access Line",
+                  "fill": "#4A5456",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "お車｜東名沼津ICより約1時間30分",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "HU0Ef",
+                  "name": "Access Line",
+                  "fill": "#4A5456",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "バス｜駅近・駐車場あり。荷物の多いご一行もご相談ください",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mTk7w",
+                  "name": "Access CTA",
+                  "cornerRadius": 2,
+                  "stroke": "#4A5D5B",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    22
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ucvqQ",
+                      "name": "Access CTA Label",
+                      "fill": "#4A5D5B",
+                      "content": "詳しいアクセス",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D9RGY7",
+          "name": "最終CTA",
+          "clip": true,
+          "width": 1440,
+          "height": 573,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../assets/images/IMGP1204.JPG",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "r7f7v",
+              "x": 0,
+              "y": 0,
+              "name": "Final Overlay",
+              "fill": "#1a242299",
+              "width": 1440,
+              "height": 573
+            },
+            {
+              "type": "frame",
+              "id": "nlUF2",
+              "x": 220,
+              "y": 180.5,
+              "name": "Final Content",
+              "width": 1000,
+              "layout": "vertical",
+              "gap": 20,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "v6vCiR",
+                  "name": "Final Heading",
+                  "fill": "#FFFFFF",
+                  "content": "ただ、家族になる時間。",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 36,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "rsKwn",
+                  "name": "Final Body",
+                  "fill": "#D1C7BD",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "特別な家族旅行だからこそ、小さなご不安も事前にお聞かせください。\nアレルギー対応や幼児グッズのご相談も、心よりお待ちしています。",
+                  "lineHeight": 1.9,
+                  "textAlign": "center",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Z5ldk",
+                  "name": "Final Actions",
+                  "gap": 20,
+                  "padding": [
+                    12,
+                    0,
+                    0,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M5gT3",
+                      "name": "Final Tel",
+                      "fill": "#BFA170",
+                      "content": "0558-36-4500",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zqrLQ",
+                      "name": "Final Book",
+                      "fill": "#BFA170",
+                      "cornerRadius": 2,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "N3V32I",
+                          "name": "Final Book Label",
+                          "fill": "#2E3334",
+                          "content": "空室確認・予約",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rgCA3",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#4A5D5B",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            56,
+            80,
+            32,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "VHstM",
+              "name": "Footer Main",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qdowB",
+                  "name": "Footer Brand",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "r9Vajd",
+                      "name": "Footer Logo Img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../assets/images/ロゴ.png",
+                        "mode": "fit"
+                      },
+                      "width": 136,
+                      "height": 61
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aA4JV",
+                  "name": "Footer Info",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "seYUV",
+                      "name": "Info Addr",
+                      "fill": "#D1C7BD",
+                      "content": "静岡県下田市柿崎700番地・外浦海水浴場 目の前",
+                      "textAlign": "right",
+                      "fontFamily": "Shippori Mincho",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "je6Is",
+                      "name": "Info Nav",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "czCFc",
+                          "fill": "#D1C7BD",
+                          "content": "客室",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "um3YT",
+                          "fill": "#D1C7BD",
+                          "content": "料理",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FHdMM",
+                          "fill": "#D1C7BD",
+                          "content": "温泉",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RPj1q",
+                          "fill": "#D1C7BD",
+                          "content": "過ごし方",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XAycP",
+                          "name": "Info おもてなし",
+                          "fill": "#D1C7BD",
+                          "content": "おもてなし",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j9aSlF",
+                          "fill": "#D1C7BD",
+                          "content": "アクセス",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uBxeE",
+                          "fill": "#D1C7BD",
+                          "content": "FAQ",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "S3WFdx",
+                      "name": "Info Contact",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F5XVe4",
+                          "fill": "#FFFFFF",
+                          "content": "0558-36-4500",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h39id",
+                          "fill": "#929E9D",
+                          "content": "・",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pK07n",
+                          "fill": "#FFFFFF",
+                          "content": "空室確認・予約 →",
+                          "fontFamily": "Shippori Mincho",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "b563X",
+              "name": "Footer Rule",
+              "fill": "#6A7A79",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "cqFFV",
+              "name": "Footer Bottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JwDNG",
+                  "name": "Copyright",
+                  "fill": "#AEB6B5",
+                  "content": "© 蒼海の宿 ならいの風 All Rights Reserved.",
+                  "fontFamily": "Shippori Mincho",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iE7DU",
+                  "name": "Footer Locale",
+                  "fill": "#AEB6B5",
+                  "content": "Izu Shimoda · Soto-ura",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1,
+                  "fontStyle": "italic"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "fileToken": "af66c817-64d0-487f-98af-967c9c1ac2e0"
