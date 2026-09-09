@@ -1,0 +1,75 @@
+/* =================================
+   Button System
+================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-family: var(--font-serif-ja);
+  
+    transition:
+      opacity .3s ease,
+      transform .3s ease;
+  }
+  
+  
+  .btn:hover {
+    opacity: .8;
+  }
+  
+  
+  /* Gold */
+  
+  .btn-primary {
+    background: var(--color-accent);
+    color: white;
+  }
+  
+  
+  /* Green */
+  
+  .btn-dark {
+    background: var(--color-primary);
+    color: white;
+  }
+  
+  
+  /* Outline */
+  
+  .btn-outline {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+  
+  
+  /* =================================
+     Typography
+  ================================= */
+  
+  
+  .section-en {
+    font-family: var(--font-serif-en);
+    font-style: italic;
+  }
+  
+  
+  .section-ja {
+    font-family: var(--font-serif-ja);
+  }
+  
+  
+  /* =================================
+     Cards
+  ================================= */
+  
+  
+  .card {
+    overflow: hidden;
+  }
+  
+  
+  .card-title {
+    font-family: var(--font-serif-ja);
+  }

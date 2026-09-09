@@ -1,0 +1,410 @@
+/* Compact desktop (1024–1439px): fluid scale between tablet and 1440px design */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  main {
+    overflow-x: clip;
+  }
+
+  /* —— Header —— */
+  header[data-header-overlay],
+  header[data-pencil-name="Header"] {
+    padding-left: clamp(24px, 3.5vw, 56px) !important;
+    padding-right: clamp(24px, 3.5vw, 56px) !important;
+    gap: 12px;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Logo"],
+  header[data-pencil-name="Header"] [data-pencil-name="Logo"] {
+    width: clamp(140px, 12vw, 181px) !important;
+    max-width: clamp(140px, 12vw, 181px) !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Nav Links"],
+  header[data-pencil-name="Header"] [data-pencil-name="Nav Links"] {
+    gap: clamp(10px, 1.6vw, 28px) !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Nav Links"] a,
+  header[data-pencil-name="Header"] [data-pencil-name="Nav Links"] a {
+    font-size: clamp(12px, 1.05vw, 14px) !important;
+  }
+
+  header[data-header-overlay] [data-pencil-name="Header CTA"],
+  header[data-pencil-name="Header"] [data-pencil-name="Header CTA"] {
+    padding: clamp(8px, 0.9vw, 14px) clamp(10px, 1.4vw, 28px) !important;
+    font-size: clamp(12px, 1.05vw, 14px) !important;
+  }
+
+  /* —— Hero —— (height/position: header-overlay.css) */
+
+  .page-hero__content {
+    left: clamp(24px, 5vw, 80px) !important;
+    max-width: min(640px, 46vw);
+  }
+
+  main .page-hero__content[class*="md:w-[640px]"],
+  main .page-hero__content[class*="max-w-[640px]"] {
+    width: min(640px, 46vw) !important;
+    max-width: min(640px, 46vw) !important;
+  }
+
+  [data-pencil-name="Hero Catch"] {
+    font-size: clamp(40px, 4.4vw, 56px) !important;
+    line-height: 1.35 !important;
+  }
+
+  /* —— Shared split rows —— */
+  [data-pencil-name="Intro"],
+  [data-pencil-name="Cuisine Split"],
+  [data-pencil-name="アクセス"] {
+    gap: clamp(24px, 3.5vw, 56px) !important;
+  }
+
+  [data-pencil-name="Intro"],
+  [data-pencil-name="アクセス"],
+  [data-pencil-name="温泉と客室"] {
+    padding-inline: clamp(24px, 5vw, 80px) !important;
+  }
+
+  [data-pencil-name="Cuisine Split"] {
+    padding-left: clamp(24px, 5vw, 80px) !important;
+    padding-right: clamp(16px, 2vw, 24px) !important;
+  }
+
+  [data-pencil-name="Intro"] > div:first-of-type,
+  [data-pencil-name="Cuisine Hero Img"],
+  [data-pencil-name="Access Map"] {
+    flex: 1.12 1 0 !important;
+    width: auto !important;
+    max-width: min(720px, 50vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Intro Text"],
+  [data-pencil-name="Cuisine Split"] [data-pencil-name="Cuisine Text"],
+  [data-pencil-name="Access Text"] {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: min(520px, 42vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Intro Image"] {
+    height: clamp(320px, 34vw, 440px) !important;
+  }
+
+  [data-pencil-name="Cuisine Hero Img"] {
+    height: clamp(320px, 38vw, 480px) !important;
+  }
+
+  [data-pencil-name="Access Map"] {
+    max-width: min(560px, 44vw) !important;
+    height: clamp(320px, 32vw, 420px) !important;
+  }
+
+  [data-pencil-name="Intro Label"] {
+    font-size: clamp(96px, 12vw, 200px) !important;
+    left: 58% !important;
+    top: 6% !important;
+  }
+
+  [data-pencil-name="Intro Heading"],
+  [data-pencil-name="Cuisine Heading"] {
+    font-size: clamp(26px, 2.5vw, 32px) !important;
+    line-height: 1.45 !important;
+  }
+
+  /* —— Cuisine block —— */
+  [data-pencil-name="料理"] {
+    gap: clamp(48px, 7vw, 100px) !important;
+  }
+
+  [data-pencil-name="Cuisine Gallery"] {
+    padding-inline: clamp(24px, 5vw, 80px) !important;
+    gap: clamp(12px, 1.5vw, 20px) !important;
+  }
+
+  [data-pencil-name="Cuisine Banner Fade"] {
+    height: clamp(280px, 28vw, 392px) !important;
+  }
+
+  [data-pencil-name="Cuisine Banner Fade"] [data-pencil-name="Cuisine En"] {
+    font-size: clamp(88px, 10vw, 160px) !important;
+    left: clamp(24px, 5vw, 80px) !important;
+  }
+
+  /* —— Stay —— */
+  [data-pencil-name="Stay Row"] {
+    gap: clamp(16px, 2vw, 32px) !important;
+  }
+
+  [data-pencil-name="Onsen Block"],
+  [data-pencil-name="Rooms Block"] {
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Onsen Img"],
+  [data-pencil-name="Rooms Img"] {
+    height: clamp(280px, 32vw, 468px) !important;
+  }
+
+  [data-pencil-name="Onsen Title"],
+  [data-pencil-name="Rooms Title"] {
+    white-space: normal !important;
+    font-size: clamp(18px, 1.7vw, 22px) !important;
+  }
+
+  [data-pencil-name="Stay En Label"] {
+    font-size: clamp(96px, 12vw, 200px) !important;
+    left: clamp(24px, 7vw, 132px) !important;
+  }
+
+  [data-pencil-name="Access Addr"] {
+    white-space: normal !important;
+  }
+
+  /* —— Sub-pages: fluid fixed widths (any depth inside main) —— */
+  main [class*="lg:flex-row"] {
+    gap: clamp(20px, 3vw, 56px) !important;
+  }
+
+  main [class*="lg:gap-[56px]"] {
+    gap: clamp(24px, 3.5vw, 56px) !important;
+  }
+
+  main [class*="lg:gap-[48px]"] {
+    gap: clamp(20px, 3.2vw, 48px) !important;
+  }
+
+  main [class*="lg:gap-[32px]"] {
+    gap: clamp(16px, 2vw, 32px) !important;
+  }
+
+  main [class*="md:w-[640px]"],
+  main [class*="max-w-[640px]"][class*="md:w-[640px]"] {
+    width: min(640px, 46vw) !important;
+    max-width: min(640px, 46vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[480px]"],
+  main [class*="max-w-[480px]"][class*="lg:w-[480px]"] {
+    width: min(480px, 38vw) !important;
+    max-width: min(480px, 38vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[509px]"],
+  main [class*="max-w-[509px]"][class*="lg:w-[509px]"] {
+    width: min(509px, 40vw) !important;
+    max-width: min(509px, 40vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[520px]"],
+  main [class*="max-w-[520px]"][class*="lg:w-[520px]"] {
+    width: min(520px, 42vw) !important;
+    max-width: min(520px, 42vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[560px]"],
+  main [class*="max-w-[560px]"][class*="lg:w-[560px]"],
+  main img[class*="lg:w-[560px]"],
+  main img[class*="max-w-[560px]"][class*="lg:w-[560px]"] {
+    width: min(560px, 44vw) !important;
+    max-width: min(560px, 44vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[614px]"],
+  main [class*="max-w-[614px]"][class*="lg:w-[614px]"] {
+    width: min(614px, 46vw) !important;
+    max-width: min(614px, 46vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[635px]"],
+  main [class*="max-w-[635px]"][class*="lg:w-[635px]"] {
+    width: min(635px, 48vw) !important;
+    max-width: min(635px, 48vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[640px]"],
+  main [class*="max-w-[640px]"][class*="lg:w-[640px]"] {
+    width: min(640px, 48vw) !important;
+    max-width: min(640px, 48vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[720px]"],
+  main [class*="max-w-[720px]"][class*="lg:w-[720px]"] {
+    width: min(720px, 50vw) !important;
+    max-width: min(720px, 50vw) !important;
+    min-width: 0 !important;
+  }
+
+  main [class*="lg:w-[1000px]"],
+  main [class*="max-w-[1000px]"][class*="lg:w-[1000px]"] {
+    width: min(1000px, calc(100% - 2rem)) !important;
+    max-width: min(1000px, calc(100% - 2rem)) !important;
+    min-width: 0 !important;
+  }
+
+  /* Timeline / bg-image containers: keep explicit width (absolute children have no flow) */
+  [data-pencil-name^="Imgs "] {
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Imgs 10:00"],
+  [data-pencil-name="Imgs 10:00"][class*="lg:w-[614px]"] {
+    width: min(614px, 46vw) !important;
+    max-width: min(614px, 46vw) !important;
+  }
+
+  [data-pencil-name="Imgs 14:00"],
+  [data-pencil-name="Imgs 14:00"][class*="lg:w-[635px]"] {
+    width: min(635px, 48vw) !important;
+    max-width: min(635px, 48vw) !important;
+  }
+
+  [data-pencil-name="Imgs 18:00"],
+  [data-pencil-name="Imgs 18:00"][class*="lg:w-[560px]"] {
+    width: min(560px, 44vw) !important;
+    max-width: min(560px, 44vw) !important;
+  }
+
+  [data-pencil-name="Imgs 翌朝"],
+  [data-pencil-name="Imgs 翌朝"][class*="lg:w-[635px]"] {
+    width: min(635px, 48vw) !important;
+    max-width: min(635px, 48vw) !important;
+  }
+
+  [data-pencil-name="Priv Img"],
+  [data-pencil-name="Fam Img"] {
+    width: min(560px, 44vw) !important;
+    max-width: min(560px, 44vw) !important;
+  }
+
+  main [class*="md:h-[360px]"],
+  main [class*="md:h-[400px]"],
+  main [class*="md:h-[420px]"],
+  main [class*="md:h-[468px]"],
+  main [class*="md:h-[480px]"],
+  main [class*="lg:h-[420px]"],
+  .cuisine-split__img[class*="md:h-[420px]"] {
+    height: clamp(280px, 32vw, 420px) !important;
+  }
+
+  main [class*="md:h-[480px]"] {
+    height: clamp(280px, 38vw, 480px) !important;
+  }
+
+  [data-pencil-name="Bath Img"] {
+    height: clamp(280px, 32vw, 468px) !important;
+  }
+
+  [data-pencil-name="Bath Row"] {
+    gap: clamp(16px, 2vw, 32px) !important;
+  }
+
+  [data-pencil-name="Day Timeline"] [class*="lg:w-[509px]"],
+  [data-pencil-name="Day Timeline"] [class*="max-w-[509px]"][class*="lg:w-[509px]"] {
+    width: min(509px, 40vw) !important;
+    max-width: min(509px, 40vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Day Timeline"] [class*="lg:w-[560px]"],
+  [data-pencil-name="Day Timeline"] [class*="max-w-[560px]"][class*="lg:w-[560px]"] {
+    width: min(560px, 44vw) !important;
+    max-width: min(560px, 44vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Day Timeline"] [class*="lg:w-[614px]"],
+  [data-pencil-name="Day Timeline"] [class*="max-w-[614px]"][class*="lg:w-[614px]"] {
+    width: min(614px, 46vw) !important;
+    max-width: min(614px, 46vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Day Timeline"] [class*="lg:w-[635px]"],
+  [data-pencil-name="Day Timeline"] [class*="max-w-[635px]"][class*="lg:w-[635px]"] {
+    width: min(635px, 48vw) !important;
+    max-width: min(635px, 48vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name="Day Timeline"] [class*="lg:w-[480px]"],
+  [data-pencil-name="Day Timeline"] [class*="max-w-[480px]"][class*="lg:w-[480px]"] {
+    width: min(480px, 38vw) !important;
+    max-width: min(480px, 38vw) !important;
+    min-width: 0 !important;
+  }
+
+  [data-pencil-name^="Slot "] {
+    gap: clamp(20px, 3vw, 48px) !important;
+  }
+
+  .cuisine-slideshow[class*="max-w-[560px]"],
+  .cuisine-slideshow [class*="max-w-[560px]"],
+  .rooms-gallery[class*="max-w-[640px]"],
+  .rooms-gallery [class*="max-w-[640px]"] {
+    width: min(640px, 48vw) !important;
+    max-width: min(640px, 48vw) !important;
+    min-width: 0 !important;
+  }
+
+  .cuisine-slideshow[class*="max-w-[560px]"],
+  .cuisine-slideshow [class*="max-w-[560px]"],
+  .cuisine-slideshow__main[class*="max-w-[560px]"],
+  .cuisine-slideshow__thumbs[class*="max-w-[560px]"],
+  .cuisine-slideshow__dots[class*="max-w-[560px]"] {
+    width: min(560px, 44vw) !important;
+    max-width: min(560px, 44vw) !important;
+  }
+
+  [data-pencil-name="Intro"] {
+    overflow-x: clip;
+  }
+
+  [class*="md:p-[96px_80px]"] {
+    padding-top: clamp(64px, 8vw, 96px) !important;
+    padding-bottom: clamp(64px, 8vw, 96px) !important;
+    padding-left: clamp(24px, 5vw, 80px) !important;
+    padding-right: clamp(24px, 5vw, 80px) !important;
+  }
+
+  [class*="lg:px-[80px]"] {
+    padding-left: clamp(24px, 5vw, 80px) !important;
+    padding-right: clamp(24px, 5vw, 80px) !important;
+  }
+
+  [class*="lg:pl-[80px]"] {
+    padding-left: clamp(24px, 5vw, 80px) !important;
+  }
+
+  [class*="lg:pr-[80px]"] {
+    padding-right: clamp(24px, 5vw, 80px) !important;
+  }
+
+  /* —— Omotenashi staff grid —— */
+  [data-pencil-name="Staff Grid"] {
+    gap: clamp(28px, 3.2vw, 40px) !important;
+  }
+
+  [data-pencil-name="Staff Row 1"],
+  [data-pencil-name="Staff Row 2"] {
+    gap: clamp(16px, 2vw, 32px) !important;
+  }
+
+  [data-pencil-name="Staff Section"] article {
+    min-width: 0;
+  }
+
+  [data-pencil-name="Staff Section"] .staff-photo {
+    height: clamp(360px, 38vw, 540px) !important;
+  }
+}
