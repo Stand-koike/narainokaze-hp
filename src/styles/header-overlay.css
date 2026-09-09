@@ -126,6 +126,40 @@ body:not([data-page="top"]) .page-hero {
     min-height: calc(100svh + 72px);
   }
 
+  /*
+    SP: 写真比率に合わせてヒーロー枠を引き、cover の最小倍率で
+    余白なく最大限の画像を見せる（ズームインはしない）。
+  */
+  body:not([data-page="top"]) .page-hero[class*="page-hero--ratio-"] {
+    min-height: 0;
+    height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
+  }
+
+  body:not([data-page="top"]) main > [data-pencil-name="Page Hero"]:first-child[class*="page-hero--ratio-"] {
+    min-height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
+    height: calc(72px + (100vw * var(--hero-ratio-h) / var(--hero-ratio-w)));
+  }
+
+  body:not([data-page="top"]) .page-hero--ratio-3x2 {
+    --hero-ratio-w: 3;
+    --hero-ratio-h: 2;
+  }
+
+  body:not([data-page="top"]) .page-hero--ratio-5x3 {
+    --hero-ratio-w: 5;
+    --hero-ratio-h: 3;
+  }
+
+  body:not([data-page="top"]) .page-hero--ratio-1x1 {
+    --hero-ratio-w: 1;
+    --hero-ratio-h: 1;
+  }
+
+  body:not([data-page="top"]) .page-hero--ratio-2x3 {
+    --hero-ratio-w: 2;
+    --hero-ratio-h: 3;
+  }
+
   body[data-page="top"] .page-hero {
     min-height: 560px;
     height: 560px;
@@ -133,59 +167,40 @@ body:not([data-page="top"]) .page-hero {
 
   body[data-page="top"] [data-pencil-name="Hero Fade"] .media-cover {
     object-fit: cover;
-    object-position: center 42%;
+    object-position: center center;
   }
 
   body[data-page="top"] [data-pencil-name="Hero Fade"] [data-hero-video] {
     pointer-events: none;
   }
 
-  /*
-    SP: 横位置の写真を縦画面に contain せず、被写体へ cover で切り込む。
-    ヒーロー高さ・コピー位置は変更しない。
-  */
+  /* 被写体のバランス調整（background-size: cover は変更しない） */
   .page-hero__bg--family {
-    /* 海の家族: 中央の船上の人物。手を残し、船体と空を切る */
-    background-position: 48% 38%;
-    background-size: auto 142%;
+    background-position: 50% 42%;
   }
 
   .page-hero__bg--cuisine {
-    /* 地魚のソテー: 皿の余白を切り、料理とセージを大きく */
-    background-position: 86% 46%;
-    background-size: auto 168%;
+    background-position: 78% center;
   }
 
   .page-hero__bg--onsen {
-    /* 温泉湯: 木の湯口と青い湯面。白飛びした窓を切る */
-    background-position: 30% 58%;
-    background-size: auto 145%;
+    background-position: 32% 52%;
   }
 
   .page-hero__bg--rooms {
-    /* お部屋hero: テーブルと海。空を少し切る */
-    background-position: 50% 58%;
-    background-size: auto 138%;
+    background-position: center 54%;
   }
 
   .page-hero__bg--offset {
-    /* 過ごし方: 砂浜の人物と左の緑の岬。空と沖を切る */
-    inset: 0;
-    height: auto;
-    background-position: 40% 78%;
-    background-size: auto 148%;
+    background-position: 42% 84%;
   }
 
   .page-hero__bg--faq {
-    /* FAQ: 中央〜右の海と客室。天井と手前床を切る */
-    background-position: 58% 48%;
-    background-size: auto 140%;
+    background-position: 56% 46%;
   }
 
   .page-hero__bg--access {
-    /* 祖父母と孫: 3人とその映り込み。山と空を切る */
-    background-position: 50% 70%;
-    background-size: auto 158%;
+    background-position: center 66%;
   }
 }
 
